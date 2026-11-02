@@ -3,18 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trentren · Vigía sísmico autónomo de Chile</title>
-<meta name="description" content="Agente de IA autónomo que vigila la sismicidad de Chile, anticipa réplicas y explica la situación a la población.">
+<title>Trentren · Vigía sísmico autónomo</title>
+<meta name="description" content="Agentes de IA autónomos que vigilan la sismicidad de Chile, Japón y Estados Unidos, deliberan ante cada sismo y emiten un estado de alerta.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='18' fill='%2306070a' stroke='%23ff6b3d' stroke-width='1.5'/%3E%3Cpath d='M5 20h7l2-5 3 12 3-16 3 13 2-7 2 3h8' fill='none' stroke='%23ece7df' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
 <body data-nivel="vigilancia">
-
 <svg width="0" height="0" style="position:absolute">
   <symbol id="sigil" viewBox="0 0 40 40">
-    <circle cx="20" cy="20" r="18.2" fill="none" stroke="var(--accent)" stroke-width="1" opacity=".9"/>
+    <circle cx="20" cy="20" r="18.2" fill="none" stroke="var(--accent)" stroke-width="1"/>
     <circle cx="20" cy="20" r="14.6" fill="none" stroke="currentColor" stroke-width=".5" opacity=".25" stroke-dasharray="1 2.4"/>
     <path d="M4.5 20h6.2l1.6-3.4 2.4 9.6 3-17.2 3 15.4 2.2-8.6 1.8 4.4 1.4-1.4h7.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="34.6" cy="18.8" r="1.25" fill="var(--accent)"/>
@@ -22,121 +21,108 @@
 </svg>
 
 <header class="top">
-  <a class="brand" href="#">
+  <a class="brand" href="#ahora">
     <svg style="color:var(--ink)"><use href="#sigil"/></svg>
-    <div><div class="w">TRENTREN</div><div class="s">Vigía sísmico autónomo de Chile</div></div>
+    <div><div class="w">TRENTREN</div><div class="s" data-i="tagline"></div></div>
   </a>
-  <div class="nivel-pill"><span class="dot"></span><span>Nivel nacional · <b id="pillNivel">—</b></span><span id="pillZona" style="color:var(--mut)"></span></div>
+  <nav class="seg" id="paises"></nav>
   <div class="meta">
-    <div class="hide-s"><span class="lbl">Datos</span><span id="fresh">—</span></div>
-    <div class="hide-s"><span class="lbl">Agente</span><span id="agentState">despertando…</span></div>
-    <div><span class="lbl">Hora de Chile</span><span class="clock" id="clock">--:--:--</span></div>
+    <div class="nivel-pill"><span class="dot"></span><b id="pillNivel">—</b></div>
+    <nav class="seg small" id="idiomas"></nav>
+    <div><span class="lbl" id="clockLbl"></span><span class="clock" id="clock">--:--</span></div>
   </div>
 </header>
-
-<div class="seismo"><span class="cap">Sismograma de Chile · últimas 24 horas</span><svg id="seismo" preserveAspectRatio="none"></svg></div>
+<nav class="sub" id="subnav"></nav>
+<div class="seismo"><span class="cap" data-i="seismo"></span><svg id="seismo" preserveAspectRatio="none"></svg></div>
 
 <div class="grid">
   <aside class="mapcol">
-    <div class="h"><span class="t">El territorio, ahora</span><span class="c" id="mapCount">—</span></div>
-    <svg id="map" role="img" aria-label="Mapa de sismos recientes en Chile"></svg>
-    <div class="legend">
-      <span><i style="background:var(--ember)"></i>superficial &lt;70 km</span>
-      <span><i style="background:var(--gold)"></i>intermedio</span>
-      <span><i style="background:var(--violet)"></i>profundo &gt;300 km</span>
-      <span><i style="background:none;border:1px solid var(--cyan)"></i>fosa de subducción</span>
-    </div>
+    <div class="h"><span class="t" id="mapTitle"></span><span class="c" id="mapCount"></span></div>
+    <div class="maphist" id="mapHist" hidden></div>
+    <svg id="map" role="img"></svg>
+    <div class="legend" id="legend"></div>
   </aside>
 
   <main class="content">
-    <section class="blk hero" id="situacion">
-      <div class="lvl" id="lvlWord"><small>Estado de situación</small>—</div>
-      <div class="tabs" id="tabs" style="display:none">
-        <button class="on" data-c="real">Situación real</button>
-        <button class="sim" data-c="sim">Simulacro en curso</button>
-      </div>
-      <div id="parte"></div>
-    </section>
-
-    <section class="blk" id="mente">
-      <div class="eyebrow">La mente de Trentren</div>
-      <h2>Un agente que <em>decide</em> solo</h2>
-      <p class="lede">Trentren lee el Centro Sismológico Nacional y el USGS cada dos minutos. Ante cada sismo elige
-        qué hacer: correr el modelo de réplicas, revisar las noticias y lo que se discute en internet, cambiar el nivel, publicar un parte
-        o agendar su próxima revisión. Aquí se ve cada decisión, con sus razones.</p>
-      <div class="mind" id="mind"></div>
-    </section>
-
-    <section class="blk" id="pulso">
-      <div class="eyebrow">Pulso sísmico</div>
-      <h2>¿Viene <em>otro</em>?</h2>
-      <p class="lede">Para cada sismo M≥4,7, la probabilidad de otro M≥5 a menos de 150 km en la próxima hora, en 3 horas y en un día.
-        Se compara con la tasa normal; la ventana se apaga cuando expira.</p>
+    <section class="blk" id="ahora">
+      <div class="lvl" id="lvlWord"></div>
+      <div id="vigente"></div>
+      <div class="kpis" id="kpis"></div>
+      <h3 class="h3" data-i="pulso_t"></h3>
+      <p class="lede sm" data-i="pulso_d"></p>
       <div class="pulses" id="pulses"></div>
     </section>
 
-    <section class="blk" id="memoria">
-      <div class="eyebrow">Memoria de la tierra</div>
-      <h2>Lo que la placa <em>recuerda</em></h2>
-      <p class="lede">Años desde el último gran sismo (M≥7,5) en cada zona y acoplamiento geodésico de la interfaz. Es contexto de largo plazo
-        para entender la tensión acumulada; <b>no</b> es un pronóstico de fecha.</p>
-      <div class="card zones" id="zones"></div>
+    <section class="blk" id="agentes">
+      <div class="eyebrow" data-i="ag_eye"></div>
+      <h2 data-i="ag_h"></h2>
+      <p class="lede" data-i="ag_d"></p>
+      <div class="pipe" id="pipe"></div>
+      <div class="metabadge" id="metaBadge"></div>
     </section>
 
-    <section class="blk" id="preguntar">
-      <div class="eyebrow">Conversación</div>
-      <h2>Pregúntale a <em>Trentren</em></h2>
-      <div class="card ask">
-        <form id="askForm"><input id="askQ" maxlength="500" placeholder="¿Fue sentido el último sismo en Santiago? ¿Debo preocuparme?" autocomplete="off"><button class="btn" id="askBtn">Preguntar</button></form>
-        <div class="sugs" id="sugs"></div>
-        <div class="answer md" id="answer"></div>
-      </div>
+    <section class="blk" id="consejo">
+      <div class="eyebrow" data-i="co_eye"></div>
+      <h2 data-i="co_h"></h2>
+      <div class="cpick" id="cpick"></div>
+      <div id="council"></div>
     </section>
 
-    <section class="blk" id="simulacros">
-      <div class="eyebrow">Simulacros</div>
-      <h2>Pon a prueba al <em>vigía</em></h2>
-      <p class="lede">Lanza un sismo ficticio y mira, en vivo, cómo Trentren lo analiza y qué decide. Los simulacros van a un canal separado
-        y nunca cambian la situación real.</p>
+    <section class="blk" id="registro">
+      <div class="eyebrow" data-i="re_eye"></div>
+      <h2 data-i="re_h"></h2>
+      <p class="lede" data-i="re_d"></p>
+      <div class="card tablewrap"><table id="regTable"></table></div>
+    </section>
+
+    <section class="blk" id="historia">
+      <div class="eyebrow" data-i="hi_eye"></div>
+      <h2 data-i="hi_h"></h2>
+      <p class="lede" data-i="hi_d"></p>
+      <div class="tabs" id="hzTabs"></div>
+      <div class="card chart" id="yearChart"></div>
+      <div class="stats" id="histStats"></div>
+      <h3 class="h3" data-i="hi_big"></h3>
+      <div class="bigs" id="bigs"></div>
+    </section>
+
+    <section class="blk" id="simular">
+      <div class="eyebrow" data-i="si_eye"></div>
+      <h2 data-i="si_h"></h2>
+      <p class="lede" data-i="si_d"></p>
       <div class="sims" id="sims"></div>
     </section>
 
-    <section class="blk" id="ciencia">
-      <div class="eyebrow">Lo que la ciencia permite hoy</div>
-      <h2>Honestidad <em>antes</em> que espectáculo</h2>
-      <p class="lede">El modelo se evaluó sin mirar el futuro: entrenado hasta 2020, calibrado en 2021-2023 y probado en <span id="nHold">945</span>
-        sismos de 2024 en adelante que nunca vio.</p>
+    <section class="blk" id="metodo">
+      <div class="eyebrow" data-i="me_eye"></div>
+      <h2 data-i="me_h"></h2>
+      <p class="lede" data-i="me_d"></p>
+      <div class="card trainbar" id="trainbar"></div>
       <div class="stats" id="stats"></div>
       <div class="truth">
-        <div class="card yes"><h4>Lo que sí puede</h4>Anticipar si la actividad va a <b>escalar</b> en las horas siguientes a un sismo (réplicas y secuencias).
-          Cuando el modelo alerta, acierta unas diez veces más que el azar.</div>
-        <div class="card no"><h4>Lo que nadie puede todavía</h4>Predecir la fecha y el lugar de un terremoto principal. Este proyecto probó más de veinte hipótesis
-          (mareas, clima solar, GNSS, migración de sismicidad, IA profunda…) y ninguna superó al modelo de clustering. Trentren nunca lo va a fingir.</div>
+        <div class="card yes"><h4 data-i="yes_h"></h4><span data-i="yes_d"></span></div>
+        <div class="card no"><h4 data-i="no_h"></h4><span data-i="no_d"></span></div>
       </div>
+      <h3 class="h3" data-i="mem_h"></h3>
+      <div class="card zones" id="zones"></div>
     </section>
 
     <section class="blk">
       <div class="card myth">
-        <svg viewBox="0 0 40 40" style="width:110px;height:110px;color:var(--ink)"><use href="#sigil"/></svg>
-        <p>En la tradición mapuche-chilota, cuando <em>Caicai Vilu</em> levantó las aguas para cubrir la tierra,
-          <em>Trentren Vilu</em> alzó los cerros para que la gente se salvara. Este vigía hereda su nombre y su tarea: mirar la tierra
-          día y noche, y avisar con la verdad.</p>
+        <svg viewBox="0 0 40 40" style="width:104px;height:104px;color:var(--ink)"><use href="#sigil"/></svg>
+        <p data-i="myth" data-html="1"></p>
       </div>
     </section>
   </main>
 </div>
 
 <footer>
-  <div><b>Trentren es un sistema experimental de investigación.</b> No reemplaza ni emite alertas oficiales. Ante un sismo fuerte
-    o una alerta de tsunami, sigue siempre las instrucciones de las autoridades. Si estás en la costa y un sismo te impide mantenerte en pie,
-    evacúa a la zona segura sin esperar aviso.
-    <div class="off"><a href="https://senapred.cl" target="_blank" rel="noopener">SENAPRED</a><a href="https://www.shoa.cl" target="_blank" rel="noopener">SHOA</a><a href="https://www.sismologia.cl" target="_blank" rel="noopener">Centro Sismológico Nacional</a></div></div>
-  <div>Datos: Centro Sismológico Nacional (U. de Chile) vía api.xor.cl · USGS ComCat · Google Noticias.<br>
-    Modelo de escalamiento v4 (logit calibrado) + Reasenberg-Jones · Agente: <span id="llm">Muse Wonder</span> (Meta).<br>
-    <span id="uso"></span></div>
+  <div><b data-i="ft_b"></b> <span data-i="ft_d"></span> <span id="ftTsunami"></span>
+    <div class="off" id="links"></div></div>
+  <div><span data-i="ft_data"></span><br><span id="ftModel"></span><br><span id="uso"></span></div>
 </footer>
-
 <div class="tip" id="tip"></div>
+<script src="i18n.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

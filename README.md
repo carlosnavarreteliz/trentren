@@ -1,3 +1,50 @@
+# Trentren · Vigía sísmico autónomo (Chile · Japón · EE.UU.)
+
+Agentes de IA autónomos que vigilan la sismicidad de Chile, Japón y Estados Unidos. Ante cada sismo
+relevante deciden solos qué hacer y escriben un estado de alerta en una base de datos:
+
+1. **Pre-alerta instantánea** (reglas + modelo del país) → tabla `alertas` en < 1 s.
+2. **Tres especialistas en paralelo**, cada uno con sus herramientas:
+   *Sismóloga* (modelo de escalamiento, secuencia previa, análogos históricos),
+   *Vigía de medios* (Google Noticias + búsqueda web: tono de la prensa, hechos, rumores) y
+   *Protección civil* (ciudades expuestas, intensidad estimada, condición de tsunami).
+3. **Debate**: cada agente lee a los otros dos y ajusta o defiende su gravedad.
+4. **Trentren (coordinador)** emite nivel, gravedad y parte en español, inglés y japonés → `alertas`.
+
+Todos los agentes corren **exclusivamente en Meta Muse Wonder** (`muse-wonder-1.0`, `api.meta.ai`,
+Responses API). No hay proveedor alternativo; `/api/meta` verifica la conexión.
+
+## Modelos (aprenden de los sismos pasados de cada país)
+
+| País | Catálogo | Entrenamiento ≤2020 | AUC 1 h / 3 h / 24 h (prueba ciega 2024+) |
+|---|---|---|---|
+| Chile | USGS 1900-2026 | 10.057 sismos M≥4,7 | 0,87 / 0,84 / 0,67 |
+| Japón | USGS 1990-2026 | 21.334 | 0,90 / 0,91 / 0,89 |
+| EE.UU. (Oeste, Alaska, Hawái) | USGS 1990-2026 | 5.544 | 0,84 / 0,84 / 0,88 |
+
+Protocolo: logit sobre rasgos causales de clustering (24 h previas), Platt cross-fitted en 2021-2023,
+umbral q95, prueba ciega 2024+. Para M≥6 se combina con Reasenberg-Jones. La *Máquina del tiempo*
+reconstruye 2014+ walk-forward (modelo ≤2013, calibración de cada año sólo con años previos).
+Pronostica **escalamiento y réplicas**, no sismos principales (20+ hipótesis nulas en `research/`).
+
+## Uso
+
+```bash
+cp .env.example .env                    # META_API_KEY=...
+python3 -m trentren                     # vigía + web en http://127.0.0.1:8787
+python3 -m trentren.regions --fetch japon --train japon   # reconstruye catálogo y modelo de un país
+bash deploy/setup_vm.sh <dominio>       # instala en una VM Debian (systemd + Caddy HTTPS)
+```
+
+- `trentren/council.py` consejo de agentes · `trentren/forecast.py` modelo por país ·
+  `trentren/history.py` máquina del tiempo · `trentren/db.py` SQLite (`trentren/state/trentren.db`) ·
+  `trentren/regions.py` países, zonas y entrenamiento · `trentren/web/` interfaz es/en/ja.
+- Simulacros y "revivir un terremoto histórico" desde la web (limitados a 6 por hora).
+
+---
+
+# Investigación previa (Chile)
+
 # Trentren: an AI council that watches Chile's earthquakes
 
 Trentren is a real-time earthquake watch system for Chile. Every two minutes it reads the

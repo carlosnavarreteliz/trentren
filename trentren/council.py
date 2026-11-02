@@ -36,6 +36,9 @@ NIVELES = ["vigilancia", "atencion", "alerta"]
 UMBRAL_CONSEJO = {"chile": 5.0, "japon": 5.5, "eeuu": 5.0}
 MAX_CONSEJOS_DIA = 12
 IDIOMA = {"es": "español de Chile", "en": "English (US)", "ja": "日本語"}
+ORDEN_IDIOMA = {"es": "OBLIGATORIO: escribe TODO (mensajes, informe, réplica) en español.",
+                "en": "MANDATORY: write EVERYTHING (messages, report, reply) in English.",
+                "ja": "必須：すべて（発言・報告・反論）を日本語で書くこと。スペイン語や英語は使わないこと。"}
 
 
 def now():
@@ -122,7 +125,9 @@ CIUDADES = {  # nombre, lat, lon, población aprox., costera
         ("Naha 那覇", 26.21, 127.68, 320000, 1)],
     "eeuu": [
         ("Seattle", 47.61, -122.33, 750000, 1), ("Tacoma", 47.25, -122.44, 220000, 1), ("Portland", 45.52, -122.68, 650000, 0),
-        ("Astoria", 46.19, -123.83, 10000, 1), ("Eureka", 40.80, -124.16, 27000, 1), ("Crescent City", 41.76, -124.20, 6700, 1),
+        ("Astoria", 46.19, -123.83, 10000, 1), ("Salem", 44.94, -123.03, 175000, 0), ("Eugene", 44.05, -123.09, 177000, 0),
+        ("Newport", 44.64, -124.05, 10000, 1), ("Lincoln City", 44.96, -124.01, 9800, 1), ("Coos Bay", 43.37, -124.22, 16000, 1),
+        ("Aberdeen", 46.98, -123.82, 17000, 1), ("Eureka", 40.80, -124.16, 27000, 1), ("Crescent City", 41.76, -124.20, 6700, 1),
         ("Sacramento", 38.58, -121.49, 525000, 0), ("San Francisco", 37.77, -122.42, 810000, 1), ("Oakland", 37.80, -122.27, 430000, 1),
         ("San José", 37.34, -121.89, 970000, 0), ("Fresno", 36.74, -119.79, 545000, 0), ("Santa Barbara", 34.42, -119.70, 88000, 1),
         ("Los Angeles", 34.05, -118.24, 3820000, 1), ("Long Beach", 33.77, -118.19, 450000, 1), ("Riverside", 33.95, -117.40, 315000, 0),
@@ -145,7 +150,11 @@ def exposicion(ev):
     out.sort(key=lambda x: -x["mmi"])
     costeras = [c for c in out if c["costera"] and c["dist_km"] < 250]
     somero = (ev.get("prof") or 30) < 60
-    if ev["mag"] >= 7.0 and somero and costeras:
+    cercana = min(out, key=lambda c: c["dist_km"]) if out else None
+    interior = bool(cercana and not cercana["costera"] and cercana["dist_km"] < 40)  # epicentro bajo una ciudad interior
+    if interior:
+        ts = "epicentro en tierra firme: sin condición de tsunami"
+    elif ev["mag"] >= 7.0 and somero and costeras:
         ts = "CONDICIÓN DE TSUNAMI: sismo costero mayor y somero. Regla oficial: " + PAISES[ev["pais"]]["tsunami"]
     elif ev["mag"] >= 6.5 and somero and costeras:
         ts = "posible evaluación precautoria de tsunami por la autoridad; mantenerse atento"
@@ -162,13 +171,13 @@ GRAVEDAD = ("Escala común de gravedad: 1 = menor, apenas sentido; 2 = sentido, 
 
 def comun(pais):
     P = PAISES[pais]
-    return (f"Eres parte del consejo de TRENTREN, vigía sísmico autónomo (nombre de Tren Tren Vilu, la serpiente de la "
+    return (ORDEN_IDIOMA[P["idioma"]] + " " + f"Eres parte del consejo de TRENTREN, vigía sísmico autónomo (nombre de Tren Tren Vilu, la serpiente de la "
             f"tradición mapuche-chilota que alzó los cerros para salvar a la gente del mar). Vigilas {P['nombre']['es']}. "
             f"Escribe tus mensajes y tu informe en {IDIOMA[P['idioma']]}. Breve y preciso. Antes de usar una herramienta, di "
             f"en una frase qué buscas. Cita cifras exactas de tus herramientas; no inventes datos. {GRAVEDAD} "
             f"Autoridades oficiales que nunca contradices: {', '.join(P['autoridades'])}. "
             "Si el episodio es SIMULACRO, el sismo es ficticio: analízalo igual. Si es HISTÓRICO, revives ese momento: razona "
-            "como si fuera esa fecha. Terminas SIEMPRE llamando a tu herramienta de entrega.")
+            "como si fuera esa fecha. Terminas SIEMPRE llamando a tu herramienta de entrega. " + ORDEN_IDIOMA[P["idioma"]])
 
 
 AGENTES = {
@@ -212,7 +221,8 @@ AGENTES = {
     },
 }
 COORD_NOMBRE = {"es": "Trentren", "en": "Trentren", "ja": "トレントレン"}
-COORD_INST = (" Eres el COORDINADOR. Lees los informes y el debate del consejo y emites el estado de alerta con `emitir_alerta`; "
+COORD_INST = (" (El campo razon_decision va en el idioma del país; titular, resumen y acciones en los tres idiomas.)"
+              " Eres el COORDINADOR. Lees los informes y el debate del consejo y emites el estado de alerta con `emitir_alerta`; "
               "queda en la base de datos y se publica. Niveles: vigilancia (gravedad 1-2), atencion (3), alerta (4-5); puedes "
               "apartarte si lo justificas. Si los agentes discrepan, di a quién le das la razón y por qué. Escribe el titular, "
               "el resumen (2-4 frases claras, probabilidades en lenguaje simple como '1 de cada 3') y 2-4 acciones en TRES "
@@ -628,6 +638,7 @@ class Consejo:
                       "utc": ev["t"][:19], "fuente": ev.get("fuente"), "zona": self.obs[ev["pais"]].zona(ev["lat"], ev["lon"])},
             "ahora_local": ahora.astimezone(tz).strftime("%Y-%m-%d %H:%M"),
             "regla_tsunami_oficial": P["tsunami"],
+            "IDIOMA_OBLIGATORIO": ORDEN_IDIOMA[P["idioma"]],
         }, ensure_ascii=False)
 
     # ---------- estado público ----------
