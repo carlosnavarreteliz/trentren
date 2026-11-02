@@ -1,0 +1,2 @@
+daily_m6 y_main [y_main/logit] N_test=72  IG(full-base)=-0.0409 nats/eq  IG(base-Poisson)=+0.044  AUC base/full=0.679/0.652  ASS base/full=0.679/0.652  T=-1.36 | boot {'ig_per_event': -0.04086894277071326, 'ci_lo': -0.10990348684562325, 'ci_hi': 0.022059720832779423, 'p_boot_le0': 0.8785, 'n_years': 14} | phase p 0.9411764705882353
+done 299.48744201660156

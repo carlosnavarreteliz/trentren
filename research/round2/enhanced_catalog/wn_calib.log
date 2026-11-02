@@ -1,0 +1,10 @@
+{'analysis': 'noise 0 (white)', 'target': 'y_all', 'ig': -0.0218, 'p_default': 0.22772277227722773, 'null_mean_default': -0.0346, 'p_window': 0.6732673267326733, 'null_mean_window': -0.0156}
+{'analysis': 'noise 1 (AR0.8)', 'target': 'y_all', 'ig': -0.0216, 'p_default': 0.8217821782178217, 'null_mean_default': -0.0128, 'p_window': 0.7128712871287128, 'null_mean_window': -0.0152}
+{'analysis': 'noise 2 (white)', 'target': 'y_all', 'ig': -0.0234, 'p_default': 0.9603960396039604, 'null_mean_default': -0.0055, 'p_window': 0.7524752475247525, 'null_mean_window': -0.0142}
+{'analysis': 'noise 3 (AR0.8)', 'target': 'y_all', 'ig': -0.013, 'p_default': 0.2871287128712871, 'null_mean_default': -0.0219, 'p_window': 0.5544554455445545, 'null_mean_window': -0.0144}
+{'analysis': 'noise 4 (white)', 'target': 'y_all', 'ig': 0.0022, 'p_default': 0.009900990099009901, 'null_mean_default': -0.0459, 'p_window': 0.1188118811881188, 'null_mean_window': -0.0138}
+{'analysis': 'noise 5 (AR0.8)', 'target': 'y_all', 'ig': -0.0014, 'p_default': 0.06930693069306931, 'null_mean_default': -0.0419, 'p_window': 0.297029702970297, 'null_mean_window': -0.0122}
+{'analysis': 'noise 6 (white)', 'target': 'y_all', 'ig': 0.0112, 'p_default': 0.009900990099009901, 'null_mean_default': -0.0287, 'p_window': 0.0297029702970297, 'null_mean_window': -0.0139}
+{'analysis': 'noise 7 (AR0.8)', 'target': 'y_all', 'ig': 0.0021, 'p_default': 0.09900990099009901, 'null_mean_default': -0.0119, 'p_window': 0.15841584158415842, 'null_mean_window': -0.0132}
+{'analysis': 'noise 8 (white)', 'target': 'y_all', 'ig': -0.0202, 'p_default': 1.0, 'null_mean_default': -0.0009, 'p_window': 0.6534653465346535, 'null_mean_window': -0.0166}
+{'analysis': 'noise 9 (AR0.8)', 'target': 'y_all', 'ig': -0.0375, 'p_default': 1.0, 'null_mean_default': -0.004, 'p_window': 0.8217821782178217, 'null_mean_window': -0.0172}

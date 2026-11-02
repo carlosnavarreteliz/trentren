@@ -1,0 +1,87 @@
+{
+ "slug": "global_transfer_neural",
+ "title": "Red neuronal preentrenada globalmente y ajustada a Chile",
+ "question": "¿Una GRU preentrenada con sismicidad pre-2013 de 10 márgenes de subducción y ajustada a Chile mejora el pronóstico semanal de M≥6 en Chile 2013-2026 frente al ETAS-logit del harness, y ayuda el pooling con eventos M≥7?",
+ "verdict": "null",
+ "headline": "La red preentrenada globalmente no aporta información sobre el ETAS-logit cuando se apila en el harness (y_main IG +0,002, p=0,42), aunque como pronóstico autónomo supera a la red solo-Chile y, de forma exploratoria, al ETAS-logit.",
+ "metrics": [
+  {
+   "target": "y_main",
+   "ig_nats_per_eq": 0.0021,
+   "p_value": 0.424,
+   "auc_base": 0.6645,
+   "auc_full": 0.6647,
+   "n_test_events": 72,
+   "note": "PRIMARIO: GFT apilado, phase_randomize n=1000"
+  },
+  {
+   "target": "y_all",
+   "ig_nats_per_eq": 0.0006,
+   "p_value": 0.519,
+   "auc_base": 0.6969,
+   "auc_full": 0.6972,
+   "n_test_events": 85,
+   "note": "GFT apilado, phase_randomize n=1000"
+  },
+  {
+   "target": "y_main",
+   "ig_nats_per_eq": -0.0106,
+   "p_value": 0.711,
+   "auc_base": 0.6645,
+   "auc_full": 0.6629,
+   "n_test_events": 72,
+   "note": "Solo-Chile (CO) apilado, n=200"
+  },
+  {
+   "target": "y_main",
+   "ig_nats_per_eq": 0.006,
+   "p_value": 0.363,
+   "auc_base": 0.6645,
+   "auc_full": 0.6646,
+   "n_test_events": 72,
+   "note": "Global zero-shot (GZS) apilado, n=200"
+  },
+  {
+   "target": "y_all",
+   "ig_nats_per_eq": 0.0108,
+   "p_value": 0.303,
+   "auc_base": 0.6969,
+   "auc_full": 0.7012,
+   "n_test_events": 85,
+   "note": "GZS apilado, n=200"
+  },
+  {
+   "target": "y_main",
+   "ig_nats_per_eq": 0.043,
+   "p_value": 0.008,
+   "auc_base": 0.6645,
+   "auc_full": 0.6779,
+   "n_test_events": 72,
+   "note": "Exploratorio: GFT autónomo vs base, nivel igualado; p bootstrap por año (no calibrado)"
+  },
+  {
+   "target": "y_main",
+   "ig_nats_per_eq": 0.057,
+   "p_value": 0.0005,
+   "auc_base": null,
+   "auc_full": null,
+   "n_test_events": 72,
+   "note": "Contraste GFT vs CO autónomo (pooling); p bootstrap por año"
+  }
+ ],
+ "key_findings": [
+  "Test primario nulo: IG apilado +0,002 nats/eq en y_main, p=0,42 (n=1000 surrogates).",
+  "Circular shift, GBM, panel M≥5,5 y versión de-meaned: todos nulos.",
+  "El preentrenamiento global sí ayuda frente a la misma red entrenada solo con Chile (+0,06 nats/eq autónomo).",
+  "La red zero-shot (sin datos de Chile) rinde igual que la ajustada: el fine-tuning no aporta.",
+  "Como pronóstico autónomo, la red global supera al ETAS-logit en ~0,04-0,05 nats/eq (nivel igualado), repartido en 11/14 años; es exploratorio y no confirmatorio.",
+  "El pooling de 257 celdas M≥7 globales no mejora M≥7 en Chile: sobrepronostica (13 vs 5 celdas) y pierde ~5 nats frente a escalar Gutenberg-Richter."
+ ],
+ "caveats": [
+  "La ganancia autónoma no fue el test primario y su p proviene de un bootstrap por año, que aquí es anti-conservador.",
+  "Toda ganancia es mejor uso de clustering y tasas del catálogo, no un precursor.",
+  "Solo 72 mainshocks y 5 celdas M≥7 en test.",
+  "Se redujo el cómputo (enmiendas 1-2) antes de evaluar el test; los análisis de nivel y período de entrenamiento son post-hoc.",
+  "ComCat revisado y completitud M≥4,7 distinta por margen en 1973-2012."
+ ]
+}

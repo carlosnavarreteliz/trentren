@@ -1,0 +1,6 @@
+[y_main/logit] N_test=153  IG(full-base)=-0.0164 nats/eq  IG(base-Poisson)=-0.051  AUC base/full=0.503/0.489  ASS base/full=0.503/0.489  T=-2.18
+  bootstrap {'ig_per_event': -0.01644796104354533, 'ci_lo': -0.025959648869495082, 'ci_hi': -0.008938152230320125, 'p_boot_le0': 1.0, 'n_years': 9} 0.9s
+  phase p 0.6218905472636815 n 200 | bin_permute p 0.6666666666666666 | circ p 0.8208955223880597
+[y_all/logit] N_test=184  IG(full-base)=-0.0047 nats/eq  IG(base-Poisson)=+0.081  AUC base/full=0.543/0.538  ASS base/full=0.540/0.535  T=-1.10
+  bootstrap {'ig_per_event': -0.004694845872934093, 'ci_lo': -0.01166175124148615, 'ci_hi': 0.0007848884004524664, 'p_boot_le0': 0.9405, 'n_years': 9} 0.1s
+  phase p 0.3681592039800995 n 200 | bin_permute p 0.44776119402985076 | circ p 0.7164179104477612

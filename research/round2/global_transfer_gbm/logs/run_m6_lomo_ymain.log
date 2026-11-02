@@ -1,0 +1,20 @@
+[    1.7s] rows 916900 margins ['ALA', 'CAS', 'CHL', 'HEL', 'IBM', 'JPN', 'KAM', 'MEX', 'MNL', 'NRY', 'PER', 'PHT', 'SOL', 'SUN', 'TON', 'VAN'] extras ['xx_cnt_nbr_7d', 'xx_cnt_nbr_3650d', 'xx_maxmag_nbr_7d', 'xx_maxmag_nbr_3650d', 'xx_log_days_since_m7_nbr', 'xx_bvalue']
+[    5.2s] y_main harness base 0.0063 N 72
+[  329.6s] y_main M1 done
+[  412.7s] y_main LOMO ALA N 50 pooled-local 0.0458 lomo-local 0.0017 localgbm-local -0.0861
+[  491.4s] y_main LOMO CAS N 12 pooled-local 0.1297 lomo-local 0.0748 localgbm-local -1.0452
+[  560.5s] y_main LOMO CHL N 72 pooled-local -0.0086 lomo-local -0.027 localgbm-local -0.3318
+[  634.6s] y_main LOMO HEL N 15 pooled-local 0.515 lomo-local 0.4885 localgbm-local -0.3696
+[  740.1s] y_main LOMO IBM N 44 pooled-local 0.0381 lomo-local 0.0353 localgbm-local -0.254
+[  843.0s] y_main LOMO JPN N 33 pooled-local 0.2001 lomo-local 0.1688 localgbm-local -0.9818
+[  991.0s] y_main LOMO KAM N 48 pooled-local -0.0369 lomo-local -0.0082 localgbm-local -0.3899
+[ 1123.5s] y_main LOMO MEX N 64 pooled-local -0.023 lomo-local -0.0538 localgbm-local -0.3729
+[ 1262.5s] y_main LOMO MNL N 11 pooled-local 0.0397 lomo-local -0.0242 localgbm-local -0.5029
+[ 1421.1s] y_main LOMO NRY N 25 pooled-local 0.0355 lomo-local 0.0058 localgbm-local -0.3159
+[ 1564.6s] y_main LOMO PER N 29 pooled-local 0.0181 lomo-local 0.0518 localgbm-local -0.5161
+[ 1696.4s] y_main LOMO PHT N 59 pooled-local 0.0458 lomo-local 0.0494 localgbm-local -0.3661
+[ 2279.2s] y_main LOMO SOL N 85 pooled-local -0.0144 lomo-local -0.0941 localgbm-local -0.0598
+[ 2810.6s] y_main LOMO SUN N 59 pooled-local -0.0078 lomo-local 0.0029 localgbm-local -0.256
+[ 2994.8s] y_main LOMO TON N 161 pooled-local 0.0017 lomo-local -0.0463 localgbm-local -0.1086
+[ 3096.1s] y_main LOMO VAN N 97 pooled-local 0.0546 lomo-local 0.0472 localgbm-local -0.4838
+[ 3096.4s] done

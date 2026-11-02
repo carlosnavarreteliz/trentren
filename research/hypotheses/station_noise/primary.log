@@ -1,0 +1,37 @@
+[W_M6_hf+lp] non-NaN fraction train/test: {'x_hf': (np.float64(0.145), np.float64(0.788)), 'x_lp': (np.float64(0.145), np.float64(0.787))}
+[W_M6_hf+lp] y_main: [y_main/logit] N_test=72  IG(full-base)=-0.0132 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.658  ASS base/full=0.664/0.657  T=-0.97  surrogate p=0.4226 (Bonferroni sig=False) | boot {'ig_per_event': -0.013155945877387406, 'ci_lo': -0.031130144643321152, 'ci_hi': 0.004805265376577765, 'p_boot_le0': 0.923, 'n_years': 14}
+   bin_permute p=0.413  circ p=0.771
+   gbm IG=-0.0242
+   (1214s)
+[W_M6_hf+lp] y_all: [y_all/logit] N_test=85  IG(full-base)=-0.0198 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.695  ASS base/full=0.696/0.694  T=-1.39  surrogate p=0.5065 (Bonferroni sig=False) | boot {'ig_per_event': -0.0197574906692795, 'ci_lo': -0.0393110498310482, 'ci_hi': -0.0007422575210324254, 'p_boot_le0': 0.9775, 'n_years': 14}
+   bin_permute p=0.582  circ p=0.950
+   gbm IG=-0.0133
+   (544s)
+[W_M6_x_hf] non-NaN fraction train/test: {'x_hf': (np.float64(0.145), np.float64(0.788))}
+[W_M6_x_hf] y_main: [y_main/logit] N_test=72  IG(full-base)=-0.0103 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.660  ASS base/full=0.664/0.659  T=-0.77  surrogate p=0.6368 (Bonferroni sig=False) | boot {'ig_per_event': -0.010280509711761776, 'ci_lo': -0.02579563245072281, 'ci_hi': 0.00500526216103995, 'p_boot_le0': 0.901, 'n_years': 14}
+   (43s)
+[W_M6_x_hf] y_all: [y_all/logit] N_test=85  IG(full-base)=-0.0210 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.695  ASS base/full=0.696/0.694  T=-1.36  surrogate p=0.7811 (Bonferroni sig=False) | boot {'ig_per_event': -0.02104859283562424, 'ci_lo': -0.03648642918489891, 'ci_hi': -0.004559338918519978, 'p_boot_le0': 0.9945, 'n_years': 14}
+   (27s)
+[W_M6_x_lp] non-NaN fraction train/test: {'x_lp': (np.float64(0.145), np.float64(0.787))}
+[W_M6_x_lp] y_main: [y_main/logit] N_test=72  IG(full-base)=+0.0002 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.665  ASS base/full=0.664/0.664  T=0.18  surrogate p=0.2736 (Bonferroni sig=False) | boot {'ig_per_event': 0.00021664985520360131, 'ci_lo': -0.0022010340272792953, 'ci_hi': 0.0030609719098147947, 'p_boot_le0': 0.4525, 'n_years': 14}
+   (30s)
+[W_M6_x_lp] y_all: [y_all/logit] N_test=85  IG(full-base)=-0.0002 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.697  ASS base/full=0.696/0.696  T=-0.12  surrogate p=0.3035 (Bonferroni sig=False) | boot {'ig_per_event': -0.000152108776123923, 'ci_lo': -0.0012529483930990614, 'ci_hi': 0.0010780136262337598, 'p_boot_le0': 0.6035, 'n_years': 14}
+   (32s)
+[W_M6_x_ms] non-NaN fraction train/test: {'x_ms': (np.float64(0.145), np.float64(0.788))}
+[W_M6_x_ms] y_main: [y_main/logit] N_test=72  IG(full-base)=-0.0187 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.654  ASS base/full=0.664/0.654  T=-1.28  surrogate p=0.7313 (Bonferroni sig=False) | boot {'ig_per_event': -0.018704454077348522, 'ci_lo': -0.05164134961767167, 'ci_hi': 0.009329817989131451, 'p_boot_le0': 0.9005, 'n_years': 14}
+   (37s)
+[W_M6_x_ms] y_all: [y_all/logit] N_test=85  IG(full-base)=-0.0058 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.695  ASS base/full=0.696/0.695  T=-1.29  surrogate p=0.6070 (Bonferroni sig=False) | boot {'ig_per_event': -0.005830750977908163, 'ci_lo': -0.015522883633384981, 'ci_hi': 0.0016563478817199042, 'p_boot_le0': 0.937, 'n_years': 14}
+   (32s)
+[W_M5.5_hf+lp] non-NaN fraction train/test: {'x_hf': (np.float64(0.145), np.float64(0.788)), 'x_lp': (np.float64(0.145), np.float64(0.787))}
+[W_M5.5_hf+lp] y_main: [y_main/logit] N_test=193  IG(full-base)=-0.0284 nats/eq  IG(base-Poisson)=-0.022  AUC base/full=0.658/0.650  ASS base/full=0.657/0.649  T=-2.43  surrogate p=0.8159 (Bonferroni sig=False) | boot {'ig_per_event': -0.028416725392201116, 'ci_lo': -0.04830750888757581, 'ci_hi': -0.011501592015561014, 'p_boot_le0': 1.0, 'n_years': 14}
+   gbm IG=-0.0083
+   (32s)
+[W_M5.5_hf+lp] y_all: [y_all/logit] N_test=228  IG(full-base)=-0.0092 nats/eq  IG(base-Poisson)=+0.186  AUC base/full=0.697/0.694  ASS base/full=0.694/0.692  T=-1.25  surrogate p=0.6219 (Bonferroni sig=False) | boot {'ig_per_event': -0.009222645814276599, 'ci_lo': -0.018207001008388967, 'ci_hi': -0.0015085161463813629, 'p_boot_le0': 0.9915, 'n_years': 14}
+   gbm IG=-0.0017
+   (33s)
+[W_M6_dense_hf+lp] non-NaN fraction train/test: {'x_hf': (np.float64(0.145), np.float64(0.966)), 'x_lp': (np.float64(0.145), np.float64(0.965))}
+[W_M6_dense_hf+lp] y_main: [y_main/logit] N_test=72  IG(full-base)=-0.0079 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.659  ASS base/full=0.664/0.659  T=-0.64  surrogate p=0.3831 (Bonferroni sig=False) | boot {'ig_per_event': -0.00792680880327318, 'ci_lo': -0.022911255758495383, 'ci_hi': 0.0075298316034656, 'p_boot_le0': 0.843, 'n_years': 14}
+   (28s)
+[W_M6_dense_hf+lp] y_all: [y_all/logit] N_test=85  IG(full-base)=-0.0194 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.696  ASS base/full=0.696/0.695  T=-1.39  surrogate p=0.5572 (Bonferroni sig=False) | boot {'ig_per_event': -0.019422126654382595, 'ci_lo': -0.04289449514694621, 'ci_hi': 0.0011856544875736262, 'p_boot_le0': 0.961, 'n_years': 14}
+   (29s)
+done

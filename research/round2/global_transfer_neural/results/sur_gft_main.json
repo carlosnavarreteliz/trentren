@@ -1,0 +1,14 @@
+{
+ "gft_y_main_phase_n1000": {
+  "ig_obs": 0.0020926161656207557,
+  "p_value": 0.42357642357642356,
+  "null_mean": 0.0018717047900106373,
+  "null_sd": 0.027879623915800227,
+  "null_q95": 0.051660094398449714,
+  "n": 1000,
+  "mode": "phase_randomize",
+  "significant_0.05": false,
+  "significant_bonferroni": false,
+  "null_q99": 0.08945999999999997
+ }
+}

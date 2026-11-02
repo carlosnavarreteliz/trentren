@@ -1,0 +1,61 @@
+      bins_cov  mean_sta
+year                    
+2000       4.0       0.1
+2001       5.5       0.2
+2002       7.1       0.3
+2003      10.5       0.4
+2004      11.0       0.4
+2005      11.9       0.4
+2006      11.2       0.5
+2007      19.0       1.2
+2008      20.6       1.8
+2009      23.7       3.6
+2010      26.0       3.9
+2011      27.5       5.6
+2012      28.8       7.5
+2013      28.9       8.1
+2014      29.0       9.6
+2015      28.6      10.0
+2016      29.0       9.9
+2017      29.0      10.1
+2018      29.0      10.2
+2019      29.0      10.8
+2020      29.0      11.2
+2021      29.0      11.8
+2022      29.0      12.3
+2023      29.0      13.3
+2024      28.7      13.2
+2025      28.0      12.7
+2026      27.1      10.5
+[PRIMARY restricted2007 weekly M6] x_gtw_z30 y_main logit: IG=+0.0025 vsETAS=-0.1122 AUC 0.638->0.637 coef={'x_gtw_z30': 0.0262} boot={'ig_per_event': 0.002455197046969952, 'ci_lo': -0.0037966393999757752, 'ci_hi': 0.008051483801481242, 'p_boot_le0': 0.2395, 'n_years': 14} phase_randomize:p=0.1542 (102s)
+[restricted2007 weekly M6] x_gtw_z30 y_all logit: IG=-0.0012 vsETAS=-0.0700 AUC 0.677->0.675 coef={'x_gtw_z30': 0.0692} boot={'ig_per_event': -0.0012161018729436306, 'ci_lo': -0.016451963778034956, 'ci_hi': 0.011769443386756595, 'p_boot_le0': 0.5745, 'n_years': 14} phase_randomize:p=0.3433 (72s)
+[full1976 weekly M6] x_gtw_z30 y_main logit: IG=-0.0015 vsETAS=-0.0095 AUC 0.665->0.665 coef={'x_gtw_z30': -0.0141} boot={'ig_per_event': -0.0014752061533700727, 'ci_lo': -0.007012224978478515, 'ci_hi': 0.004033293346551116, 'p_boot_le0': 0.671, 'n_years': 14} phase_randomize:p=0.4653 (60s)
+[full1976 weekly M6] x_gtw_z30 y_all logit: IG=+0.0010 vsETAS=+0.0004 AUC 0.697->0.698 coef={'x_gtw_z30': 0.0237} boot={'ig_per_event': 0.0009559142697011896, 'ci_lo': -0.006997501748474575, 'ci_hi': 0.008291989890358873, 'p_boot_le0': 0.4145, 'n_years': 14} phase_randomize:p=0.2475 (63s)
+[restricted2007 weekly M6 altsur] x_gtw_z30 y_main logit: IG=+0.0025 vsETAS=-0.1122 AUC 0.638->0.637 coef={'x_gtw_z30': 0.0262} boot={'ig_per_event': 0.002455197046969952, 'ci_lo': -0.0037966393999757752, 'ci_hi': 0.008051483801481242, 'p_boot_le0': 0.2395, 'n_years': 14} bin_permute:p=0.1089 circular_shift:p=0.1287 (86s)
+[restricted2007 weekly M6 altsur] x_gtw_z30 y_all logit: IG=-0.0012 vsETAS=-0.0700 AUC 0.677->0.675 coef={'x_gtw_z30': 0.0692} boot={'ig_per_event': -0.0012161018729436306, 'ci_lo': -0.016451963778034956, 'ci_hi': 0.011769443386756595, 'p_boot_le0': 0.5745, 'n_years': 14} bin_permute:p=0.4356 circular_shift:p=0.3168 (93s)
+[restricted2007 weekly M6 GBM] x_gtw_z30 y_main gbm: IG=+0.0125 vsETAS=-0.4603 AUC 0.626->0.625 coef=None boot={'ig_per_event': 0.012452927273051915, 'ci_lo': -0.06503415586748403, 'ci_hi': 0.09413339189850704, 'p_boot_le0': 0.4055, 'n_years': 14}  (0s)
+[restricted2007 weekly M6 GBM] x_gtw_z30 y_all gbm: IG=-0.0061 vsETAS=-0.2310 AUC 0.670->0.674 coef=None boot={'ig_per_event': -0.006097967532238411, 'ci_lo': -0.07336484012741419, 'ci_hi': 0.0705358475232536, 'p_boot_le0': 0.581, 'n_years': 14}  (0s)
+[restricted2007 weekly M6 variant] x_gtw_z90 y_main logit: IG=+0.0034 vsETAS=-0.1112 AUC 0.638->0.638 coef={'x_gtw_z90': 0.0222} boot={'ig_per_event': 0.0033946995285444774, 'ci_lo': -0.0013228167924864977, 'ci_hi': 0.007967446310841337, 'p_boot_le0': 0.085, 'n_years': 14} phase_randomize:p=0.1287 (55s)
+[restricted2007 weekly M6 variant] x_gtw_z90 y_all logit: IG=+0.0002 vsETAS=-0.0686 AUC 0.677->0.677 coef={'x_gtw_z90': 0.0068} boot={'ig_per_event': 0.0001621510076799232, 'ci_lo': -0.0012697835130303784, 'ci_hi': 0.001402769249647311, 'p_boot_le0': 0.426, 'n_years': 14} phase_randomize:p=0.2376 (56s)
+[restricted2007 weekly M6 variant] x_gtw_absz30 y_main logit: IG=-0.0048 vsETAS=-0.1194 AUC 0.638->0.637 coef={'x_gtw_absz30': -0.1305} boot={'ig_per_event': -0.004765908298890092, 'ci_lo': -0.01575991188252768, 'ci_hi': 0.005294283658018254, 'p_boot_le0': 0.829, 'n_years': 14} phase_randomize:p=0.4455 (53s)
+[restricted2007 weekly M6 variant] x_gtw_absz30 y_all logit: IG=-0.0029 vsETAS=-0.0716 AUC 0.677->0.678 coef={'x_gtw_absz30': -0.0573} boot={'ig_per_event': -0.0028655675997503243, 'ci_lo': -0.00957063525108275, 'ci_hi': 0.003671282513258144, 'p_boot_le0': 0.8195, 'n_years': 14} phase_randomize:p=0.4158 (47s)
+[restricted2007 weekly M6 variant] x_gtw_z30_clean y_main logit: IG=-0.0104 vsETAS=-0.1250 AUC 0.638->0.634 coef={'x_gtw_z30_clean': 0.1206} boot={'ig_per_event': -0.010416045306039056, 'ci_lo': -0.03301250588506751, 'ci_hi': 0.007988581162988792, 'p_boot_le0': 0.8595, 'n_years': 14} phase_randomize:p=0.5347 (45s)
+[restricted2007 weekly M6 variant] x_gtw_z30_clean y_all logit: IG=-0.0252 vsETAS=-0.0940 AUC 0.677->0.671 coef={'x_gtw_z30_clean': 0.2977} boot={'ig_per_event': -0.02521481234395133, 'ci_lo': -0.08175960653049592, 'ci_hi': 0.019608959762949414, 'p_boot_le0': 0.8625, 'n_years': 14} phase_randomize:p=0.5347 (40s)
+[restricted2007 weekly M6 variant] x_gtw_z30_lag14 y_main logit: IG=+0.0053 vsETAS=-0.1093 AUC 0.638->0.639 coef={'x_gtw_z30_lag14': 0.034} boot={'ig_per_event': 0.0053188706608056245, 'ci_lo': -0.0015571273878950656, 'ci_hi': 0.011998599698439832, 'p_boot_le0': 0.076, 'n_years': 14} phase_randomize:p=0.1287 (35s)
+[restricted2007 weekly M6 variant] x_gtw_z30_lag14 y_all logit: IG=-0.0029 vsETAS=-0.0717 AUC 0.677->0.676 coef={'x_gtw_z30_lag14': -0.0353} boot={'ig_per_event': -0.002924310635342088, 'ci_lo': -0.010053526517435045, 'ci_hi': 0.0052947387784928026, 'p_boot_le0': 0.746, 'n_years': 14} phase_randomize:p=0.3861 (30s)
+[restricted2007 weekly M5.5] x_gtw_z30 y_main logit: IG=-0.0274 vsETAS=-0.0740 AUC 0.655->0.651 coef={'x_gtw_z30': -0.1724} boot={'ig_per_event': -0.027447394441310856, 'ci_lo': -0.04884908636159241, 'ci_hi': -0.007794031992013043, 'p_boot_le0': 0.9985, 'n_years': 14} phase_randomize:p=0.9010 (35s)
+[restricted2007 weekly M5.5] x_gtw_z30 y_all logit: IG=-0.0080 vsETAS=-0.0411 AUC 0.693->0.692 coef={'x_gtw_z30': -0.0785} boot={'ig_per_event': -0.008012067962378024, 'ci_lo': -0.016503803516316917, 'ci_hi': 0.0010361766058993758, 'p_boot_le0': 0.953, 'n_years': 14} phase_randomize:p=0.6733 (32s)
+[restricted2007 30d M6] x_gtw_z30 y_main logit: IG=+0.0023 vsETAS=-0.1840 AUC 0.638->0.638 coef={'x_gtw_z30': 0.0188} boot={'ig_per_event': 0.0023317848055105553, 'ci_lo': -0.0015072657029599615, 'ci_hi': 0.005990791544786214, 'p_boot_le0': 0.134, 'n_years': 14} phase_randomize:p=0.1980 (14s)
+[restricted2007 30d M6] x_gtw_z30 y_all logit: IG=-0.0144 vsETAS=-0.0590 AUC 0.658->0.653 coef={'x_gtw_z30': -0.1085} boot={'ig_per_event': -0.014381569068880351, 'ci_lo': -0.039294699982815096, 'ci_hi': 0.017497886879149927, 'p_boot_le0': 0.8115, 'n_years': 14} phase_randomize:p=0.5941 (13s)
+[restricted2007 30d M6 z90] x_gtw_z90 y_main logit: IG=+0.0074 vsETAS=-0.1790 AUC 0.638->0.639 coef={'x_gtw_z90': 0.052} boot={'ig_per_event': 0.007411602009671477, 'ci_lo': -0.0006849444821873462, 'ci_hi': 0.015926188016058475, 'p_boot_le0': 0.038, 'n_years': 14} phase_randomize:p=0.1485 (14s)
+[restricted2007 weekly M6 split2016] x_gtw_z30 y_main logit: IG=-0.0115 vsETAS=-0.0770 AUC 0.642->0.629 coef={'x_gtw_z30': 0.1809} boot={'ig_per_event': -0.011534604234557565, 'ci_lo': -0.04944386764660909, 'ci_hi': 0.027000098823670094, 'p_boot_le0': 0.7255, 'n_years': 11} phase_randomize:p=0.6436 (29s)
+[restricted2007 weekly M6 split2016] x_gtw_z30 y_all logit: IG=-0.0060 vsETAS=-0.0643 AUC 0.650->0.641 coef={'x_gtw_z30': 0.1362} boot={'ig_per_event': -0.005994654622282876, 'ci_lo': -0.0354159611151542, 'ci_hi': 0.021584581372979302, 'p_boot_le0': 0.654, 'n_years': 11} phase_randomize:p=0.5842 (27s)
+corr with station count / clustering features:
+                            x   nsta  ...  log_days_since_m6_nbr  cnt_nbr_30d
+x                      1.000 -0.121  ...                 -0.003        0.032
+nsta                  -0.121  1.000  ...                 -0.371        0.119
+maxmag_nbr_365d        0.045  0.259  ...                 -0.825        0.449
+log_days_since_m6_nbr -0.003 -0.371  ...                  1.000       -0.434
+cnt_nbr_30d            0.032  0.119  ...                 -0.434        1.000
+
+[5 rows x 5 columns]

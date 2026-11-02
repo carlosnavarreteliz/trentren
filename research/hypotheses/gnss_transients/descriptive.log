@@ -1,0 +1,6 @@
+z30        train covered cells=  7559  y_main: n+= 22 AUC(x)=0.548 mean x | y=1: -0.08 vs all -0.24  y_all: n+= 46 AUC(x)=0.694 mean x | y=1: +2.08 vs all -0.24
+z30        test  covered cells= 20703  y_main: n+= 72 AUC(x)=0.505 mean x | y=1: -0.11 vs all -0.33  y_all: n+= 85 AUC(x)=0.540 mean x | y=1: +0.25 vs all -0.33
+z90        train covered cells=  7400  y_main: n+= 22 AUC(x)=0.536 mean x | y=1: -0.40 vs all -0.60  y_all: n+= 46 AUC(x)=0.593 mean x | y=1: +1.05 vs all -0.60
+z90        test  covered cells= 20688  y_main: n+= 72 AUC(x)=0.543 mean x | y=1: -0.14 vs all -0.64  y_all: n+= 85 AUC(x)=0.587 mean x | y=1: +0.32 vs all -0.64
+z30_clean  train covered cells=  3019  y_main: n+=  7 AUC(x)=0.564 mean x | y=1: +0.21 vs all -0.26  y_all: n+= 11 AUC(x)=0.660 mean x | y=1: +1.02 vs all -0.26
+z30_clean  test  covered cells= 10689  y_main: n+= 25 AUC(x)=0.454 mean x | y=1: -0.66 vs all -0.38  y_all: n+= 28 AUC(x)=0.495 mean x | y=1: -0.43 vs all -0.38

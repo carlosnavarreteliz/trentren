@@ -1,0 +1,37 @@
+panel s7 h7 M6.0: frac NaN x_tsens 0.160; x_tsens mean/sd 0.110/0.990
+s7h7_M6.0|y_main|x_tsens|logit           IG=-0.0255 CI=[-0.073,+0.017] AUC base/full=0.665/0.654 ASS=0.664/0.653 coef={'x_tsens': 0.1881} n=72
+s7h7_M6.0|y_main|x_tsens|gbm             IG=+0.0133 CI=[-0.046,+0.065] AUC base/full=0.644/0.648 ASS=0.644/0.647 coef={'x_tsens': 139.0} n=72
+s7h7_M6.0|y_main|x_tsens_lp|logit        IG=-0.0047 CI=[-0.026,+0.016] AUC base/full=0.665/0.664 ASS=0.664/0.664 coef={'x_tsens_lp': 0.083} n=72
+s7h7_M6.0|y_main|x_tamp|logit            IG=+0.0012 CI=[-0.010,+0.015] AUC base/full=0.665/0.666 ASS=0.664/0.666 coef={'x_tamp': 0.0461} n=72
+s7h7_M6.0|y_main|x_tamp|gbm              IG=+0.0025 CI=[-0.061,+0.056] AUC base/full=0.644/0.647 ASS=0.644/0.646 coef={'x_tamp': 92.0} n=72
+s7h7_M6.0|y_main|x_tsens365|logit        IG=-0.0000 CI=[-0.007,+0.007] AUC base/full=0.665/0.665 ASS=0.664/0.665 coef={'x_tsens365': 0.0306} n=72
+s7h7_M6.0|y_main|all3|logit              IG=-0.0258 CI=[-0.072,+0.009] AUC base/full=0.665/0.657 ASS=0.664/0.656 coef={'x_tsens': 0.1722, 'x_tsens_lp': 0.0545, 'x_tamp': 0.0182} n=72
+s7h7_M6.0|y_all|x_tsens|logit            IG=-0.0228 CI=[-0.053,+0.002] AUC base/full=0.697/0.695 ASS=0.696/0.694 coef={'x_tsens': 0.1387} n=85
+s7h7_M6.0|y_all|x_tsens|gbm              IG=+0.0032 CI=[-0.039,+0.032] AUC base/full=0.695/0.685 ASS=0.694/0.685 coef={'x_tsens': 141.0} n=85
+s7h7_M6.0|y_all|x_tsens_lp|logit         IG=-0.0023 CI=[-0.011,+0.006] AUC base/full=0.697/0.697 ASS=0.696/0.696 coef={'x_tsens_lp': 0.0444} n=85
+s7h7_M6.0|y_all|x_tamp|logit             IG=-0.0075 CI=[-0.038,+0.029] AUC base/full=0.697/0.699 ASS=0.696/0.698 coef={'x_tamp': 0.1293} n=85
+s7h7_M6.0|y_all|x_tamp|gbm               IG=-0.0126 CI=[-0.037,+0.006] AUC base/full=0.695/0.687 ASS=0.694/0.686 coef={'x_tamp': 84.0} n=85
+s7h7_M6.0|y_all|x_tsens365|logit         IG=-0.0006 CI=[-0.006,+0.006] AUC base/full=0.697/0.698 ASS=0.696/0.697 coef={'x_tsens365': 0.0319} n=85
+s7h7_M6.0|y_all|all3|logit               IG=-0.0237 CI=[-0.059,+0.003] AUC base/full=0.697/0.698 ASS=0.696/0.697 coef={'x_tsens': 0.1216, 'x_tsens_lp': 0.0234, 'x_tamp': 0.112} n=85
+panel s7 h7 M5.5: frac NaN x_tsens 0.160; x_tsens mean/sd 0.110/0.990
+s7h7_M5.5|y_main|x_tsens|logit           IG=-0.0203 CI=[-0.037,-0.005] AUC base/full=0.658/0.654 ASS=0.657/0.653 coef={'x_tsens': 0.1072} n=193
+s7h7_M5.5|y_main|x_tsens_lp|logit        IG=-0.0076 CI=[-0.019,+0.003] AUC base/full=0.658/0.657 ASS=0.657/0.656 coef={'x_tsens_lp': 0.0662} n=193
+s7h7_M5.5|y_main|x_tamp|logit            IG=-0.0058 CI=[-0.013,+0.001] AUC base/full=0.658/0.654 ASS=0.657/0.652 coef={'x_tamp': -0.0561} n=193
+s7h7_M5.5|y_main|x_tsens365|logit        IG=+0.0002 CI=[-0.001,+0.002] AUC base/full=0.658/0.659 ASS=0.657/0.657 coef={'x_tsens365': 0.0121} n=193
+s7h7_M5.5|y_main|all3|logit              IG=-0.0370 CI=[-0.065,-0.012] AUC base/full=0.658/0.648 ASS=0.657/0.647 coef={'x_tsens': 0.1039, 'x_tsens_lp': 0.0608, 'x_tamp': -0.0721} n=193
+s7h7_M5.5|y_all|x_tsens|logit            IG=-0.0165 CI=[-0.029,-0.007] AUC base/full=0.697/0.695 ASS=0.694/0.693 coef={'x_tsens': 0.0855} n=228
+s7h7_M5.5|y_all|x_tsens_lp|logit         IG=-0.0032 CI=[-0.009,+0.002] AUC base/full=0.697/0.696 ASS=0.694/0.694 coef={'x_tsens_lp': 0.0411} n=228
+s7h7_M5.5|y_all|x_tamp|logit             IG=+0.0015 CI=[-0.001,+0.004] AUC base/full=0.697/0.697 ASS=0.694/0.695 coef={'x_tamp': 0.0228} n=228
+s7h7_M5.5|y_all|x_tsens365|logit         IG=-0.0002 CI=[-0.001,+0.000] AUC base/full=0.697/0.696 ASS=0.694/0.694 coef={'x_tsens365': -0.0045} n=228
+s7h7_M5.5|y_all|all3|logit               IG=-0.0176 CI=[-0.032,-0.008] AUC base/full=0.697/0.695 ASS=0.694/0.693 coef={'x_tsens': 0.0803, 'x_tsens_lp': 0.034, 'x_tamp': 0.0119} n=228
+panel s30 h30 M6.0: frac NaN x_tsens 0.160; x_tsens mean/sd 0.109/0.989
+s30h30_M6.0|y_main|x_tsens|logit         IG=-0.0226 CI=[-0.070,+0.020] AUC base/full=0.664/0.649 ASS=0.662/0.647 coef={'x_tsens': 0.2038} n=72
+s30h30_M6.0|y_main|x_tsens_lp|logit      IG=+0.0010 CI=[-0.010,+0.012] AUC base/full=0.664/0.663 ASS=0.662/0.661 coef={'x_tsens_lp': 0.0439} n=72
+s30h30_M6.0|y_main|x_tamp|logit          IG=-0.0008 CI=[-0.003,+0.002] AUC base/full=0.664/0.663 ASS=0.662/0.661 coef={'x_tamp': -0.0145} n=72
+s30h30_M6.0|y_main|x_tsens365|logit      IG=+0.0004 CI=[-0.003,+0.004] AUC base/full=0.664/0.665 ASS=0.662/0.662 coef={'x_tsens365': 0.0184} n=72
+s30h30_M6.0|y_main|all3|logit            IG=-0.0283 CI=[-0.080,+0.018] AUC base/full=0.664/0.645 ASS=0.662/0.643 coef={'x_tsens': 0.2057, 'x_tsens_lp': 0.0179, 'x_tamp': -0.0565} n=72
+s30h30_M6.0|y_all|x_tsens|logit          IG=-0.0259 CI=[-0.064,+0.005] AUC base/full=0.671/0.669 ASS=0.668/0.666 coef={'x_tsens': 0.1624} n=80
+s30h30_M6.0|y_all|x_tsens_lp|logit       IG=-0.0003 CI=[-0.005,+0.004] AUC base/full=0.671/0.671 ASS=0.668/0.668 coef={'x_tsens_lp': 0.0216} n=80
+s30h30_M6.0|y_all|x_tamp|logit           IG=+0.0019 CI=[-0.001,+0.004] AUC base/full=0.671/0.672 ASS=0.668/0.669 coef={'x_tamp': 0.0144} n=80
+s30h30_M6.0|y_all|x_tsens365|logit       IG=-0.0007 CI=[-0.003,+0.002] AUC base/full=0.671/0.672 ASS=0.668/0.669 coef={'x_tsens365': 0.0146} n=80
+s30h30_M6.0|y_all|all3|logit             IG=-0.0290 CI=[-0.067,+0.003] AUC base/full=0.671/0.668 ASS=0.668/0.665 coef={'x_tsens': 0.1647, 'x_tsens_lp': -0.0008, 'x_tamp': -0.0145} n=80

@@ -1,0 +1,102 @@
+{
+ "primary_ymain_m6": {
+  "label": "PRIMARY y_main M6",
+  "cols": [
+   "x_tpga",
+   "x_rough",
+   "x_logsed",
+   "x_logdist_ridge"
+  ],
+  "target": "y_main",
+  "model": "logit",
+  "eval": {
+   "target": "y_main",
+   "model": "logit",
+   "n_test_events": 72,
+   "n_train_events": 146,
+   "n_test_cells": 20851,
+   "extra_cols": [
+    "x_tpga",
+    "x_rough",
+    "x_logsed",
+    "x_logdist_ridge"
+   ],
+   "ig_per_event": -0.019166916950004362,
+   "ig_base_vs_poisson": 0.006306374661972332,
+   "ig_full_vs_poisson": -0.01286054228803203,
+   "ig_etas_vs_poisson": 0.014293457181861887,
+   "ig_full_vs_etas": -0.027153999469893917,
+   "base": {
+    "ll": -469.8514377563252,
+    "brier": 0.003438159652579742,
+    "roc_auc": 0.6645324339209994,
+    "pr_auc": 0.007038972736853383,
+    "molchan_ass": 0.6639642916140446,
+    "expected": 57.62184584938004,
+    "observed": 72
+   },
+   "full": {
+    "ll": -471.2314557767255,
+    "brier": 0.003438166487800774,
+    "roc_auc": 0.6509971338584362,
+    "pr_auc": 0.006746886180733798,
+    "molchan_ass": 0.650475729914366,
+    "expected": 58.89227030276612,
+    "observed": 72
+   },
+   "poisson": {
+    "ll": -470.3054967319872,
+    "brier": 0.0034380957481822925,
+    "roc_auc": 0.6778170802787001,
+    "pr_auc": 0.007841897624663944,
+    "molchan_ass": 0.6775667567236316,
+    "expected": 54.390673575129526,
+    "observed": 72
+   },
+   "etas": {
+    "ll": -469.27636781489315,
+    "brier": 0.003438276038572021,
+    "roc_auc": 0.677027688210854,
+    "pr_auc": 0.0073979866305508065,
+    "molchan_ass": 0.6764163988937382,
+    "expected": 57.4408684672203,
+    "observed": 72
+   },
+   "ttest_full_vs_base": {
+    "N": 72,
+    "IG": -0.019170331702654298,
+    "T": -2.3782277120490027,
+    "p_one_sided": 0.989954870995803
+   },
+   "ttest_base_vs_poisson": {
+    "N": 72,
+    "IG": 0.00631979757459033,
+    "T": 0.17224745979150952,
+    "p_one_sided": 0.43186651594199055
+   },
+   "coef_extra": {
+    "x_tpga": -0.0785,
+    "x_rough": 0.0013,
+    "x_logsed": -0.1327,
+    "x_logdist_ridge": 0.0024
+   }
+  },
+  "bootstrap": {
+   "ig_per_event": -0.019166916950004494,
+   "ci_lo": -0.03575469361409877,
+   "ci_hi": -0.004052873058892883,
+   "p_boot_le0": 0.9885,
+   "n_years": 14
+  },
+  "null_ft": {
+   "ig_obs": -0.019166916950004362,
+   "p_value": 0.8161838161838162,
+   "null_mean": -0.007609744886537573,
+   "null_sd": 0.01346812394856486,
+   "null_q95": 0.011770829835816971,
+   "n": 1000,
+   "significant_0.05": false,
+   "significant_bonferroni": false
+  }
+ }
+}

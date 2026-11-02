@@ -1,0 +1,10 @@
+[PRIMARY] empty selected set -> null by construction
+[E1 top5 noFDR] [y_all/logit] N_test=85  IG(full-base)=-0.1418 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.650  ASS base/full=0.696/0.650  T=-3.05  surrogate p=1.0000 (Bonferroni sig=False)  (307s)
+   binperm p=0.995 circ p=1.000 gbm IG=-0.0352 w55 IG=-0.0219 m6 IG=-0.2285
+[E4 best single] [y_all/logit] N_test=85  IG(full-base)=-0.0220 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.694  ASS base/full=0.696/0.693  T=-1.64  surrogate p=0.9602 (Bonferroni sig=False)  (840s)
+[E3 physical-candidate block] [y_all/logit] N_test=85  IG(full-base)=-0.1897 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.664  ASS base/full=0.696/0.664  T=-2.54  surrogate p=0.0891 (Bonferroni sig=False)  (1275s)
+[E3 artifact-prone block] [y_all/logit] N_test=85  IG(full-base)=-0.6239 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.638  ASS base/full=0.696/0.638  T=-5.02  surrogate p=0.7030 (Bonferroni sig=False)  (1492s)
+[E3 ComCat-metadata block] [y_all/logit] N_test=85  IG(full-base)=-0.3379 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.617  ASS base/full=0.696/0.616  T=-3.72  surrogate p=0.9307 (Bonferroni sig=False)  (1531s)
+[E2 kitchen sink logit] [y_all/logit] N_test=85  IG(full-base)=-3.2533 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.663  ASS base/full=0.696/0.662  T=-16.65  surrogate p=0.9109 (Bonferroni sig=False)  (1787s)
+[E2 kitchen gbm] IG=-0.0687
+done 1791s

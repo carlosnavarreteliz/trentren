@@ -1,0 +1,24 @@
+main_M6.0_main_nocv {'sigma': 0.75, 'n_test': 72.0, 'n_fit': 78.0, 'ig_pois': 0.0147, 'ig_spatial': 0.0133, 'll_base': -113.9663, 'll_full': -112.9081} p_pois=0.1289 p_spat=0.1429
+main_M6.0_main_cv3 {'sigma': 0.75, 'n_test': 72.0, 'n_fit': 78.0, 'ig_pois': -0.0155, 'ig_spatial': -0.0145, 'll_base': -114.8501, 'll_full': -115.9672} p_pois=0.1578 p_spat=0.1508
+main_M6.0_all_nocv {'sigma': 2.0, 'n_test': 104.0, 'n_fit': 134.0, 'ig_pois': -0.2765, 'ig_spatial': -0.1977, 'll_base': -143.6226, 'll_full': -172.3755} p_pois=0.9770 p_spat=0.9790
+main_M6.0_all_cv3 {'sigma': 2.0, 'n_test': 104.0, 'n_fit': 134.0, 'ig_pois': -0.3849, 'ig_spatial': -0.2847, 'll_base': -147.4083, 'll_full': -187.434} p_pois=0.9840 p_spat=0.9850
+main_M5.5_main_nocv {'sigma': 0.1, 'n_test': 195.0, 'n_fit': 247.0, 'ig_pois': 0.0267, 'ig_spatial': 0.0231, 'll_base': -189.0891, 'll_full': -183.8798} p_pois=0.0100 p_spat=0.0149
+main_M5.5_main_cv3 {'sigma': 0.1, 'n_test': 195.0, 'n_fit': 247.0, 'ig_pois': 0.0154, 'ig_spatial': 0.0096, 'll_base': -190.2775, 'll_full': -187.2813} p_pois=0.0498 p_spat=0.0846
+main_M5.5_all_nocv {'sigma': 2.0, 'n_test': 300.0, 'n_fit': 422.0, 'ig_pois': -0.1194, 'ig_spatial': -0.093, 'll_base': -261.3035, 'll_full': -297.1216} p_pois=0.8706 p_spat=0.8657
+main_M5.5_all_cv3 {'sigma': 2.0, 'n_test': 300.0, 'n_fit': 422.0, 'ig_pois': -0.0843, 'ig_spatial': -0.0866, 'll_base': -265.2785, 'll_full': -290.5831} p_pois=0.6816 p_spat=0.7861
+alt2005_M6.0_main_nocv {'sigma': 0.75, 'n_test': 34.0, 'n_fit': 56.0, 'ig_pois': -0.0162, 'ig_spatial': -0.0139, 'll_base': -73.9638, 'll_full': -74.5159} p_pois=0.0945 p_spat=0.0796
+alt2005_M6.0_main_cv3 {'sigma': 0.75, 'n_test': 34.0, 'n_fit': 56.0, 'ig_pois': 0.0148, 'ig_spatial': 0.0129, 'll_base': -73.0264, 'll_full': -72.5248} p_pois=0.0149 p_spat=0.0100
+alt2005_M6.0_all_nocv {'sigma': 0.75, 'n_test': 76.0, 'n_fit': 72.0, 'ig_pois': 0.0335, 'ig_spatial': 0.0367, 'll_base': -154.2237, 'll_full': -151.6757} p_pois=0.1095 p_spat=0.0796
+alt2005_M6.0_all_cv3 {'sigma': 0.75, 'n_test': 76.0, 'n_fit': 72.0, 'ig_pois': 0.1118, 'ig_spatial': 0.1312, 'll_base': -153.2687, 'll_full': -144.7682} p_pois=0.0796 p_spat=0.0348
+alt2005_M5.5_main_nocv {'sigma': 0.5, 'n_test': 115.0, 'n_fit': 178.0, 'ig_pois': -0.0038, 'ig_spatial': -0.0048, 'll_base': -150.1884, 'll_full': -150.6232} p_pois=0.5672 p_spat=0.5871
+alt2005_M5.5_main_cv3 {'sigma': 0.5, 'n_test': 115.0, 'n_fit': 178.0, 'ig_pois': -0.0377, 'ig_spatial': -0.0412, 'll_base': -150.5977, 'll_full': -154.9297} p_pois=0.8308 p_spat=0.8408
+alt2005_M5.5_all_nocv {'sigma': 0.5, 'n_test': 241.0, 'n_fit': 235.0, 'ig_pois': -0.0229, 'ig_spatial': -0.0315, 'll_base': -330.8478, 'll_full': -336.3564} p_pois=0.4179 p_spat=0.4577
+alt2005_M5.5_all_cv3 {'sigma': 0.5, 'n_test': 241.0, 'n_fit': 235.0, 'ig_pois': -0.0362, 'ig_spatial': -0.0215, 'll_base': -328.0553, 'll_full': -336.7702} p_pois=0.5721 p_spat=0.3881
+M7 {'time': '2014-04-01 23:46:47.260000', 'mag': 8.2, 'lat': -19.6097, 'bin': 105, 'pct_rank_base': 0.6120689655172413, 'pct_rank_full': 0.5172413793103449}
+M7 {'time': '2014-04-03 02:43:13.110000', 'mag': 7.7, 'lat': -20.5709, 'bin': 101, 'pct_rank_base': 0.6982758620689655, 'pct_rank_full': 0.3706896551724138}
+M7 {'time': '2015-09-16 22:54:32.860000', 'mag': 8.3, 'lat': -31.5729, 'bin': 57, 'pct_rank_base': 0.9482758620689655, 'pct_rank_full': 0.8362068965517241}
+M7 {'time': '2015-09-16 23:18:41.850000', 'mag': 7.0, 'lat': -31.5622, 'bin': 57, 'pct_rank_base': 0.9482758620689655, 'pct_rank_full': 0.8362068965517241}
+M7 {'time': '2016-12-25 14:22:27.010000', 'mag': 7.6, 'lat': -43.4064, 'bin': 10, 'pct_rank_base': 0.02586206896551724, 'pct_rank_full': 0.06896551724137931}
+M7 {'time': '2024-07-19 01:50:48.571000', 'mag': 7.4, 'lat': -23.0791, 'bin': 91, 'pct_rank_base': 0.9827586206896551, 'pct_rank_full': 0.9568965517241379}
+coef {'intercept': -0.3367, 'log_bg_rate': 0.6969, 'x_tpga': 0.0006, 'x_rough': -0.0488, 'x_logsed': 0.0967, 'x_logdist_ridge': 0.1456}
+saved out/count_model.json

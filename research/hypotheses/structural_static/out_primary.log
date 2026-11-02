@@ -1,0 +1,3 @@
+PRIMARY y_main M6 [y_main/logit] N_test=72  IG(full-base)=-0.0192 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.651  ASS base/full=0.664/0.650  T=-2.38 | boot {'ig_per_event': -0.019, 'ci_lo': -0.036, 'ci_hi': -0.004, 'p_boot_le0': 0.989, 'n_years': 14}
+   null ft: p=0.8162 mean=-0.0076 q95=0.0118 (151s)
+saved out/primary.json

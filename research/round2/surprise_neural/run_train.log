@@ -1,0 +1,30 @@
+f0 0 {'train_nll_last': 1.253470841854138, 'secs': 32.44639182090759}
+f0 1 {'train_nll_last': 1.2585261324190737, 'secs': 26.659626007080078}
+f0 2 {'train_nll_last': 1.2512131590200513, 'secs': 18.843083143234253}
+f1 0 {'train_nll_last': 1.2324768849612893, 'secs': 14.623711109161377}
+f1 1 {'train_nll_last': 1.2471160613862526, 'secs': 11.458303928375244}
+f1 2 {'train_nll_last': 1.23112547564002, 'secs': 12.870315074920654}
+f2 0 {'train_nll_last': 1.3476369292425465, 'secs': 30.890141010284424}
+f2 1 {'train_nll_last': 1.327175491681908, 'secs': 33.31669521331787}
+f2 2 {'train_nll_last': 1.3340584443054135, 'secs': 28.076899766921997}
+f3 0 {'train_nll_last': 2.0741253134645063, 'secs': 21.199803829193115}
+f3 1 {'train_nll_last': 2.0859905143497084, 'secs': 18.935150146484375}
+f3 2 {'train_nll_last': 2.0721423825445817, 'secs': 17.6071138381958}
+final 0 {'train_nll_last': 1.4395933102472138, 'secs': 26.602962017059326}
+final 1 {'train_nll_last': 1.4400099329358271, 'secs': 24.127821683883667}
+final 2 {'train_nll_last': 1.4268369521860615, 'secs': 26.2505202293396}
+scored f0 0
+scored f0 1
+scored f0 2
+scored f1 0
+scored f1 1
+scored f1 2
+scored f2 0
+scored f2 1
+scored f2 2
+scored f3 0
+scored f3 1
+scored f3 2
+scored final 0
+scored final 1
+scored final 2

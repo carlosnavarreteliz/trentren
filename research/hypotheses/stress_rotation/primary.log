@@ -1,0 +1,11 @@
+[y_main/logit] N_test=72  IG(full-base)=-0.0508 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.627  ASS base/full=0.664/0.626  T=-1.54
+  bootstrap: {'ig_per_event': -0.05083463953857402, 'ci_lo': -0.12353079165107808, 'ci_hi': 0.01631200800549222, 'p_boot_le0': 0.914, 'n_years': 14}
+  phase_randomize: {'ig_obs': -0.05083463953857464, 'p_value': 0.9310689310689311, 'null_mean': -0.015401604876368064, 'null_sd': 0.024186789725879693, 'null_q95': 0.01961117665072574, 'n': 1000, 'mode': 'phase_randomize', 'significant_0.05': False, 'significant_bonferroni': False}
+  bin_permute: {'ig_obs': -0.05083463953857464, 'p_value': 0.7761194029850746, 'null_mean': -0.029412196942025345, 'null_sd': 0.033583703336654266, 'null_q95': 0.013290449072777556, 'n': 200, 'mode': 'bin_permute', 'significant_0.05': False, 'significant_bonferroni': False}
+  mechanism_shuffle: {'ig_obs': -0.05083463953857464, 'p_value': 0.8855721393034826, 'null_mean': -0.022360943600891633, 'null_sd': 0.026539165809924804, 'null_q95': 0.013382741425435146, 'n': 200, 'mode': 'mechanism_shuffle'}
+[y_all/logit] N_test=85  IG(full-base)=-0.0169 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.689  ASS base/full=0.696/0.689  T=-1.26
+  bootstrap: {'ig_per_event': -0.016881100339882358, 'ci_lo': -0.04476903970743715, 'ci_hi': 0.010499861018721485, 'p_boot_le0': 0.8705, 'n_years': 14}
+  phase_randomize: {'ig_obs': -0.01688110033988136, 'p_value': 0.7213930348258707, 'null_mean': -0.010197064633682472, 'null_sd': 0.016433724419999695, 'null_q95': 0.010551762198300042, 'n': 200, 'mode': 'phase_randomize', 'significant_0.05': False, 'significant_bonferroni': False}
+  bin_permute: {'ig_obs': -0.01688110033988136, 'p_value': 0.5422885572139303, 'null_mean': -0.018622508330702774, 'null_sd': 0.022453272581683514, 'null_q95': 0.008343777142250193, 'n': 200, 'mode': 'bin_permute', 'significant_0.05': False, 'significant_bonferroni': False}
+  mechanism_shuffle: {'ig_obs': -0.01688110033988136, 'p_value': 0.6965174129353234, 'null_mean': -0.012445739953839125, 'null_sd': 0.01764051037641382, 'null_q95': 0.01159931628563504, 'n': 200, 'mode': 'mechanism_shuffle'}
+done

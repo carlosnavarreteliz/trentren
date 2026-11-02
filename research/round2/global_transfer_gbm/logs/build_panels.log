@@ -1,0 +1,17 @@
+Chile done {'6.0': {'max_abs_diff': 0.0, 'rows': [76850, 76850]}, '5.5': {'max_abs_diff': 0.0, 'rows': [76850, 76850]}} 10.9
+PER {'n_bins': 27, 'length_km': 2975.7, 'n_events': 3570, 'n_m6': 162, 'n_m7': 30, 'n_m8': 3, 'n_m6_main': 133, 'test_pos_m6_all': 35, 'test_pos_m6_main': 29} 17.0
+MEX {'n_bins': 28, 'length_km': 3004.3, 'n_events': 5119, 'n_m6': 288, 'n_m7': 41, 'n_m8': 3, 'n_m6_main': 245, 'test_pos_m6_all': 68, 'test_pos_m6_main': 64} 22.2
+CAS {'n_bins': 11, 'length_km': 1135.9, 'n_events': 768, 'n_m6': 48, 'n_m7': 6, 'n_m8': 0, 'n_m6_main': 43, 'test_pos_m6_all': 12, 'test_pos_m6_main': 12} 23.3
+ALA {'n_bins': 34, 'length_km': 3686.1, 'n_events': 5630, 'n_m6': 273, 'n_m7': 24, 'n_m8': 2, 'n_m6_main': 211, 'test_pos_m6_all': 62, 'test_pos_m6_main': 50} 30.7
+KAM {'n_bins': 21, 'length_km': 2297.3, 'n_events': 10365, 'n_m6': 372, 'n_m7': 38, 'n_m8': 6, 'n_m6_main': 229, 'test_pos_m6_all': 71, 'test_pos_m6_main': 48} 43.9
+JPN {'n_bins': 10, 'length_km': 1110.4, 'n_events': 6715, 'n_m6': 269, 'n_m7': 27, 'n_m8': 1, 'n_m6_main': 117, 'test_pos_m6_all': 45, 'test_pos_m6_main': 33} 51.4
+IBM {'n_bins': 30, 'length_km': 3263.5, 'n_events': 7852, 'n_m6': 184, 'n_m7': 15, 'n_m8': 0, 'n_m6_main': 169, 'test_pos_m6_all': 49, 'test_pos_m6_main': 44} 60.8
+NRY {'n_bins': 19, 'length_km': 2087.9, 'n_events': 3429, 'n_m6': 124, 'n_m7': 9, 'n_m8': 0, 'n_m6_main': 106, 'test_pos_m6_all': 26, 'test_pos_m6_main': 25} 65.3
+PHT {'n_bins': 12, 'length_km': 1294.3, 'n_events': 8323, 'n_m6': 272, 'n_m7': 34, 'n_m8': 0, 'n_m6_main': 200, 'test_pos_m6_all': 70, 'test_pos_m6_main': 59} 76.7
+MNL {'n_bins': 10, 'length_km': 1035.4, 'n_events': 2127, 'n_m6': 60, 'n_m7': 8, 'n_m8': 0, 'n_m6_main': 54, 'test_pos_m6_all': 12, 'test_pos_m6_main': 11} 79.0
+SUN {'n_bins': 43, 'length_km': 4773.8, 'n_events': 10910, 'n_m6': 357, 'n_m7': 33, 'n_m8': 5, 'n_m6_main': 232, 'test_pos_m6_all': 65, 'test_pos_m6_main': 59} 99.9
+SOL {'n_bins': 18, 'length_km': 1938.7, 'n_events': 10626, 'n_m6': 538, 'n_m7': 59, 'n_m8': 2, 'n_m6_main': 372, 'test_pos_m6_all': 109, 'test_pos_m6_main': 85} 120.3
+VAN {'n_bins': 16, 'length_km': 1743.3, 'n_events': 10715, 'n_m6': 576, 'n_m7': 70, 'n_m8': 1, 'n_m6_main': 370, 'test_pos_m6_all': 121, 'test_pos_m6_main': 97} 138.7
+TON {'n_bins': 28, 'length_km': 3083.0, 'n_events': 22991, 'n_m6': 847, 'n_m7': 67, 'n_m8': 5, 'n_m6_main': 680, 'test_pos_m6_all': 195, 'test_pos_m6_main': 161} 167.9
+HEL {'n_bins': 10, 'length_km': 1072.2, 'n_events': 1235, 'n_m6': 52, 'n_m7': 3, 'n_m8': 0, 'n_m6_main': 44, 'test_pos_m6_all': 16, 'test_pos_m6_main': 15} 168.8
+done 168.8

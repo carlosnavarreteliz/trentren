@@ -1,0 +1,12 @@
+[y_main/logit] N_test=72  IG(full-base)=-0.0508 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.642  ASS base/full=0.664/0.642  T=-2.42 
+  bootstrap: {'ig_per_event': -0.050777187112904416, 'ci_lo': -0.11786195342190307, 'ci_hi': -0.006819579533882866, 'p_boot_le0': 0.9895, 'n_years': 14}
+  phase_randomize n=200: {'ig_obs': -0.05077718711290342, 'p_value': 0.7114427860696517, 'null_mean': -0.03432928040991725, 'null_sd': 0.0377439108058966, 'null_q95': 0.023089039307064414, 'n': 200, 'mode': 'phase_randomize', 'significant_0.05': False, 'significant_bonferroni': False}
+  bin_permute n=200: {'ig_obs': -0.05077718711290342, 'p_value': 0.681592039800995, 'null_mean': -0.033275033818426884, 'null_sd': 0.04377317856372389, 'null_q95': 0.030812813104597797, 'n': 200, 'mode': 'bin_permute', 'significant_0.05': False, 'significant_bonferroni': False}
+  circular_shift(end-matched) n=200: {'ig_obs': -0.05077718711290342, 'p_value': 0.7064676616915423, 'null_mean': -0.037003466187676706, 'null_sd': 0.047755830603167924, 'null_q95': 0.018209799109097254, 'n': 200, 'mode': 'circular_shift', 'significant_0.05': False, 'significant_bonferroni': False}
+  [y_main done in 172s]
+[y_all/logit] N_test=85  IG(full-base)=-0.0127 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.694  ASS base/full=0.696/0.693  T=-0.59 
+  bootstrap: {'ig_per_event': -0.012668421096831034, 'ci_lo': -0.043531074959433876, 'ci_hi': 0.012752585425748522, 'p_boot_le0': 0.8235, 'n_years': 14}
+  phase_randomize n=200: {'ig_obs': -0.012668421096831854, 'p_value': 0.472636815920398, 'null_mean': -0.01734369827710633, 'null_sd': 0.029131878240845437, 'null_q95': 0.024200604376203246, 'n': 200, 'mode': 'phase_randomize', 'significant_0.05': False, 'significant_bonferroni': False}
+  bin_permute n=200: {'ig_obs': -0.012668421096831854, 'p_value': 0.3034825870646766, 'null_mean': -0.035301330654165915, 'null_sd': 0.03453661897357542, 'null_q95': 0.009516133272226897, 'n': 200, 'mode': 'bin_permute', 'significant_0.05': False, 'significant_bonferroni': False}
+  circular_shift(end-matched) n=200: {'ig_obs': -0.012668421096831854, 'p_value': 0.5422885572139303, 'null_mean': -0.013643565200627745, 'null_sd': 0.028938293625915358, 'null_q95': 0.0274404371566365, 'n': 200, 'mode': 'circular_shift', 'significant_0.05': False, 'significant_bonferroni': False}
+  [y_all done in 502s]

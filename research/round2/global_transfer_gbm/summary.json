@@ -1,0 +1,82 @@
+{
+ "slug": "global_transfer_gbm",
+ "title": "Aprender de todas las subducciones del mundo (transfer learning, GBM global)",
+ "question": "¿Un modelo entrenado con las 15 zonas de subducción principales del mundo (unas 13 veces más sismos M6+) pronostica mejor los M6+ de Chile 2013-2026 que el baseline ETAS-logit del harness, y mejor que un modelo entrenado solo con Chile?",
+ "verdict": "null",
+ "headline": "Entrenar con todas las subducciones del mundo no supera al baseline ETAS-logit en Chile (+0,02 nats/sismo en y_all, p=0,24; −0,01 en y_main, p=0,63); sí rescata a un GBM que, entrenado solo con Chile, se sobreajusta (+0,23 a +0,29 nats/sismo frente al GBM chileno).",
+ "metrics": [
+  {
+   "target": "y_all",
+   "ig_nats_per_eq": 0.0235,
+   "p_value": 0.2413,
+   "auc_base": 0.697,
+   "auc_full": 0.697,
+   "n_test_events": 85,
+   "note": "PRIMARIO: GBM global estricto (<2013) vs ETAS-logit del harness; p = sign-flip exacto por año"
+  },
+  {
+   "target": "y_main",
+   "ig_nats_per_eq": -0.0086,
+   "p_value": 0.6306,
+   "auc_base": 0.665,
+   "auc_full": 0.646,
+   "n_test_events": 72,
+   "note": "PRIMARIO: GBM global estricto vs ETAS-logit, sismos principales"
+  },
+  {
+   "target": "y_all",
+   "ig_nats_per_eq": 0.2266,
+   "p_value": 0.0021,
+   "auc_base": 0.697,
+   "auc_full": 0.697,
+   "n_test_events": 85,
+   "note": "Contraste clave: GBM global vs GBM solo-Chile (mismas variables); auc_base = ETAS-logit"
+  },
+  {
+   "target": "y_main",
+   "ig_nats_per_eq": 0.2894,
+   "p_value": 0.0001,
+   "auc_base": 0.665,
+   "auc_full": 0.646,
+   "n_test_events": 72,
+   "note": "Contraste clave: GBM global vs GBM solo-Chile"
+  },
+  {
+   "target": "y_all",
+   "ig_nats_per_eq": 0.031,
+   "p_value": 0.0649,
+   "auc_base": 0.697,
+   "auc_full": 0.698,
+   "n_test_events": 85,
+   "note": "Logit global (mismas variables del harness) vs ETAS-logit"
+  },
+  {
+   "target": "y_main",
+   "ig_nats_per_eq": -0.006,
+   "p_value": 0.6731,
+   "auc_base": 0.665,
+   "auc_full": 0.668,
+   "n_test_events": 72,
+   "note": "Logit global vs ETAS-logit"
+  }
+ ],
+ "key_findings": [
+  "GBM global vs ETAS-logit en Chile: y_all +0.024 nats/sismo (p=0.24), y_main -0.009 (p=0.63): nulo.",
+  "Un GBM entrenado solo con Chile pierde -0.20 (y_all) y -0.30 (y_main) nats/sismo frente al logit: hay muy pocos M6 para un modelo flexible.",
+  "Agregar las otras zonas recupera esa pérdida: GBM global vs GBM chileno = +0.23 (p=0.0021) y +0.29 (p=0.0001). La transferencia funciona, pero solo hasta el nivel del logit simple.",
+  "El mismo patrón aparece en las 16 zonas: el GBM global le gana al GBM local en casi todas, pero queda empatado con el logit ETAS local.",
+  "Un modelo que nunca vio Chile (dejar-una-zona-fuera) pronostica Chile tan bien como el baseline chileno: la física del clustering es universal.",
+  "La variable dominante del GBM global es la tasa ETAS (≈40 % de la ganancia); b-value, tiempo desde M7 y actividad de 10 años no aportan en Chile.",
+  "y_all: promedio ponderado entre zonas, GBM global vs logit local +0.020 nats/sismo (10/16 zonas >0); vs GBM local +0.292 (16/16 zonas >0).",
+  "y_main: promedio ponderado entre zonas, GBM global vs logit local +0.028 nats/sismo (11/16 zonas >0); vs GBM local +0.337 (16/16 zonas >0).",
+  "Con umbral M5,5 (robustez) el GBM global gana +0,036 (y_all, p=0,028) y +0,027 (y_main, p=0,046): solo nominal, lejos de Bonferroni y en el rango donde la calibración muestra falsos positivos inflados."
+ ],
+ "caveats": [
+  "El test sign-flip por años (14 bloques) no es el surrogate del harness: compara modelos distintos, no una variable añadida. Calibración con ruido: FPR 0.068 a p<0,05, pero 15 % en y_main con caminatas aleatorias (trampa de nivel).",
+  "Trazas de fosa digitalizadas a mano (~50 km de precisión) y corredor fijo de 300 km mar adentro / 700 km tierra adentro.",
+  "Magnitudes ComCat heterogéneas entre zonas y épocas (mb vs Mw); completitud M4,7 distinta por zona.",
+  "Solo 85 (y_all) y 72 (y_main) celdas positivas en el test chileno: un efecto real de ±0,05 nats/sismo no es detectable.",
+  "Hiperparámetros del GBM fijados a priori, sin ajuste; otro GBM podría rendir distinto, pero el logit global tampoco supera al baseline.",
+  "Controles de fuga: corte estricto <2013 en todas las zonas; variables de Chile idénticas al harness (diferencia 0); el modelo no estricto (con 2013+ de otras zonas) no mejora; IG ajustada por nivel ≈ igual."
+ ]
+}

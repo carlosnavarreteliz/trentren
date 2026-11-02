@@ -1,0 +1,4 @@
+[y_main/logit] N_test=72  IG(full-base)=-0.0023 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.662  ASS base/full=0.664/0.661  T=-0.21
+{'ig_obs': -0.0023213314449069206, 'p_value': 0.4065934065934066, 'null_mean': -0.008529154685442556, 'null_sd': 0.017835701852546626, 'null_q95': 0.015022075814226573, 'n': 1000, 'mode': 'phase_randomize', 'significant_0.05': False, 'significant_bonferroni': False}
+saved /Users/cnavarreteliz/Documents/Repos/earthquakes/research/hypotheses/ocean_loading/results_primary.json
+elapsed 321.1

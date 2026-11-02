@@ -1,0 +1,414 @@
+[
+ {
+  "analysis": "ML>=4.5 (high-Mc contrast)",
+  "target": "y_main",
+  "model": "logit",
+  "n_test": 153,
+  "ig": -0.0163,
+  "ci_lo": -0.0376,
+  "ci_hi": 0.0015,
+  "p_phase": 0.48258706467661694,
+  "auc_base": 0.503,
+  "auc_full": 0.513,
+  "coef": {
+   "x_act7": -0.0477,
+   "x_act30": -0.0567,
+   "x_dbpos": -0.012
+  }
+ },
+ {
+  "analysis": "ML>=4.5 (high-Mc contrast)",
+  "target": "y_all",
+  "model": "logit",
+  "n_test": 184,
+  "ig": -0.0128,
+  "ci_lo": -0.0242,
+  "ci_hi": 0.0003,
+  "p_phase": 0.4079601990049751,
+  "auc_base": 0.543,
+  "auc_full": 0.561,
+  "coef": {
+   "x_act7": -0.0622,
+   "x_act30": -0.0327,
+   "x_dbpos": -0.0111
+  }
+ },
+ {
+  "analysis": "ML>=2.5",
+  "target": "y_main",
+  "model": "logit",
+  "n_test": 153,
+  "ig": -0.0146,
+  "ci_lo": -0.0428,
+  "ci_hi": 0.0055,
+  "p_phase": 0.6567164179104478,
+  "auc_base": 0.503,
+  "auc_full": 0.502,
+  "coef": {
+   "x_act7": -0.0344,
+   "x_act30": 0.002,
+   "x_dbpos": 0.0497
+  }
+ },
+ {
+  "analysis": "ML>=2.5",
+  "target": "y_all",
+  "model": "logit",
+  "n_test": 184,
+  "ig": -0.0066,
+  "ci_lo": -0.0256,
+  "ci_hi": 0.0068,
+  "p_phase": 0.5024875621890548,
+  "auc_base": 0.543,
+  "auc_full": 0.542,
+  "coef": {
+   "x_act7": -0.0251,
+   "x_act30": 0.0016,
+   "x_dbpos": 0.0407
+  }
+ },
+ {
+  "analysis": "single x_act7 ML>=3",
+  "target": "y_main",
+  "model": "logit",
+  "n_test": 153,
+  "ig": -0.0121,
+  "ci_lo": -0.0143,
+  "ci_hi": -0.0091,
+  "p_phase": 0.8059701492537313,
+  "auc_base": 0.503,
+  "auc_full": 0.493,
+  "coef": {
+   "x_act7": -0.0225
+  }
+ },
+ {
+  "analysis": "single x_act7 ML>=3",
+  "target": "y_all",
+  "model": "logit",
+  "n_test": 184,
+  "ig": -0.0021,
+  "ci_lo": -0.0034,
+  "ci_hi": -0.001,
+  "p_phase": 0.572139303482587,
+  "auc_base": 0.543,
+  "auc_full": 0.542,
+  "coef": {
+   "x_act7": -0.0065
+  }
+ },
+ {
+  "analysis": "single x_act30 ML>=3",
+  "target": "y_main",
+  "model": "logit",
+  "n_test": 153,
+  "ig": -0.0005,
+  "ci_lo": -0.0039,
+  "ci_hi": 0.0022,
+  "p_phase": 0.48258706467661694,
+  "auc_base": 0.503,
+  "auc_full": 0.503,
+  "coef": {
+   "x_act30": 0.0087
+  }
+ },
+ {
+  "analysis": "single x_act30 ML>=3",
+  "target": "y_all",
+  "model": "logit",
+  "n_test": 184,
+  "ig": -0.001,
+  "ci_lo": -0.0038,
+  "ci_hi": 0.0022,
+  "p_phase": 0.48756218905472637,
+  "auc_base": 0.543,
+  "auc_full": 0.54,
+  "coef": {
+   "x_act30": 0.0136
+  }
+ },
+ {
+  "analysis": "single x_dbpos ML>=3",
+  "target": "y_main",
+  "model": "logit",
+  "n_test": 153,
+  "ig": 0.0019,
+  "ci_lo": -0.0027,
+  "ci_hi": 0.0073,
+  "p_phase": 0.3781094527363184,
+  "auc_base": 0.503,
+  "auc_full": 0.502,
+  "coef": {
+   "x_dbpos": 0.0161
+  }
+ },
+ {
+  "analysis": "single x_dbpos ML>=3",
+  "target": "y_all",
+  "model": "logit",
+  "n_test": 184,
+  "ig": 0.0014,
+  "ci_lo": -0.0023,
+  "ci_hi": 0.0044,
+  "p_phase": 0.3034825870646766,
+  "auc_base": 0.543,
+  "auc_full": 0.543,
+  "coef": {
+   "x_dbpos": 0.0145
+  }
+ },
+ {
+  "analysis": "detrended (minus trailing 52 wk mean)",
+  "target": "y_main",
+  "model": "logit",
+  "n_test": 153,
+  "ig": -0.0348,
+  "ci_lo": -0.0508,
+  "ci_hi": -0.0203,
+  "p_phase": 0.9104477611940298,
+  "auc_base": 0.503,
+  "auc_full": 0.483,
+  "coef": {
+   "x_act7": -0.0476,
+   "x_act30": 0.021,
+   "x_dbpos": 0.0354
+  }
+ },
+ {
+  "analysis": "detrended (minus trailing 52 wk mean)",
+  "target": "y_all",
+  "model": "logit",
+  "n_test": 184,
+  "ig": -0.018,
+  "ci_lo": -0.0374,
+  "ci_hi": -0.0024,
+  "p_phase": 0.7562189054726368,
+  "auc_base": 0.543,
+  "auc_full": 0.534,
+  "coef": {
+   "x_act7": -0.0317,
+   "x_act30": 0.0265,
+   "x_dbpos": 0.0386
+  }
+ },
+ {
+  "analysis": "GBM",
+  "target": "y_main",
+  "model": "gbm",
+  "n_test": 153,
+  "ig": -0.0182,
+  "ci_lo": -0.0432,
+  "ci_hi": 0.0022,
+  "p_phase": NaN,
+  "auc_base": 0.518,
+  "auc_full": 0.513,
+  "coef": {
+   "x_act7": 63.0,
+   "x_act30": 17.0,
+   "x_dbpos": 22.0
+  }
+ },
+ {
+  "analysis": "GBM",
+  "target": "y_all",
+  "model": "gbm",
+  "n_test": 184,
+  "ig": -0.0061,
+  "ci_lo": -0.0304,
+  "ci_hi": 0.0153,
+  "p_phase": NaN,
+  "auc_base": 0.549,
+  "auc_full": 0.55,
+  "coef": {
+   "x_act7": 43.0,
+   "x_act30": 27.0,
+   "x_dbpos": 26.0
+  }
+ },
+ {
+  "analysis": "target M>=5.5",
+  "target": "y_main",
+  "model": "logit",
+  "n_test": 44,
+  "ig": 0.0284,
+  "ci_lo": -0.0058,
+  "ci_hi": 0.0698,
+  "p_phase": 0.06965174129353234,
+  "auc_base": 0.482,
+  "auc_full": 0.519,
+  "coef": {
+   "x_act7": 0.041,
+   "x_act30": 0.0291,
+   "x_dbpos": 0.0241
+  }
+ },
+ {
+  "analysis": "target M>=5.5",
+  "target": "y_all",
+  "model": "logit",
+  "n_test": 55,
+  "ig": 0.0054,
+  "ci_lo": -0.0256,
+  "ci_hi": 0.0623,
+  "p_phase": 0.14427860696517414,
+  "auc_base": 0.538,
+  "auc_full": 0.563,
+  "coef": {
+   "x_act7": 0.033,
+   "x_act30": 0.031,
+   "x_dbpos": 0.0168
+  }
+ },
+ {
+  "analysis": "target M>=6.0",
+  "target": "y_main",
+  "model": "logit",
+  "n_test": 17,
+  "ig": -0.1405,
+  "ci_lo": -0.629,
+  "ci_hi": 0.0868,
+  "p_phase": 0.13432835820895522,
+  "auc_base": 0.562,
+  "auc_full": 0.581,
+  "coef": {
+   "x_act7": 0.0764,
+   "x_act30": -0.0401,
+   "x_dbpos": -0.2483
+  }
+ },
+ {
+  "analysis": "target M>=6.0",
+  "target": "y_all",
+  "model": "logit",
+  "n_test": 22,
+  "ig": -0.1765,
+  "ci_lo": -0.5067,
+  "ci_hi": 0.0448,
+  "p_phase": 0.17412935323383086,
+  "auc_base": 0.555,
+  "auc_full": 0.574,
+  "coef": {
+   "x_act7": 0.0795,
+   "x_act30": -0.0384,
+   "x_dbpos": -0.1989
+  }
+ },
+ {
+  "analysis": "shallow events only (<=60 km)",
+  "target": "y_main",
+  "model": "logit",
+  "n_test": 153,
+  "ig": -0.0004,
+  "ci_lo": -0.0064,
+  "ci_hi": 0.0057,
+  "p_phase": 0.15422885572139303,
+  "auc_base": 0.503,
+  "auc_full": 0.501,
+  "coef": {
+   "x_act7": -0.0238,
+   "x_act30": 0.0039,
+   "x_dbpos": 0.0
+  }
+ },
+ {
+  "analysis": "shallow events only (<=60 km)",
+  "target": "y_all",
+  "model": "logit",
+  "n_test": 184,
+  "ig": -0.0017,
+  "ci_lo": -0.012,
+  "ci_hi": 0.0104,
+  "p_phase": 0.13432835820895522,
+  "auc_base": 0.543,
+  "auc_full": 0.546,
+  "coef": {
+   "x_act7": -0.0282,
+   "x_act30": 0.0213,
+   "x_dbpos": 0.0
+  }
+ },
+ {
+  "analysis": "daily panel act1+act7",
+  "target": "y_main",
+  "model": "logit",
+  "n_test": 159,
+  "ig": -0.0339,
+  "ci_lo": -0.0685,
+  "ci_hi": -0.008,
+  "p_phase": 0.8407960199004975,
+  "auc_base": 0.503,
+  "auc_full": 0.498,
+  "coef": {
+   "x_act1": 0.091,
+   "x_act7": -0.0378
+  }
+ },
+ {
+  "analysis": "daily panel act1+act7",
+  "target": "y_all",
+  "model": "logit",
+  "n_test": 215,
+  "ig": -0.004,
+  "ci_lo": -0.0554,
+  "ci_hi": 0.0299,
+  "p_phase": 0.4228855721393035,
+  "auc_base": 0.597,
+  "auc_full": 0.591,
+  "coef": {
+   "x_act1": 0.0827,
+   "x_act7": -0.0326
+  }
+ },
+ {
+  "analysis": "LOYO",
+  "target": "y_main",
+  "loyo": {
+   "2013": -0.0161,
+   "2014": -0.0149,
+   "2015": -0.0139,
+   "2016": -0.018,
+   "2017": -0.0179,
+   "2018": -0.0145,
+   "2019": -0.0185,
+   "2020": -0.0176,
+   "2021": -0.0168
+  },
+  "per_year_dll": {
+   "2013": -0.327,
+   "2014": -0.49,
+   "2015": -0.632,
+   "2016": -0.14,
+   "2017": -0.202,
+   "2018": -0.456,
+   "2019": 0.057,
+   "2020": -0.193,
+   "2021": -0.134
+  }
+ },
+ {
+  "analysis": "LOYO",
+  "target": "y_all",
+  "loyo": {
+   "2013": -0.0045,
+   "2014": -0.0058,
+   "2015": -0.0023,
+   "2016": -0.0059,
+   "2017": -0.0044,
+   "2018": -0.0033,
+   "2019": -0.0055,
+   "2020": -0.0057,
+   "2021": -0.0049
+  },
+  "per_year_dll": {
+   "2013": -0.108,
+   "2014": -0.01,
+   "2015": -0.502,
+   "2016": 0.1,
+   "2017": -0.168,
+   "2018": -0.293,
+   "2019": 0.074,
+   "2020": 0.054,
+   "2021": -0.01
+  }
+ }
+]

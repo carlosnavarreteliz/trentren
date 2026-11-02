@@ -1,0 +1,11 @@
+[   28.2s] rows 916900 margins ['ALA', 'CAS', 'CHL', 'HEL', 'IBM', 'JPN', 'KAM', 'MEX', 'MNL', 'NRY', 'PER', 'PHT', 'SOL', 'SUN', 'TON', 'VAN'] extras ['xx_cnt_nbr_7d', 'xx_cnt_nbr_3650d', 'xx_maxmag_nbr_7d', 'xx_maxmag_nbr_3650d', 'xx_log_days_since_m7_nbr', 'xx_bvalue']
+[  147.7s] y_main harness base -0.0222 N 193
+[ 1189.6s] y_main M1 done
+[ 1229.1s] y_main M2 done
+[ 1464.0s] y_main M4 done
+[ 1598.2s] y_main M5/M6 done
+[ 1630.4s] y_main PRIMARY_m1_vs_base IG 0.0274 p 0.045654296875 CI [0.002 0.058]
+[ 1630.4s] y_main m1_vs_m2_chile_gbm IG 0.0958 p 0.00177001953125 CI [0.044 0.156]
+[ 1630.4s] y_main m2_vs_base IG -0.0684 p 0.95928955078125 CI [-0.142  0.002]
+[ 1630.4s] y_main m3_pooled_logit_vs_base IG 0.025 p 0.0147705078125 CI [0.005 0.049]
+[ 1630.6s] done

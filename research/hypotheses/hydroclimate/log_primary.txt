@@ -1,0 +1,5 @@
+[A primary] y_main logit: IG=+0.0051 vsETAS=-0.0029 base_vsETAS=-0.0080 AUC 0.665->0.667 ASS 0.664->0.666 boot={'ig_per_event': 0.005100951985605579, 'ci_lo': -0.0026391508003660294, 'ci_hi': 0.01159281355792656, 'p_boot_le0': 0.08, 'n_years': 14} loyo_min=+0.0029 coef={'x_load180_anom': -0.0348, 'x_rate30_anom': 0.0329}
+[A primary] surrogate phase_randomize y_main n=1000: obs=+0.0051 p=0.2268 null_mean=-0.0053 q95=+0.0202 (550s)
+[A] y_all logit: IG=+0.0120 vsETAS=+0.0114 base_vsETAS=-0.0006 AUC 0.697->0.700 ASS 0.696->0.699 boot={'ig_per_event': 0.012000721632502667, 'ci_lo': 0.003217456351464556, 'ci_hi': 0.019388217554634907, 'p_boot_le0': 0.0035, 'n_years': 14} loyo_min=+0.0097 coef={'x_load180_anom': -0.0218, 'x_rate30_anom': -0.0458}
+[A] surrogate phase_randomize y_all n=200: obs=+0.0120 p=0.0498 null_mean=-0.0040 q95=+0.0101 (79s)
+saved /Users/cnavarreteliz/Documents/Repos/earthquakes/research/hypotheses/hydroclimate/results_primary.json

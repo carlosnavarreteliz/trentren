@@ -1,0 +1,39 @@
+train y_main x_hf n_pos 27 AUC 0.582 mean z pos 0.20 neg 0.04
+train y_main x_lp n_pos 27 AUC 0.538 mean z pos 0.35 neg 0.38
+train y_main x_ms n_pos 27 AUC 0.524 mean z pos 0.08 neg -0.01
+train y_all x_hf n_pos 32 AUC 0.617 mean z pos 0.39 neg 0.04
+train y_all x_lp n_pos 32 AUC 0.539 mean z pos 0.34 neg 0.38
+train y_all x_ms n_pos 32 AUC 0.472 mean z pos -0.03 neg -0.01
+test y_main x_hf n_pos 51 AUC 0.490 mean z pos 0.08 neg 0.08
+test y_main x_lp n_pos 51 AUC 0.490 mean z pos 0.41 neg 0.33
+test y_main x_ms n_pos 51 AUC 0.466 mean z pos -0.14 neg 0.01
+test y_all x_hf n_pos 62 AUC 0.565 mean z pos 0.40 neg 0.07
+test y_all x_lp n_pos 62 AUC 0.522 mean z pos 0.62 neg 0.33
+test y_all x_ms n_pos 62 AUC 0.444 mean z pos -0.16 neg 0.01
+Iquique M8.2 band    hf    lp   ms
+sta                  
+GO01  2.52 -0.01 -0.5
+Illapel M8.3 band    hf    lp    ms
+sta                   
+CO02  0.07 -0.72  0.31
+CO03  0.82  0.17  0.35
+DG06  1.57 -1.07  1.34
+GO04  1.24  6.00 -0.51
+MT01  0.09 -1.21 -0.06
+MT05 -0.11 -0.69  0.29
+MT09 -0.04  0.21 -0.15
+VA01  0.48 -0.13  0.19
+VA03  0.02  0.28  0.28
+VA05  0.12 -0.05 -0.17
+Chiloe M7.6 band    hf    lp    ms
+sta                   
+AY01  0.66  1.14 -0.82
+COYC  0.07  0.57 -0.56
+GO07 -0.03 -0.51 -0.41
+LL01  0.07  1.07 -0.43
+LL02 -0.25  0.10 -0.52
+LL03  0.22  1.01 -0.60
+LL04  0.13 -0.12 -0.64
+LL05 -0.06  0.72 -0.37
+LL06  0.27 -0.18 -0.98
+LL07 -0.08  0.42 -0.54

@@ -1,0 +1,108 @@
+{
+ "saved_preds_auc": {
+  "M1: Poisson-GR (CSEP Baseline)": 0.5772861437150149,
+  "M2: Classical-ETAS (Ogata 1998)": 0.632184369464099,
+  "M3: Reyes-Panakkat-ML (b-value+RF)": 0.5867112042322342,
+  "M4: Neural-Point-Process (RECAST)": 0.5804900599819742,
+  "M5: Anisotropic-Slab-ETAS (3D Slab2)": 0.6425827989516104,
+  "M6: PI-ST-Fusion (Ours)": 0.653724960029283
+ },
+ "rerun_m6_test_auc": 0.653724960029283,
+ "rerun_m2_test_auc": 0.632184369464099,
+ "n_test": 7310,
+ "n_test_pos": 332,
+ "single_feature_test_auc": {
+  "mag": 0.5412626430053835,
+  "etas_iso_intensity": 0.6062625394095729,
+  "etas_aniso_intensity": 0.6186008004502965,
+  "max_mag_local_7d": 0.5743673317517706,
+  "count_local_7d": 0.5897692230659526
+ },
+ "etas_plus_own_mag_logit_test_auc": 0.6360480615497244,
+ "etas_plus_own_mag_logit_test_prauc": 0.09758498000389616,
+ "m6_test_prauc": 0.09030162120553027,
+ "pre_mainshock_frac_of_test_kept": 0.9482900136798905,
+ "pre_mainshock_frac_of_test_positives_kept": 0.9066265060240963,
+ "test_positive_rate_if_trigger_M>=5.5": 0.08759124087591241,
+ "test_positive_rate_if_trigger_M<4.5": 0.04161640530759952,
+ "share_of_test_positives_with_target_within_1d_of_bigger_prior": null,
+ "fusion_weights": {
+  "chosen_val_auc": 0.9249035171449319,
+  "chosen_test_auc": 0.6537189169403322,
+  "pct_random_weights_beating_chosen_on_val": 0.6185,
+  "pct_random_weights_beating_chosen_on_test": 0.406,
+  "best_val_weights": [
+   0.119,
+   0.391,
+   0.49
+  ],
+  "test_auc_of_best_val_weights": 0.6556453673680103,
+  "single_pathway_test_auc": {
+   "z_m5": 0.6423320107601516,
+   "z_stress": 0.6476309364715958,
+   "z_gbdt": 0.6224437733738047
+  },
+  "single_pathway_val_auc": {
+   "z_m5": 0.9060268463812378,
+   "z_stress": 0.8694265050513943,
+   "z_gbdt": 0.9223890589403031
+  }
+ },
+ "m6_cal_slope": 0.6047795038302765,
+ "m6_test_mean_pred_vs_obs": [
+  0.06777699423686372,
+  0.0454172366621067
+ ],
+ "m6_test_reliability_deciles[pred,obs,n]": [
+  [
+   0.0227,
+   0.0123,
+   731
+  ],
+  [
+   0.0319,
+   0.0205,
+   731
+  ],
+  [
+   0.0383,
+   0.0315,
+   731
+  ],
+  [
+   0.0446,
+   0.026,
+   731
+  ],
+  [
+   0.0505,
+   0.0465,
+   731
+  ],
+  [
+   0.0563,
+   0.0492,
+   731
+  ],
+  [
+   0.0623,
+   0.0465,
+   731
+  ],
+  [
+   0.0706,
+   0.0506,
+   731
+  ],
+  [
+   0.0861,
+   0.0725,
+   731
+  ],
+  [
+   0.2146,
+   0.0985,
+   731
+  ]
+ ]
+}

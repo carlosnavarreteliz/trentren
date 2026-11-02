@@ -1,0 +1,65 @@
+180 features, 164 eligible (<=95% NaN in train)
+fold 0 1995-01-01..2002-01-01: n_val_events=39 base IG vs Poisson=+0.162
+  fold 0 done, 106s
+fold 1 2002-01-01..2008-01-01: n_val_events=28 base IG vs Poisson=+0.254
+  fold 1 done, 316s
+fold 2 2008-01-01..2013-01-01: n_val_events=42 base IG vs Poisson=+0.656
+  fold 2 done, 565s
+                   feature    ig_val  n_pos_folds    dll_f0    dll_f1    dll_f2   p_boot  artifact_prone  bh_q10  passes
+0        x_n1_a_meanlon_90  0.014357            3  0.105424  0.562633  0.896879  0.06275           False   False   False
+1            x_n1_m_gap_90  0.012252            1  0.000000  0.000000  1.335474  0.04475            True   False   False
+2       x_n3_a_logcnt_1095  0.011992            3  0.581735  0.483960  0.241400  0.03575           False   False   False
+3       x_n1_a_meanlon_365  0.011696            3  0.251499  0.378931  0.644433  0.07275           False   False   False
+4      x_n1_a_meanlon_1095  0.009659            3  0.154060  0.258053  0.640715  0.08450           False   False   False
+5          x_n1_s_fmd_1095  0.006981            3  0.322221  0.285684  0.153005  0.15000            True   False   False
+6          x_n1_sp_d2_1095  0.006140            3  0.251117  0.252881  0.165262  0.30125           False   False   False
+7       x_n1_a_logcnt_1095  0.005387            1  0.710329 -0.071780 -0.051418  0.32900           False   False   False
+8           x_n1_s_fmd_365  0.004018            2  0.300402  0.305026 -0.167473  0.25975            True   False   False
+9           x_n1_s_fguc_90  0.003509            2  0.000000  0.048640  0.333886  0.20125            True   False   False
+10           x_n1_s_fmd_90  0.003181            3  0.313928  0.021110  0.011719  0.28750            True   False   False
+11        x_n1_a_logcnt_90  0.003032            2  0.382758 -0.556804  0.504568  0.31575           False   False   False
+12        x_gl_a_cvdt_1095  0.002662            3  0.103962  0.065242  0.120973  0.12150           False   False   False
+13          x_n1_m_derr_90  0.002223            1 -0.022160 -0.351184  0.615698  0.39100            True   False   False
+14        x_n1_s_logcnt_90  0.001959            2  0.489765  0.046285 -0.322558  0.44950            True   False   False
+15          x_n1_m_gap_365  0.001786            1  0.000000  0.000000  0.194664  0.38875            True   False   False
+16           x_n1_a_fmb_90  0.001153            2  0.101823 -0.056992  0.080853  0.45625            True   False   False
+17         x_n1_m_gap_1095  0.000987            1  0.000000  0.000000  0.107567  0.47625            True   False   False
+18         x_n1_s_fguc_365  0.000751            1  0.000000 -0.057156  0.139057  0.45175            True   False   False
+19        x_n1_s_night_365  0.000725            2 -0.107324  0.018630  0.167763  0.29450            True   False   False
+20       x_n3_a_logcnt_365  0.000498            1 -0.043824 -0.004184  0.102250  0.45000           False   False   False
+21           x_n1_m_rms_90  0.000449            1  0.154339 -0.045889 -0.059516  0.43900            True   False   False
+22     x_n1_a_stdlogdt_365  0.000434            2  0.316495  0.331267 -0.600508  0.47675           False   False   False
+23  x_n1_c_meandep_90v1095  0.000211            2 -0.019610  0.003019  0.039642  0.45225           False   False   False
+24        x_n1_a_hourR_365  0.000093            2  0.003389  0.032671 -0.025877  0.47900            True   False   False
+{
+ "target": "y_all",
+ "split": "2013",
+ "n_features": 180,
+ "n_eligible": 164,
+ "folds": [
+  [
+   "1995-01-01",
+   "2002-01-01"
+  ],
+  [
+   "2002-01-01",
+   "2008-01-01"
+  ],
+  [
+   "2008-01-01",
+   "2013-01-01"
+  ]
+ ],
+ "n_bh_q10": 0,
+ "n_pass": 0,
+ "selected": [],
+ "top5_no_fdr": [
+  "x_n1_a_meanlon_90",
+  "x_n1_m_gap_90",
+  "x_n3_a_logcnt_1095",
+  "x_n1_a_meanlon_365",
+  "x_n1_a_meanlon_1095"
+ ],
+ "min_p_boot": 0.03575,
+ "runtime_s": 568.1754360198975
+}

@@ -1,0 +1,65 @@
+180 features, 163 eligible (<=95% NaN in train)
+fold 0 1990-01-01..1995-01-01: n_val_events=18 base IG vs Poisson=+0.239
+  fold 0 done, 58s
+fold 1 1995-01-01..2000-01-01: n_val_events=27 base IG vs Poisson=+0.030
+  fold 1 done, 119s
+fold 2 2000-01-01..2006-01-01: n_val_events=27 base IG vs Poisson=-0.044
+  fold 2 done, 211s
+                   feature    ig_val  n_pos_folds        dll_f0    dll_f1    dll_f2   p_boot  artifact_prone  bh_q10  passes
+0       x_n3_a_logcnt_1095  0.024121            3  1.913665e-01  0.774285  0.771035  0.01375           False   False   False
+1       x_n1_a_logcnt_1095  0.021261            3  7.409369e-01  0.135369  0.654462  0.13825           False   False   False
+2          x_n1_a_bval_365  0.016633            2 -6.873988e-02  0.210925  1.055396  0.02750           False   False   False
+3   x_n1_a_logbenioff_1095  0.011617            3  1.260750e-01  0.350934  0.359425  0.14250           False   False   False
+4          x_n1_m_fguc_365  0.008741            1  0.000000e+00  0.000000  0.629356  0.07575            True   False   False
+5       x_n1_a_stdlogdt_90  0.007909            1 -3.304244e-01 -0.434383  1.334274  0.35375           False   False   False
+6     x_n1_c_zrate_90v1095  0.007714            2  3.582468e-01  0.300960 -0.103763  0.30350           False   False   False
+7         x_gl_a_bval_1095  0.007328            3  1.145592e-02  0.293311  0.222819  0.14000           False   False   False
+8          x_n1_w_s_fano52  0.006425            2 -3.224455e-01  0.676164  0.108888  0.28225            True   False   False
+9      x_n1_a_stdlogdt_365  0.006402            2  3.058305e-01  0.210033 -0.054907  0.31650           False   False   False
+10   x_n1_a_logmoment_1095  0.003648            3  1.117946e-02  0.062763  0.188679  0.21025           False   False   False
+11        x_n1_m_fguc_1095  0.003553            1  0.000000e+00  0.000000  0.255834  0.23700            True   False   False
+12     x_n1_a_meanlogdt_90  0.002133            2 -1.958981e-01  0.012299  0.337186  0.33400           False   False   False
+13        x_n1_s_logcnt_90  0.001791            2  6.051009e-02  0.289037 -0.220570  0.45225            True   False   False
+14         x_n1_sp_d2_1095  0.001218            1 -6.456305e-01 -0.095697  0.828991  0.44350           False   False   False
+15          x_gl_a_fbg_365  0.001060            2  8.333241e-02 -0.218593  0.211558  0.40900           False   False   False
+16        x_n1_s_night_365  0.000477            2 -5.154395e-02  0.001841  0.084026  0.41850            True   False   False
+17     x_n1_a_meanlon_1095  0.000343            2  3.126984e-01  0.945190 -1.233200  0.46725           False   False   False
+18           x_n1_m_rms_90  0.000158            1  1.854045e-02 -0.005841 -0.001330  0.47700            True   False   False
+19           x_n1_s_fmd_90  0.000097            2  2.598040e-11  0.497890 -0.490893  0.49150            True   False   False
+20       x_n3_a_logcnt_365  0.000040            2  1.324813e-02  0.103902 -0.114296  0.45775           False   False   False
+21         x_n1_m_gap_1095  0.000000            0  0.000000e+00  0.000000  0.000000  1.00000            True   False   False
+22          x_n1_m_nst_365  0.000000            0  0.000000e+00  0.000000  0.000000  1.00000            True   False   False
+23          x_n1_m_gap_365  0.000000            0  0.000000e+00  0.000000  0.000000  1.00000            True   False   False
+24         x_n1_m_nst_1095  0.000000            0  0.000000e+00  0.000000  0.000000  1.00000            True   False   False
+{
+ "target": "y_all",
+ "split": "2006",
+ "n_features": 180,
+ "n_eligible": 163,
+ "folds": [
+  [
+   "1990-01-01",
+   "1995-01-01"
+  ],
+  [
+   "1995-01-01",
+   "2000-01-01"
+  ],
+  [
+   "2000-01-01",
+   "2006-01-01"
+  ]
+ ],
+ "n_bh_q10": 0,
+ "n_pass": 0,
+ "selected": [],
+ "top5_no_fdr": [
+  "x_n3_a_logcnt_1095",
+  "x_n1_a_logcnt_1095",
+  "x_n1_a_bval_365",
+  "x_n1_a_logbenioff_1095",
+  "x_n1_m_fguc_365"
+ ],
+ "min_p_boot": 0.01375,
+ "runtime_s": 212.5404920578003
+}

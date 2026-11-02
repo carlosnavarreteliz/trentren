@@ -1,0 +1,15 @@
+forecast f0 0 366 14s trunc=0
+forecast f0 1 366 14s trunc=0
+forecast f0 2 366 23s trunc=6
+forecast f1 0 522 62s trunc=18
+forecast f1 1 522 46s trunc=9
+forecast f1 2 522 53s trunc=46
+forecast f2 0 521 22s trunc=0
+forecast f2 1 521 23s trunc=1
+forecast f2 2 521 35s trunc=2
+forecast f3 0 522 23s trunc=0
+forecast f3 1 522 19s trunc=0
+forecast f3 2 522 19s trunc=0
+forecast final 0 719 36s trunc=11
+forecast final 1 719 44s trunc=27
+forecast final 2 719 64s trunc=128

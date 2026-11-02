@@ -1,0 +1,19 @@
+                count                 mean  ...                  max       std
+bin_id        76850.0                 14.0  ...                 28.0  8.366655
+t_start         76850  2001-05-20 12:00:00  ...  2026-10-08 00:00:00       NaN
+x_ids_anom    76850.0            -0.108103  ...             1.617904  0.563583
+x_or_anom     76850.0            -0.182682  ...             4.634729  0.691986
+x_vert_shift  76850.0             0.478425  ...             4.834555  1.294498
+
+[5 rows x 8 columns]
+[y_main/logit] N_test=72  IG(full-base)=+0.0211 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.673  ASS base/full=0.664/0.672  T=1.27 
+ boot: {'ig_per_event': 0.021067653428215836, 'ci_lo': -0.011324960199111006, 'ci_hi': 0.050381645812582074, 'p_boot_le0': 0.109, 'n_years': 14}
+[y_all/logit] N_test=85  IG(full-base)=+0.0055 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.704  ASS base/full=0.696/0.703  T=0.48 
+ boot: {'ig_per_event': 0.005477739818398751, 'ci_lo': -0.021472748075333278, 'ci_hi': 0.02964171460645566, 'p_boot_le0': 0.322, 'n_years': 14}
+y_main phase_randomize {'ig_obs': 0.02106765342821622, 'p_value': 0.04395604395604396, 'null_mean': -0.009391140052314964, 'null_sd': 0.02041760591085182, 'null_q95': 0.01922780926396158, 'n': 1000, 'mode': 'phase_randomize', 'significant_0.05': True, 'significant_bonferroni': False} 899s
+y_main bin_permute {'ig_obs': 0.02106765342821622, 'p_value': 0.033932135728542916, 'null_mean': -0.01938277402429286, 'null_sd': 0.024890985001181712, 'null_q95': 0.013222555208758898, 'n': 500, 'mode': 'bin_permute', 'significant_0.05': True, 'significant_bonferroni': False} 344s
+y_main circular_shift {'ig_obs': 0.02106765342821622, 'p_value': 0.07784431137724551, 'null_mean': -0.012070663741282303, 'null_sd': 0.02426305065508638, 'null_q95': 0.02892149177965258, 'n': 500, 'mode': 'circular_shift', 'significant_0.05': False, 'significant_bonferroni': False} 316s
+y_all phase_randomize {'ig_obs': 0.005477739818399427, 'p_value': 0.23276723276723277, 'null_mean': -0.0049741408604731755, 'null_sd': 0.01710354579763884, 'null_q95': 0.021246796218461317, 'n': 1000, 'mode': 'phase_randomize', 'significant_0.05': False, 'significant_bonferroni': False} 552s
+y_all bin_permute {'ig_obs': 0.005477739818399427, 'p_value': 0.09580838323353294, 'null_mean': -0.010401837363804463, 'null_sd': 0.015525116412528255, 'null_q95': 0.009971993698984995, 'n': 500, 'mode': 'bin_permute', 'significant_0.05': False, 'significant_bonferroni': False} 180s
+y_all circular_shift {'ig_obs': 0.005477739818399427, 'p_value': 0.249500998003992, 'null_mean': -0.008795028929091436, 'null_sd': 0.021402881368961447, 'null_q95': 0.020176650691732367, 'n': 500, 'mode': 'circular_shift', 'significant_0.05': False, 'significant_bonferroni': False} 149s
+DONE

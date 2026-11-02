@@ -1,0 +1,30 @@
+{
+ "slug": "enhanced_catalog",
+ "title": "Catálogos de alta resolución (sismos pequeños que el catálogo USGS no ve)",
+ "question": "¿Bajar la magnitud de completitud (IPOC ML>=3, Riedel-Hornig ML>=2.5) revela información predictiva sobre sismos M>=5 que el baseline ETAS-logit con M>=4.7 no tiene?",
+ "verdict": "null",
+ "headline": "Los sismos pequeños de los catálogos IPOC y Riedel-Hornig (de ML 2,5 a 3, unas 50 veces más eventos que USGS) no mejoran el pronóstico de M>=5 frente al baseline ETAS-logit: en el test primario, y_main da IG=-0,016 nats/sismo (p=0,62) y tampoco aparecen foreshocks en exceso frente a ventanas de control.",
+ "metrics": [
+  {"target": "y_main", "ig_nats_per_eq": -0.0164, "p_value": 0.6219, "auc_base": 0.503, "auc_full": 0.489, "n_test_events": 153, "note": "PRIMARIO: IPOC ML>=3, bloque {x_act7, x_act30, x_dbpos}, panel semanal con objetivo M>=5, bins 22-27, test 2013-2021, phase_randomize n=200 (ventana: p=0,60 con n=1000)"},
+  {"target": "y_all", "ig_nats_per_eq": -0.0047, "p_value": 0.3682, "auc_base": 0.543, "auc_full": 0.538, "n_test_events": 184, "note": "IPOC ML>=3, mismo diseño (ventana: p=0,32)"},
+  {"target": "y_main", "ig_nats_per_eq": -0.0163, "p_value": 0.4826, "auc_base": 0.503, "auc_full": 0.513, "n_test_events": 153, "note": "Contraste: el mismo catálogo IPOC con umbral ML>=4.5"},
+  {"target": "y_main", "ig_nats_per_eq": 0.0006, "p_value": 0.3077, "auc_base": 0.651, "auc_full": 0.646, "n_test_events": 101, "note": "Replicación: Riedel ML>=2.5, 18-43°S, test 2019-07 a 2021, null en ventana con n=1000 (con el null por defecto p=0,011, un artefacto)"},
+  {"target": "y_all", "ig_nats_per_eq": 0.0055, "p_value": 0.1938, "auc_base": 0.643, "auc_full": 0.641, "n_test_events": 108, "note": "Replicación: Riedel ML>=2.5, null en ventana con n=1000"}
+ ],
+ "key_findings": [
+  "Se obtuvieron dos catálogos de alta resolución: IPOC (Sippl et al. 2023), con 183 mil eventos entre 2007 y 2021, y Riedel-Hornig et al. (2026, deep learning), con 602 mil eventos entre 2017 y 2021.",
+  "El test primario es nulo: IG=-0,016 nats/sismo en y_main (p=0,62) y -0,005 en y_all (p=0,37).",
+  "Bajar el umbral de ML 4,5 a ML 3 o 2,5 lleva el IG de levemente negativo a cerca de cero, pero nunca supera al baseline.",
+  "El cambio de b-positive, las ventanas diarias, los eventos someros, el GBM y la versión sin tendencia también son nulos.",
+  "La señal en M>=5,5 (IG +0,028, p=0,07) no se replica en el catálogo Riedel (-0,028).",
+  "Antes de 227 sismos principales M>=5 no hay exceso de sismos ML>=3 frente a 200 controles por evento (4,8% supera el p95, cuando se esperaba 5%). En el subconjunto sin actividad previa la cifra es 2,2%.",
+  "Con features que existen solo en una ventana corta, el surrogate por defecto del harness es anticonservador. Un surrogate restringido a la ventana del catálogo lo corrige."
+ ],
+ "caveats": [
+  "Los periodos de test son cortos (9 años en IPOC y 2,5 en Riedel) y las huellas pequeñas, de modo que hay poca potencia para M>=6.",
+  "El baseline restringido a la huella casi no tiene skill en y_main (AUC 0,50).",
+  "Los catálogos saturan durante las réplicas, lo que subdetecta eventos pequeños.",
+  "Bajo ML 2,5, IPOC pierde detección después de 2017 por la degradación de la red; por eso se usó ML>=3.",
+  "El null restringido a la ventana se agregó después de ver los resultados, como robustez. El test primario se mantuvo tal como se preregistró."
+ ]
+}

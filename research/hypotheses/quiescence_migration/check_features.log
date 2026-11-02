@@ -1,0 +1,38 @@
+built in 5.1s, shape (76850, 10)
+NaN frac (all rows): {'x_rtl': 0.098, 'x_zq': 0.0, 'x_doughnut': 0.098, 'x_migr': 0.0, 'x_sync': 0.039, 'x_central': 0.039, 'x_shadow': 0.0, 'x_load': 0.0}
+              count   mean    std     min    25%    50%    75%    max
+x_rtl       48459.0  0.134  1.123  -2.518 -0.644 -0.130  0.703  8.023
+x_zq        55970.0  0.236  1.466  -5.457 -0.712 -0.012  0.896  8.135
+x_doughnut  48430.0  0.015  0.483  -2.291 -0.270  0.018  0.305  2.194
+x_migr      55999.0 -0.006  1.340 -11.102 -0.633  0.000  0.615  7.484
+x_sync      52983.0 -0.002  0.054  -0.153 -0.039 -0.009  0.027  0.330
+x_central   52983.0  0.463  0.267   0.000  0.255  0.437  0.660  1.000
+x_shadow    55999.0  0.181  0.474   0.000  0.000  0.000  0.000  3.137
+x_load      55999.0  0.431  0.569   0.000  0.000  0.153  0.763  3.143
+train corr with baseline features:
+             cnt_bin_365d  cnt_nbr_365d  ...  maxmag_nbr_365d  log_bg_m45
+x_rtl               0.32          0.31  ...             0.28        0.02
+x_zq               -0.36         -0.44  ...            -0.34       -0.09
+x_doughnut         -0.08         -0.12  ...            -0.13        0.01
+x_migr              0.00         -0.00  ...            -0.01        0.01
+x_sync             -0.12         -0.13  ...            -0.03       -0.14
+x_central           0.17          0.13  ...             0.11        0.15
+x_shadow            0.22          0.22  ...             0.19        0.23
+x_load              0.22          0.28  ...             0.20        0.41
+
+[8 rows x 5 columns]
+train corr among features:
+             x_rtl  x_zq  x_doughnut  ...  x_central  x_shadow  x_load
+x_rtl        1.00 -0.59       -0.26  ...       0.11      0.22    0.06
+x_zq        -0.59  1.00        0.27  ...      -0.06     -0.09   -0.05
+x_doughnut  -0.26  0.27        1.00  ...      -0.14      0.03   -0.06
+x_migr       0.05 -0.01       -0.01  ...      -0.01     -0.02    0.00
+x_sync       0.08 -0.03       -0.09  ...       0.34     -0.04   -0.04
+x_central    0.11 -0.06       -0.14  ...       1.00      0.09    0.06
+x_shadow     0.22 -0.09        0.03  ...       0.09      1.00    0.14
+x_load       0.06 -0.05       -0.06  ...       0.06      0.14    1.00
+
+[8 rows x 8 columns]
+truncation at 2010-02-25: rows 51707, max abs diff 2.76e-10, NaN mismatches 0
+truncation at 2014-03-20: rows 57855, max abs diff 4.11e-10, NaN mismatches 0
+truncation at 1995-07-28: rows 29638, max abs diff 1.24e-10, NaN mismatches 0

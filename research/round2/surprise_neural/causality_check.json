@@ -1,0 +1,86 @@
+[
+ {
+  "t_start": "2020-12-17",
+  "model": "final",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2022-05-19",
+  "model": "final",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2025-05-01",
+  "model": "final",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2025-12-04",
+  "model": "final",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2021-07-22",
+  "model": "final",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2023-09-07",
+  "model": "final",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2003-01-16",
+  "model": "f3",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2012-02-02",
+  "model": "f3",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2011-09-08",
+  "model": "f3",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2007-12-27",
+  "model": "f3",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2014-04-03",
+  "model": "final",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ },
+ {
+  "t_start": "2015-09-10",
+  "model": "final",
+  "max_abs_dH": 0.0,
+  "max_abs_dNLL": 0.0,
+  "max_abs_dP_sim": 0.0
+ }
+]

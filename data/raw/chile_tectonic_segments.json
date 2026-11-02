@@ -1,0 +1,259 @@
+[
+  {
+    "name": "Arica - Camarones (North Iquique Gap)",
+    "lat_min": -19.5,
+    "lat_max": -17.0,
+    "trench_lon": -71.6,
+    "slab_dip_deg": 20.0,
+    "convergence_mm_yr": 65.0,
+    "geodetic_locking_mean": 0.65,
+    "last_giant_rupture_year": 1868,
+    "last_giant_mag": 8.8,
+    "major_ruptures": [
+      [
+        1868,
+        8.8
+      ],
+      [
+        2005,
+        7.8
+      ],
+      [
+        2014,
+        6.7
+      ]
+    ]
+  },
+  {
+    "name": "Iquique - Pisagua (2014 Rupture & Loa Segment)",
+    "lat_min": -21.5,
+    "lat_max": -19.5,
+    "trench_lon": -71.3,
+    "slab_dip_deg": 21.0,
+    "convergence_mm_yr": 66.0,
+    "geodetic_locking_mean": 0.78,
+    "last_giant_rupture_year": 2014,
+    "last_giant_mag": 8.2,
+    "major_ruptures": [
+      [
+        1877,
+        8.8
+      ],
+      [
+        2007,
+        7.7
+      ],
+      [
+        2014,
+        8.2
+      ]
+    ]
+  },
+  {
+    "name": "Tocopilla - Mejillones - Antofagasta (Southern 1877 Gap / Calama Intraslab)",
+    "lat_min": -25.0,
+    "lat_max": -21.5,
+    "trench_lon": -71.4,
+    "slab_dip_deg": 22.0,
+    "convergence_mm_yr": 66.0,
+    "geodetic_locking_mean": 0.72,
+    "last_giant_rupture_year": 1995,
+    "last_giant_mag": 8.0,
+    "major_ruptures": [
+      [
+        1877,
+        8.8
+      ],
+      [
+        1950,
+        8.2
+      ],
+      [
+        1995,
+        8.0
+      ],
+      [
+        2007,
+        7.7
+      ],
+      [
+        2024,
+        7.4
+      ]
+    ]
+  },
+  {
+    "name": "Taltal - Copiap\u00f3 - Atacama Gap (1922 Segment)",
+    "lat_min": -29.0,
+    "lat_max": -25.0,
+    "trench_lon": -71.8,
+    "slab_dip_deg": 16.0,
+    "convergence_mm_yr": 66.0,
+    "geodetic_locking_mean": 0.75,
+    "last_giant_rupture_year": 1922,
+    "last_giant_mag": 8.5,
+    "major_ruptures": [
+      [
+        1918,
+        7.6
+      ],
+      [
+        1922,
+        8.5
+      ],
+      [
+        1983,
+        7.6
+      ],
+      [
+        2013,
+        6.8
+      ],
+      [
+        2020,
+        6.8
+      ]
+    ]
+  },
+  {
+    "name": "La Serena - Coquimbo - Illapel (Pampean Flat-Slab Transition)",
+    "lat_min": -32.2,
+    "lat_max": -29.0,
+    "trench_lon": -72.5,
+    "slab_dip_deg": 13.5,
+    "convergence_mm_yr": 66.0,
+    "geodetic_locking_mean": 0.68,
+    "last_giant_rupture_year": 2015,
+    "last_giant_mag": 8.3,
+    "major_ruptures": [
+      [
+        1943,
+        8.1
+      ],
+      [
+        1997,
+        7.1
+      ],
+      [
+        2015,
+        8.3
+      ],
+      [
+        2019,
+        6.7
+      ]
+    ]
+  },
+  {
+    "name": "Valpara\u00edso - Metropolitan Central Gap (1730 / 1906 / 1985 Segment)",
+    "lat_min": -34.5,
+    "lat_max": -32.2,
+    "trench_lon": -72.8,
+    "slab_dip_deg": 18.0,
+    "convergence_mm_yr": 66.0,
+    "geodetic_locking_mean": 0.85,
+    "last_giant_rupture_year": 1985,
+    "last_giant_mag": 8.0,
+    "major_ruptures": [
+      [
+        1730,
+        9.1
+      ],
+      [
+        1906,
+        8.2
+      ],
+      [
+        1971,
+        7.8
+      ],
+      [
+        1985,
+        8.0
+      ],
+      [
+        2017,
+        6.9
+      ]
+    ]
+  },
+  {
+    "name": "Pichilemu - Constituci\u00f3n - Maule - Cobquecura (2010 Maule Segment)",
+    "lat_min": -38.2,
+    "lat_max": -34.5,
+    "trench_lon": -73.8,
+    "slab_dip_deg": 19.5,
+    "convergence_mm_yr": 65.5,
+    "geodetic_locking_mean": 0.82,
+    "last_giant_rupture_year": 2010,
+    "last_giant_mag": 8.8,
+    "major_ruptures": [
+      [
+        1835,
+        8.5
+      ],
+      [
+        1928,
+        7.7
+      ],
+      [
+        1939,
+        8.3
+      ],
+      [
+        2010,
+        8.8
+      ],
+      [
+        2012,
+        7.1
+      ]
+    ]
+  },
+  {
+    "name": "Arauco - Valdivia - Chilo\u00e9 - Corcovado (1960 Giant Megathrust Segment)",
+    "lat_min": -46.5,
+    "lat_max": -38.2,
+    "trench_lon": -75.0,
+    "slab_dip_deg": 20.0,
+    "convergence_mm_yr": 65.0,
+    "geodetic_locking_mean": 0.8,
+    "last_giant_rupture_year": 1960,
+    "last_giant_mag": 9.5,
+    "major_ruptures": [
+      [
+        1575,
+        8.5
+      ],
+      [
+        1837,
+        8.8
+      ],
+      [
+        1960,
+        9.5
+      ],
+      [
+        2016,
+        7.6
+      ]
+    ]
+  },
+  {
+    "name": "Chile Triple Junction - Patagonia - Magallanes (Antarctic Plate Subduction)",
+    "lat_min": -56.0,
+    "lat_max": -46.5,
+    "trench_lon": -75.8,
+    "slab_dip_deg": 24.0,
+    "convergence_mm_yr": 20.0,
+    "geodetic_locking_mean": 0.35,
+    "last_giant_rupture_year": 1949,
+    "last_giant_mag": 7.7,
+    "major_ruptures": [
+      [
+        1949,
+        7.7
+      ]
+    ]
+  }
+]

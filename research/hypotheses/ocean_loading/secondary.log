@@ -1,0 +1,12 @@
+y_all [y_all/logit] N_test=85  IG(full-base)=+0.0120 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.703  ASS base/full=0.696/0.702  T=1.85
+y_all {'phase': 0.03482587064676617, 'bin_permute': 0.03482587064676617, 'circ': 0.04975124378109453}
+y_main [y_main/logit] N_test=72  IG(full-base)=-0.0023 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.662  ASS base/full=0.664/0.661  T=-0.21
+y_main {'bin_permute': 0.5024875621890548, 'circ': 0.48756218905472637}
+SLonly y_all [y_all/logit] N_test=85  IG(full-base)=-0.0174 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.690  ASS base/full=0.696/0.690  T=-2.98 p= 0.7810945273631841
+SLonly y_main [y_main/logit] N_test=72  IG(full-base)=-0.0155 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.654  ASS base/full=0.664/0.654  T=-1.84 p= 0.7412935323383084
+PAonly y_all [y_all/logit] N_test=85  IG(full-base)=-0.0456 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.677  ASS base/full=0.696/0.676  T=-1.86 p= 0.9751243781094527
+PAonly y_main [y_main/logit] N_test=72  IG(full-base)=-0.0254 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.651  ASS base/full=0.664/0.650  T=-1.60 p= 0.9154228855721394
+M5.5 y_all [y_all/logit] N_test=228  IG(full-base)=+0.0060 nats/eq  IG(base-Poisson)=+0.186  AUC base/full=0.697/0.699  ASS base/full=0.694/0.697  T=1.01 p= 0.01990049751243781
+M5.5 y_main [y_main/logit] N_test=193  IG(full-base)=+0.0046 nats/eq  IG(base-Poisson)=-0.022  AUC base/full=0.658/0.662  ASS base/full=0.657/0.660  T=0.86 p= 0.04975124378109453
+saved /Users/cnavarreteliz/Documents/Repos/earthquakes/research/hypotheses/ocean_loading/results_secondary.json
+elapsed 1050.9

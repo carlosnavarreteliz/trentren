@@ -1,0 +1,29 @@
+[A] surrogate bin_permute y_main n=200: obs=+0.0051 p=0.0846 null_mean=-0.0265 q95=+0.0077 (190s)
+[A] surrogate bin_permute y_all n=200: obs=+0.0120 p=0.0348 null_mean=-0.0200 q95=+0.0087 (163s)
+[A yearshift] surrogate circular_shift y_main n=200: obs=+0.0051 p=0.2587 null_mean=-0.0092 q95=+0.0268 (218s)
+[A yearshift] surrogate circular_shift y_all n=200: obs=+0.0120 p=0.0746 null_mean=-0.0057 q95=+0.0192 (288s)
+[A diff] y_main logit: IG=+0.0169 vsETAS=+0.0089 base_vsETAS=-0.0080 AUC 0.665->0.676 ASS 0.664->0.676 boot={'ig_per_event': 0.016905652794378532, 'ci_lo': -0.022490978776850912, 'ci_hi': 0.054502479831564005, 'p_boot_le0': 0.223, 'n_years': 14} loyo_min=+0.0022 coef={'x_load180_anom_d': -0.2429, 'x_rate30_anom_d': 0.3571}
+[A diff] surrogate phase_randomize y_main n=200: obs=+0.0169 p=0.0398 null_mean=-0.0079 q95=+0.0140 (166s)
+[A diff] y_all logit: IG=+0.0008 vsETAS=+0.0003 base_vsETAS=-0.0006 AUC 0.697->0.702 ASS 0.696->0.701 boot={'ig_per_event': 0.0008330786162811909, 'ci_lo': -0.02993620170382496, 'ci_hi': 0.026052824796550154, 'p_boot_le0': 0.4645, 'n_years': 14} loyo_min=-0.0060 coef={'x_load180_anom_d': -0.1861, 'x_rate30_anom_d': 0.215}
+[A diff] surrogate phase_randomize y_all n=200: obs=+0.0008 p=0.2886 null_mean=-0.0055 q95=+0.0132 (135s)
+[B] y_main logit: IG=-0.0533 vsETAS=-0.0613 base_vsETAS=-0.0080 AUC 0.665->0.635 ASS 0.664->0.634 boot={'ig_per_event': -0.053285350907288864, 'ci_lo': -0.09353329021150764, 'ci_hi': -0.0032491854742033423, 'p_boot_le0': 0.982, 'n_years': 14} loyo_min=-0.0642 coef={'x_season_sin': 0.1566, 'x_season_cos': -0.0532}
+[B] surrogate phase_randomize y_main n=200: obs=-0.0533 p=0.8209 null_mean=-0.0290 q95=+0.0034 (111s)
+[B] y_all logit: IG=-0.0503 vsETAS=-0.0509 base_vsETAS=-0.0006 AUC 0.697->0.672 ASS 0.696->0.671 boot={'ig_per_event': -0.05033005145297186, 'ci_lo': -0.09622867476392806, 'ci_hi': 0.0016958829690137658, 'p_boot_le0': 0.972, 'n_years': 14} loyo_min=-0.0611 coef={'x_season_sin': 0.198, 'x_season_cos': -0.0107}
+[B] surrogate phase_randomize y_all n=200: obs=-0.0503 p=0.8607 null_mean=-0.0258 q95=+0.0004 (120s)
+[C] y_main logit: IG=-0.0104 vsETAS=-0.0184 base_vsETAS=-0.0080 AUC 0.665->0.674 ASS 0.664->0.673 boot={'ig_per_event': -0.01036875660380092, 'ci_lo': -0.04002862534657041, 'ci_hi': 0.02026985763937156, 'p_boot_le0': 0.7455, 'n_years': 14} loyo_min=-0.0177 coef={'x_oni': -0.1313, 'x_pdo': 0.1564, 'x_doni12': 0.0872, 'x_dpdo12': -0.1886}
+[C] surrogate phase_randomize y_main n=200: obs=-0.0104 p=0.4378 null_mean=-0.0245 q95=+0.0201 (172s)
+[C] y_all logit: IG=-0.0062 vsETAS=-0.0068 base_vsETAS=-0.0006 AUC 0.697->0.702 ASS 0.696->0.701 boot={'ig_per_event': -0.0061872548925253215, 'ci_lo': -0.027610656219045394, 'ci_hi': 0.0199092478669027, 'p_boot_le0': 0.704, 'n_years': 14} loyo_min=-0.0117 coef={'x_oni': -0.0887, 'x_pdo': 0.173, 'x_doni12': 0.0971, 'x_dpdo12': -0.1834}
+[C] surrogate phase_randomize y_all n=200: obs=-0.0062 p=0.2985 null_mean=-0.0244 q95=+0.0109 (135s)
+[D] y_main logit: IG=+0.0028 vsETAS=-0.0052 base_vsETAS=-0.0080 AUC 0.665->0.666 ASS 0.664->0.665 boot={'ig_per_event': 0.0027928936771692663, 'ci_lo': -0.005751148652891908, 'ci_hi': 0.01242894663526113, 'p_boot_le0': 0.2915, 'n_years': 14} loyo_min=-0.0004 coef={'x_swe_anom': -0.0607, 'x_dswe30': -0.0261}
+[D] surrogate phase_randomize y_main n=200: obs=+0.0028 p=0.1542 null_mean=-0.0085 q95=+0.0080 (130s)
+[D] y_all logit: IG=+0.0019 vsETAS=+0.0014 base_vsETAS=-0.0006 AUC 0.697->0.698 ASS 0.696->0.697 boot={'ig_per_event': 0.0019187214451353515, 'ci_lo': -0.003386315617994495, 'ci_hi': 0.006488808777406635, 'p_boot_le0': 0.236, 'n_years': 14} loyo_min=+0.0001 coef={'x_swe_anom': -0.0343, 'x_dswe30': -0.0235}
+[D] surrogate phase_randomize y_all n=200: obs=+0.0019 p=0.2388 null_mean=-0.0049 q95=+0.0080 (104s)
+[E] y_main logit: IG=-0.0167 vsETAS=-0.0247 base_vsETAS=-0.0080 AUC 0.665->0.660 ASS 0.664->0.659 boot={'ig_per_event': -0.016733283364055652, 'ci_lo': -0.02656344647806116, 'ci_hi': -0.0050332087550456215, 'p_boot_le0': 0.9965, 'n_years': 14} loyo_min=-0.0183 coef={'x_andesload365_anom': 0.0672}
+[E] surrogate phase_randomize y_main n=200: obs=-0.0167 p=0.9303 null_mean=-0.0004 q95=+0.0134 (91s)
+[E] y_all logit: IG=+0.0054 vsETAS=+0.0049 base_vsETAS=-0.0006 AUC 0.697->0.698 ASS 0.696->0.697 boot={'ig_per_event': 0.005428795051625214, 'ci_lo': -0.0020752513561940857, 'ci_hi': 0.011635669828527076, 'p_boot_le0': 0.0775, 'n_years': 14} loyo_min=+0.0036 coef={'x_andesload365_anom': -0.0499}
+[E] surrogate phase_randomize y_all n=200: obs=+0.0054 p=0.1592 null_mean=+0.0001 q95=+0.0094 (74s)
+[Cdiff] y_main logit: IG=+0.0122 vsETAS=+0.0042 base_vsETAS=-0.0080 AUC 0.665->0.671 ASS 0.664->0.670 boot={'ig_per_event': 0.012175608257320204, 'ci_lo': -0.013624547031660262, 'ci_hi': 0.03715058612537375, 'p_boot_le0': 0.1805, 'n_years': 14} loyo_min=+0.0049 coef={'x_oni_d': -0.0755, 'x_pdo_d': -0.0583}
+[Cdiff] surrogate phase_randomize y_main n=200: obs=+0.0122 p=0.0647 null_mean=-0.0078 q95=+0.0135 (77s)
+[Cdiff] y_all logit: IG=+0.0042 vsETAS=+0.0036 base_vsETAS=-0.0006 AUC 0.697->0.699 ASS 0.696->0.698 boot={'ig_per_event': 0.004166610757858576, 'ci_lo': -0.001415455565447049, 'ci_hi': 0.00971387822500646, 'p_boot_le0': 0.073, 'n_years': 14} loyo_min=+0.0022 coef={'x_oni_d': -0.0195, 'x_pdo_d': -0.0115}
+[Cdiff] surrogate phase_randomize y_all n=200: obs=+0.0042 p=0.1990 null_mean=-0.0075 q95=+0.0121 (75s)
+saved /Users/cnavarreteliz/Documents/Repos/earthquakes/research/hypotheses/hydroclimate/results_secondary.json

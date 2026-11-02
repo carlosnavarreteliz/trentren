@@ -1,0 +1,4 @@
+[y_main/logit] N_test=72  IG(full-base)=-0.0039 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.665  ASS base/full=0.664/0.665  T=-0.66  surrogate p=0.4545 (Bonferroni sig=False)
+  bootstrap {'ig_per_event': -0.0038981874540998693, 'ci_lo': -0.01565429760711921, 'ci_hi': 0.008345903270414685, 'p_boot_le0': 0.722, 'n_years': 14}
+[y_all/logit] N_test=85  IG(full-base)=-0.0010 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.697  ASS base/full=0.696/0.696  T=-0.55  surrogate p=0.4356 (Bonferroni sig=False)
+  bootstrap {'ig_per_event': -0.0010361836922737854, 'ci_lo': -0.004328181315122073, 'ci_hi': 0.0027784266414073765, 'p_boot_le0': 0.7095, 'n_years': 14}

@@ -1,0 +1,17 @@
+[M30_M6] y_main: [y_main/logit] N_test=72  IG(full-base)=+0.0041 nats/eq  IG(base-Poisson)=-0.002  AUC base/full=0.664/0.666  ASS base/full=0.662/0.663  T=0.25  surrogate p=0.2438 (Bonferroni sig=False)
+[M30_M6] y_all: [y_all/logit] N_test=80  IG(full-base)=+0.0043 nats/eq  IG(base-Poisson)=-0.053  AUC base/full=0.671/0.676  ASS base/full=0.668/0.673  T=0.60  surrogate p=0.1095 (Bonferroni sig=False)
+[W_M6_split2017] y_main: [y_main/logit] N_test=49  IG(full-base)=-0.0100 nats/eq  IG(base-Poisson)=-0.020  AUC base/full=0.668/0.663  ASS base/full=0.667/0.662  T=-0.96  surrogate p=0.3881 (Bonferroni sig=False)
+[W_M6_split2017] y_all: [y_all/logit] N_test=51  IG(full-base)=-0.0007 nats/eq  IG(base-Poisson)=-0.086  AUC base/full=0.668/0.668  ASS base/full=0.668/0.667  T=-0.27  surrogate p=0.2189 (Bonferroni sig=False)
+[W_M6_from1996] y_main: [y_main/logit] N_test=72  IG(full-base)=-0.0184 nats/eq  IG(base-Poisson)=+0.020  AUC base/full=0.660/0.652  ASS base/full=0.659/0.651  T=-1.26  surrogate p=0.3682 (Bonferroni sig=False)
+[W_M6_from1996] y_all: [y_all/logit] N_test=85  IG(full-base)=-0.0390 nats/eq  IG(base-Poisson)=+0.220  AUC base/full=0.701/0.699  ASS base/full=0.700/0.698  T=-1.87  surrogate p=0.6816 (Bonferroni sig=False)
+[W_M6_lag3] y_main: [y_main/logit] N_test=72  IG(full-base)=-0.0272 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.652  ASS base/full=0.664/0.651  T=-1.48  surrogate p=0.5821 (Bonferroni sig=False)
+[W_M6_lag3] y_all: [y_all/logit] N_test=85  IG(full-base)=-0.0376 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.691  ASS base/full=0.696/0.691  T=-1.86  surrogate p=0.7164 (Bonferroni sig=False)
+[quiet30] y_main: {'n_cells': 19886, 'n_events': 69, 'ig_per_event': -0.01662793940595863, 'bootstrap': {'ig_per_event': -0.016627939405958622, 'ci_lo': -0.03485285300972588, 'ci_hi': 0.00023033266126422635, 'p_boot_le0': 0.973, 'n_years': 14}}
+year   2013   2014   2015   2016   2017   2018   2019   2020   2021   2022   2023   2024   2025   2026
+d    -0.083  0.248 -0.168 -0.095 -0.126  0.016 -0.137  0.294 -0.046 -0.007 -0.192 -0.297 -0.038 -0.314
+y     3.000  3.000  9.000  8.000  4.000  3.000  7.000  9.000  5.000  5.000  6.000  3.000  3.000  4.000
+[quiet30] y_all: {'n_cells': 19886, 'n_events': 75, 'ig_per_event': -0.008706650158787778, 'bootstrap': {'ig_per_event': -0.008706650158787778, 'ci_lo': -0.02706139381006396, 'ci_hi': 0.007879939099090969, 'p_boot_le0': 0.852, 'n_years': 14}}
+year   2013   2014    2015   2016   2017   2018  2019    2020   2021   2022   2023   2024   2025   2026
+d    -0.052  0.001  -0.817 -0.062 -0.132 -0.012 -0.12   0.318 -0.046  0.022 -0.152 -0.306 -0.031 -0.289
+y     3.000  8.000  14.000  9.000  4.000  3.000  7.00  10.000  5.000  6.000  6.000  3.000  3.000  4.000
+done

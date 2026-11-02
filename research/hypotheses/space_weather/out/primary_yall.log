@@ -1,0 +1,5 @@
+NaN fraction train/test: 0.219 0.009
+[y_all/logit] N_test=92  IG(full-base)=+0.0000 nats/eq  IG(base-Poisson)=+0.545  AUC base/full=0.742/0.742  ASS base/full=0.742/0.742  T=0.03 
+ bootstrap {'ig_per_event': 6.512737532017178e-06, 'ci_lo': -0.000982038667745978, 'ci_hi': 0.0007820552851428168, 'p_boot_le0': 0.494, 'n_years': 14} (35.9s)
+surrogate {'ig_obs': 6.512737531030997e-06, 'p_value': 0.3333333333333333, 'null_mean': -0.003552918730467575, 'null_sd': 0.009053416812609575, 'null_q95': 0.010628153193383122, 'n': 200, 'mode': 'phase_randomize', 'significant_0.05': False, 'significant_bonferroni': False}
+done 1417.2907011508942

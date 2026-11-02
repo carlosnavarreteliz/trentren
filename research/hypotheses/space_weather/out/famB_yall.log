@@ -1,0 +1,18 @@
+x_np7 [y_all/logit] N_test=85  IG(full-base)=+0.0043 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.692  ASS base/full=0.696/0.691  T=0.26 | boot {'ig_per_event': 0.0043, 'ci_lo': -0.0259, 'ci_hi': 0.0313, 'p_boot_le0': 0.411, 'n_years': 14}
+   surrogate p=0.1393 obs=+0.0043 null_mean=-0.0022 q95=+0.0102 (213s)
+x_v7 [y_all/logit] N_test=85  IG(full-base)=+0.0134 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.702  ASS base/full=0.696/0.701  T=0.89 | boot {'ig_per_event': 0.0134, 'ci_lo': -0.0075, 'ci_hi': 0.0328, 'p_boot_le0': 0.0945, 'n_years': 14}
+   surrogate p=0.0398 obs=+0.0134 null_mean=-0.0031 q95=+0.0085 (399s)
+x_bzs7 [y_all/logit] N_test=85  IG(full-base)=+0.0004 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.697  ASS base/full=0.696/0.696  T=0.23 | boot {'ig_per_event': 0.0004, 'ci_lo': -0.0023, 'ci_hi': 0.0034, 'p_boot_le0': 0.3885, 'n_years': 14}
+   surrogate p=0.4030 obs=+0.0004 null_mean=-0.0015 q95=+0.0116 (542s)
+x_kpmax7 [y_all/logit] N_test=85  IG(full-base)=+0.0042 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.701  ASS base/full=0.696/0.700  T=0.46 | boot {'ig_per_event': 0.0042, 'ci_lo': -0.0059, 'ci_hi': 0.0179, 'p_boot_le0': 0.261, 'n_years': 14}
+   surrogate p=0.1592 obs=+0.0042 null_mean=-0.0028 q95=+0.0089 (641s)
+x_dstmin7 [y_all/logit] N_test=85  IG(full-base)=+0.0025 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.698  ASS base/full=0.696/0.698  T=0.68 | boot {'ig_per_event': 0.0025, 'ci_lo': -0.0006, 'ci_hi': 0.0061, 'p_boot_le0': 0.052, 'n_years': 14}
+   surrogate p=0.1891 obs=+0.0025 null_mean=-0.0030 q95=+0.0101 (739s)
+x_storm7 [y_all/logit] N_test=85  IG(full-base)=+0.0013 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.700  ASS base/full=0.696/0.699  T=0.10 | boot {'ig_per_event': 0.0013, 'ci_lo': -0.0208, 'ci_hi': 0.0224, 'p_boot_le0': 0.4285, 'n_years': 14}
+   surrogate p=0.2687 obs=+0.0013 null_mean=-0.0025 q95=+0.0092 (848s)
+x_f107_d81 [y_all/logit] N_test=85  IG(full-base)=-0.0091 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.694  ASS base/full=0.696/0.693  T=-1.49 | boot {'ig_per_event': -0.0091, 'ci_lo': -0.018, 'ci_hi': 0.0006, 'p_boot_le0': 0.968, 'n_years': 14}
+   surrogate p=0.8507 obs=-0.0091 null_mean=-0.0020 q95=+0.0115 (986s)
+x_ssn_d81 [y_all/logit] N_test=85  IG(full-base)=-0.0095 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.694  ASS base/full=0.696/0.693  T=-1.32 | boot {'ig_per_event': -0.0095, 'ci_lo': -0.019, 'ci_hi': -0.0001, 'p_boot_le0': 0.975, 'n_years': 14}
+   surrogate p=0.8458 obs=-0.0095 null_mean=-0.0023 q95=+0.0096 (1126s)
+JOINT [y_all/logit] N_test=85  IG(full-base)=-0.0019 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.695  ASS base/full=0.696/0.694  T=-0.10
+done 1126.532056093216

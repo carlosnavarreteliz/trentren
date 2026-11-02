@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+trentren/state/
+
+# Datos pesados (no caben en GitHub; se regeneran con los scripts)
+research/data/
+research/cache/
+research/round2/global_transfer_neural/work/
+results/catalog_with_predictions.csv
+data/processed/chile_features_m40.csv

@@ -1,0 +1,14 @@
+masked y_all 0.115 [y_all/logit] N_test=85  IG(full-base)=+0.0086 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.703  ASS base/full=0.696/0.702  T=1.50 p= 0.0945273631840796
+masked y_main 0.115 [y_main/logit] N_test=72  IG(full-base)=-0.0017 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.663  ASS base/full=0.664/0.662  T=-0.35 p= 0.4427860696517413
+s30h30 y_all [y_all/logit] N_test=80  IG(full-base)=-0.0188 nats/eq  IG(base-Poisson)=-0.053  AUC base/full=0.671/0.655  ASS base/full=0.668/0.652  T=-0.75 p= 0.7412935323383084
+s30h30 y_main [y_main/logit] N_test=72  IG(full-base)=-0.0196 nats/eq  IG(base-Poisson)=-0.002  AUC base/full=0.664/0.645  ASS base/full=0.662/0.642  T=-1.14 p= 0.7213930348258707
+s1h1 y_all [y_all/logit] N_test=92  IG(full-base)=-0.0050 nats/eq  IG(base-Poisson)=+0.545  AUC base/full=0.742/0.738  ASS base/full=0.742/0.738  T=-1.03 p= 0.4117647058823529
+s1h1 y_main [y_main/logit] N_test=72  IG(full-base)=-0.0231 nats/eq  IG(base-Poisson)=+0.044  AUC base/full=0.679/0.664  ASS base/full=0.679/0.664  T=-2.62 p= 0.7647058823529411
+split2005 y_all [y_all/logit] N_test=143  IG(full-base)=+0.0055 nats/eq  IG(base-Poisson)=+0.363  AUC base/full=0.711/0.712  ASS base/full=0.710/0.712  T=1.66 p= 0.08955223880597014
+split2005 y_main [y_main/logit] N_test=106  IG(full-base)=+0.0060 nats/eq  IG(base-Poisson)=-0.064  AUC base/full=0.651/0.654  ASS base/full=0.650/0.654  T=0.86 p= 0.11442786069651742
+godin y_all [y_all/logit] N_test=85  IG(full-base)=+0.0137 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.703  ASS base/full=0.696/0.702  T=1.69 p= 0.03980099502487562
+godin y_main [y_main/logit] N_test=72  IG(full-base)=+0.0014 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.662  ASS base/full=0.664/0.662  T=0.11 p= 0.24378109452736318
+RQ source y_all [y_all/logit] N_test=85  IG(full-base)=+0.0085 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.701  ASS base/full=0.696/0.700  T=1.25
+RQ source y_main [y_main/logit] N_test=72  IG(full-base)=-0.0018 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.666  ASS base/full=0.664/0.666  T=-0.32
+saved /Users/cnavarreteliz/Documents/Repos/earthquakes/research/hypotheses/ocean_loading/results_robust.json
+elapsed 1185.2

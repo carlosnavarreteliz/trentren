@@ -1,0 +1,24 @@
+{
+ "A_y_all_sur_phase_n1000": {
+  "ig_obs": 0.012000721632502705,
+  "p_value": 0.054945054945054944,
+  "null_mean": -0.0034596089210831736,
+  "null_sd": 0.011316358988040584,
+  "null_q95": 0.012403730487278676,
+  "n": 1000,
+  "mode": "phase_randomize",
+  "significant_0.05": false,
+  "significant_bonferroni": false
+ },
+ "A_y_all_sur_circ_n500": {
+  "ig_obs": 0.012000721632502705,
+  "p_value": 0.12974051896207583,
+  "null_mean": -0.0014327623536504873,
+  "null_sd": 0.014322679662467065,
+  "null_q95": 0.01640474115663536,
+  "n": 500,
+  "mode": "circular_shift",
+  "significant_0.05": false,
+  "significant_bonferroni": false
+ }
+}

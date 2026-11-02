@@ -1,0 +1,24 @@
+{
+ "positive_control_leak": {
+  "ig": 0.4348855004229068,
+  "p_shift": 0.009900990099009901,
+  "T": 4.301740285719945
+ },
+ "clustering_in_disguise": {
+  "ig_vs_etas_baseline": 0.0024596606045018715,
+  "p_shift": 0.1485148514851485,
+  "naive_auc_alone_test": 0.5653149095523792
+ },
+ "positive_control_leak_v2_phase_randomize": {
+  "y_all": {
+   "ig": 0.538360831655103,
+   "p_phase_randomize": 0.009900990099009901,
+   "null_mean": -0.0026013775518462993
+  },
+  "y_main": {
+   "ig": 0.3501302066219828,
+   "p_phase_randomize": 0.009900990099009901,
+   "null_mean": -0.0027293903677973936
+  }
+ }
+}

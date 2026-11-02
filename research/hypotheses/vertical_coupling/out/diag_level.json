@@ -1,0 +1,44 @@
+{
+ "F1|y_main": {
+  "ig_raw": 0.0211,
+  "ig_after_level_recal": 0.0115,
+  "exp_base": 57.62,
+  "exp_full": 60.78,
+  "obs": 72
+ },
+ "F1|y_all": {
+  "ig_raw": 0.0055,
+  "ig_after_level_recal": 0.0059,
+  "exp_base": 85.17,
+  "exp_full": 87.52,
+  "obs": 85
+ },
+ "x_or_anom|y_main": {
+  "ig_raw": 0.02,
+  "ig_after_level_recal": 0.0098,
+  "exp_base": 57.62,
+  "exp_full": 61.06,
+  "obs": 72
+ },
+ "x_or_anom|y_all": {
+  "ig_raw": 0.0027,
+  "ig_after_level_recal": 0.0033,
+  "exp_base": 85.17,
+  "exp_full": 87.91,
+  "obs": 85
+ },
+ "x_ids_anom|y_main": {
+  "ig_raw": -0.0004,
+  "ig_after_level_recal": 0.0005,
+  "exp_base": 57.62,
+  "exp_full": 57.37,
+  "obs": 72
+ },
+ "x_ids_anom|y_all": {
+  "ig_raw": -0.001,
+  "ig_after_level_recal": -0.001,
+  "exp_base": 85.17,
+  "exp_full": 84.73,
+  "obs": 85
+ }
+}

@@ -1,0 +1,12 @@
+M6 y_all [y_all/logit] N_test=85  IG(full-base)=-0.0083 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.694  ASS base/full=0.696/0.693  T=-1.06 | boot {'ig_per_event': -0.008, 'ci_lo': -0.024, 'ci_hi': 0.005, 'p_boot_le0': 0.882, 'n_years': 14}
+   null ft: p=0.8102 mean=-0.0020 q95=0.0102 (249s)
+   null shift: p=0.8303 mean=-0.0013 q95=0.0127 (175s)
+   null bin_permute: p=0.7313 mean=-0.0025 q95=0.0128 (92s)
+M6 y_main (shift/permute) [y_main/logit] N_test=72  IG(full-base)=-0.0192 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.651  ASS base/full=0.664/0.650  T=-2.38 | boot {'ig_per_event': -0.019, 'ci_lo': -0.036, 'ci_hi': -0.004, 'p_boot_le0': 0.989, 'n_years': 14}
+   null shift: p=0.8363 mean=-0.0078 q95=0.0124 (221s)
+   null bin_permute: p=0.8408 mean=-0.0037 q95=0.0170 (78s)
+M5.5 y_main [y_main/logit] N_test=193  IG(full-base)=-0.0081 nats/eq  IG(base-Poisson)=-0.022  AUC base/full=0.658/0.651  ASS base/full=0.657/0.650  T=-1.71 | boot {'ig_per_event': -0.008, 'ci_lo': -0.018, 'ci_hi': 0.002, 'p_boot_le0': 0.941, 'n_years': 14}
+   null ft: p=0.7166 mean=-0.0050 q95=0.0049 (267s)
+M5.5 y_all [y_all/logit] N_test=228  IG(full-base)=-0.0028 nats/eq  IG(base-Poisson)=+0.186  AUC base/full=0.697/0.695  ASS base/full=0.694/0.693  T=-1.19 | boot {'ig_per_event': -0.003, 'ci_lo': -0.006, 'ci_hi': 0.0, 'p_boot_le0': 0.957, 'n_years': 14}
+   null ft: p=0.4351 mean=-0.0038 q95=0.0037 (264s)
+saved out/secondary.json

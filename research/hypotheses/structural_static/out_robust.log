@@ -1,0 +1,13 @@
+GBM y_main [y_main/gbm] N_test=72  IG(full-base)=+0.0239 nats/eq  IG(base-Poisson)=-0.067  AUC base/full=0.644/0.654  ASS base/full=0.644/0.653  T=1.53 | boot {'ig_per_event': 0.024, 'ci_lo': -0.009, 'ci_hi': 0.052, 'p_boot_le0': 0.064, 'n_years': 14}
+   null ft: p=0.2475 mean=0.0183 q95=0.0352 (280s)
+GBM y_all [y_all/gbm] N_test=85  IG(full-base)=+0.0156 nats/eq  IG(base-Poisson)=+0.153  AUC base/full=0.695/0.693  ASS base/full=0.694/0.692  T=1.09 | boot {'ig_per_event': 0.016, 'ci_lo': -0.006, 'ci_hi': 0.039, 'p_boot_le0': 0.084, 'n_years': 14}
+   null ft: p=0.2772 mean=0.0110 q95=0.0213 (366s)
+30d y_main [y_main/logit] N_test=72  IG(full-base)=-0.0050 nats/eq  IG(base-Poisson)=-0.002  AUC base/full=0.664/0.660  ASS base/full=0.662/0.658  T=-1.55 | boot {'ig_per_event': -0.005, 'ci_lo': -0.012, 'ci_hi': 0.001, 'p_boot_le0': 0.94, 'n_years': 14}
+   null ft: p=0.5549 mean=-0.0046 q95=0.0118 (111s)
+30d y_all [y_all/logit] N_test=80  IG(full-base)=-0.0003 nats/eq  IG(base-Poisson)=-0.053  AUC base/full=0.671/0.668  ASS base/full=0.668/0.665  T=-0.09 | boot {'ig_per_event': -0.0, 'ci_lo': -0.017, 'ci_hi': 0.014, 'p_boot_le0': 0.524, 'n_years': 14}
+   null ft: p=0.4232 mean=-0.0021 q95=0.0122 (113s)
+alt split 2005-2012 y_main [y_main/logit] N_test=34  IG(full-base)=+0.0092 nats/eq  IG(base-Poisson)=-0.110  AUC base/full=0.611/0.605  ASS base/full=0.610/0.605  T=0.67 | boot {'ig_per_event': 0.009, 'ci_lo': -0.022, 'ci_hi': 0.039, 'p_boot_le0': 0.273, 'n_years': 8}
+   null ft: p=0.1297 mean=-0.0145 q95=0.0272 (369s)
+alt split 2005-2012 y_all [y_all/logit] N_test=58  IG(full-base)=+0.0072 nats/eq  IG(base-Poisson)=+0.805  AUC base/full=0.702/0.697  ASS base/full=0.701/0.696  T=0.45 | boot {'ig_per_event': 0.007, 'ci_lo': -0.015, 'ci_hi': 0.041, 'p_boot_le0': 0.305, 'n_years': 8}
+   null ft: p=0.2255 mean=-0.0075 q95=0.0239 (536s)
+saved out/robust.json

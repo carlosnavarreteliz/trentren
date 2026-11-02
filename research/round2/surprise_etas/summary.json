@@ -1,0 +1,31 @@
+{
+ "slug": "surprise_etas",
+ "title": "Sorpresa bajo ETAS: anomalías respecto de la sismicidad normal",
+ "question": "¿La sorpresa de la sismicidad reciente respecto de un ETAS espacio-temporal ajustado (residuos en tiempo transformado, déficit de verosimilitud, magnitudes, ubicación a lo largo del rumbo y en profundidad) agrega información sobre sismos M>=6 más allá del ETAS-logit del harness?",
+ "verdict": "null",
+ "headline": "El puntaje compuesto de sorpresa respecto del ETAS, que fue preregistrado, no agrega información (y_main: IG = -0,002 nats/sismo, p = 0,49), y la única señal nominal, el estadístico Anderson-Darling de los tiempos transformados, es post hoc y no resiste el corte m0 = 5,0.",
+ "metrics": [
+  {"target": "y_main (M>=6, semanal)", "ig_nats_per_eq": -0.0018, "p_value": 0.4875, "auc_base": 0.665, "auc_full": 0.662, "n_test_events": 72, "note": "PRIMARIO preregistrado. x_surprise = media de -ln p_k sobre 7 componentes; logit; phase_randomize n=1000; IC bootstrap por años [-0.006, 0.003]."},
+  {"target": "y_all (M>=6, semanal)", "ig_nats_per_eq": 0.0009, "p_value": 0.2328, "auc_base": 0.697, "auc_full": 0.697, "n_test_events": 85, "note": "Co-reportado, mismo diseño. IC [-0.002, 0.004]."},
+  {"target": "y_main, compuesto sin tendencia (260 semanas)", "ig_nats_per_eq": -0.0027, "p_value": 0.5025, "auc_base": 0.665, "auc_full": 0.659, "n_test_events": 72, "note": "Robustez preregistrada; phase_randomize n=200."},
+  {"target": "y_main, compuesto con m0=5.0", "ig_nats_per_eq": -0.0063, "p_value": 0.7761, "auc_base": 0.665, "auc_full": 0.651, "n_test_events": 72, "note": "Pipeline reconstruido con catálogo M>=5.0 (completo)."},
+  {"target": "y_main, x_ad (exploratorio)", "ig_nats_per_eq": 0.0107, "p_value": 0.006, "auc_base": 0.665, "auc_full": 0.668, "n_test_events": 72, "note": "POST HOC: el mejor de ~11 componentes (p*11 ≈ 0.07); IC [-0.009, 0.038]; con m0=5.0: IG 0.0025, p 0.10; panel M>=5.5: IG -0.001."},
+  {"target": "y_all, x_ad (exploratorio)", "ig_nats_per_eq": 0.0115, "p_value": 0.006, "auc_base": 0.697, "auc_full": 0.702, "n_test_events": 85, "note": "POST HOC; IC [-0.019, 0.053]; con m0=5.0: IG 0.0012, p 0.22."}
+ ],
+ "key_findings": [
+  "El compuesto preregistrado es nulo en y_main y en y_all con los tres tipos de sustitutos (phase, bin_permute, circular_shift).",
+  "También es nulo sin tendencia, con m0=5.0, en el panel M>=5.5 y en el panel diario.",
+  "Por separado, la quietud o activación relativa al ETAS (rr), el déficit de verosimilitud (lld), la sorpresa de magnitud, la espacial y la de profundidad no aportan; usar todos los componentes juntos empeora el pronóstico (IG -0.05 en y_main).",
+  "Única pista: el estadístico Anderson-Darling de los tiempos transformados (x_ad) da p nominal 0.006, pero es post hoc, depende del catálogo M>=4.7 y casi desaparece con m0=5.0.",
+  "El GBM con el compuesto mejora a un GBM base débil, pero sigue siendo peor que el ETAS-logit: no cuenta como evidencia.",
+  "Antes del Mw 8.2 de Iquique 2014 la sorpresa estuvo en el percentil 99.9; antes de Illapel 2015, Chiloé 2016 y el M7.4 de 2024 fue normal."
+ ],
+ "caveats": [
+  "ETAS 1-D (latitud × tiempo) casi crítico con m0=4.7 (razón de ramificación 0.98); con m0=5.0 baja a 0.68.",
+  "La calibración del ETAS varía 10-20% entre décadas (0.81 a 1.13) por cambios en la red y en la completitud.",
+  "El compuesto se desplaza +0.24 SD entre entrenamiento y prueba, sobre todo por la profundidad (+0.51 SD).",
+  "Solo 72 sismos principales M>=6 en la prueba: poca potencia para efectos menores que unos 0.01 nats/sismo.",
+  "La señal de x_ad viene en gran parte de 2014 (secuencia precursora de Iquique) y debería preregistrarse con m0=5.0 en otra ronda.",
+  "El test de truncamiento confirma que las características son causales (diferencias de 1e-10 o menos)."
+ ]
+}

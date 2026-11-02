@@ -1,0 +1,78 @@
+{
+ "slug": "surprise_neural",
+ "title": "Sorpresa bajo un modelo neuronal de procesos puntuales",
+ "question": "¿Un proceso puntual neuronal (GRU, estilo RECAST) entrenado con la sismicidad M>=4.7 de Chile, sus medidas de 'sorpresa' o un autoencoder de 'normalidad' de la actividad local agregan información sobre sismos M>=6 (sobre todo sismos principales) más allá del ETAS?",
+ "verdict": "null",
+ "headline": "La red neuronal aprende bien el agrupamiento temporal, pero pronostica peor que el ETAS, y ni su 'sorpresa' ni la anomalía del autoencoder agregan información (y_main: IG = -0,004 nats/sismo, p = 0,45).",
+ "metrics": [
+  {
+   "target": "y_main (M>=6, semanal)",
+   "ig_nats_per_eq": -0.0039,
+   "p_value": 0.4545,
+   "auc_base": 0.665,
+   "auc_full": 0.665,
+   "n_test_events": 72,
+   "note": "PRIMARIO preregistrado. Bloque {x_ntpp_logp60, x_resid_90, x_ae_score}, logit, phase_randomize n=1000; IC bootstrap por años [-0.016, 0.008]."
+  },
+  {
+   "target": "y_all (M>=6, semanal)",
+   "ig_nats_per_eq": -0.001,
+   "p_value": 0.4356,
+   "auc_base": 0.697,
+   "auc_full": 0.697,
+   "n_test_events": 85,
+   "note": "Co-reportado. Bloque {x_ntpp_logp60, x_resid_90, x_ae_score}, logit, phase_randomize n=1000; IC bootstrap por años [-0.004, 0.003]."
+  },
+  {
+   "target": "y_main (M>=6) NTPP solo vs ETAS",
+   "ig_nats_per_eq": -0.0998,
+   "p_value": null,
+   "auc_base": 0.677,
+   "auc_full": 0.645,
+   "n_test_events": 72,
+   "note": "Pronóstico propio de la red (recalibrado en train) contra el ETAS aditivo; IC bootstrap [-0.226, 0.014]; sin prueba de surrogates (comparación de modelos). auc_base = ETAS, auc_full = red."
+  },
+  {
+   "target": "y_all (M>=6) NTPP solo vs ETAS",
+   "ig_nats_per_eq": -0.2262,
+   "p_value": null,
+   "auc_base": 0.698,
+   "auc_full": 0.674,
+   "n_test_events": 85,
+   "note": "Pronóstico propio de la red (recalibrado en train) contra el ETAS aditivo; IC bootstrap [-0.509, 0.056]; sin prueba de surrogates (comparación de modelos). auc_base = ETAS, auc_full = red."
+  },
+  {
+   "target": "y_main (M>=5.5, semanal)",
+   "ig_nats_per_eq": -0.0135,
+   "p_value": 0.9353,
+   "auc_base": 0.658,
+   "auc_full": 0.653,
+   "n_test_events": 193,
+   "note": "Robustez: mismo bloque con P_ntpp(M>=5.5), phase_randomize n=200."
+  },
+  {
+   "target": "y_all (M>=5.5, semanal)",
+   "ig_nats_per_eq": -0.0078,
+   "p_value": 0.8109,
+   "auc_base": 0.697,
+   "auc_full": 0.692,
+   "n_test_events": 228,
+   "note": "Robustez: mismo bloque con P_ntpp(M>=5.5), phase_randomize n=200."
+  }
+ ],
+ "key_findings": [
+  "Prueba primaria preregistrada (y_main, M>=6 semanal): IG = -0,0039 nats/sismo, p = 0,45 (n = 1000 surrogates); y_all: IG = -0,0010, p = 0,44.",
+  "Como pronosticador propio, la red rinde peor que el ETAS: -0,23 nats/sismo en y_all M6 y -0,10 en y_main M6 (recalibrada).",
+  "La red sí aprende el agrupamiento: supera a Poisson en M>=5,5 y_all (+0,065 nats/sismo, IC [0,02, 0,11]), pero su localización es más difusa que el núcleo de ruptura del ETAS.",
+  "Ninguno de los 10 rasgos de sorpresa (residuo de Ogata, NLL por evento, norma de actualización del embedding, autoencoder) tiene p < 0,2 por sí solo.",
+  "Todo sale nulo también con GBM, en el panel M>=5,5, con la versión sin tendencia, con desplazamiento circular, con permutación de bins y quitando un año de prueba a la vez.",
+  "La prueba de causalidad con el catálogo truncado da diferencia 0 en estados, NLL y pronósticos simulados."
+ ],
+ "caveats": [
+  "Solo 72 sismos principales de prueba: no se pueden descartar efectos menores a ~0,01 nats/sismo.",
+  "Se usa el catálogo ComCat revisado (prueba pseudo-prospectiva), con completitud de M4,7 variable antes de 1990.",
+  "Modelo pequeño (GRU de 64 unidades, una sola secuencia regional): una arquitectura espacial más rica podría localizar mejor, aunque es difícil que supere al ETAS.",
+  "Antes de mirar la prueba se estabilizó la red (mezclas defensivas, EMA, 3 semillas), y las épocas del autoencoder quedaron en el borde de la grilla (40).",
+  "Los rasgos de sorpresa exploratorios se desplazan entre 0,15 y 0,39 DE entre train y test porque el periodo de prueba es más activo."
+ ]
+}

@@ -1,0 +1,3 @@
+[full1976 weekly M6] x_gtw_z30 y_main logit: IG=+0.0003 vsETAS=-0.0077 AUC 0.665->0.663 coef={'x_gtw_z30': 0.0145} boot={'ig_per_event': 0.0003171563505782885, 'ci_lo': -0.004709610492313065, 'ci_hi': 0.004938143349209241, 'p_boot_le0': 0.461, 'n_years': 14} phase_randomize:p=0.3564 (45s)
+/opt/miniconda3/lib/python3.13/multiprocessing/resource_tracker.py:400: UserWarning: resource_tracker: There appear to be 2 leaked semaphore objects to clean up at shutdown: {'/loky-79534-bnx9ibe4', '/loky-79534-fali2mot'}
+  warnings.warn(

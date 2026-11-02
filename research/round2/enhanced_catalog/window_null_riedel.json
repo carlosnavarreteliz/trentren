@@ -1,0 +1,90 @@
+[
+ {
+  "analysis": "Riedel ML>=2.5 M>=5.0, harness-default null (n=100)",
+  "target": "y_main",
+  "ig": 0.0006,
+  "p_default": 0.0297029702970297,
+  "null_mean": -0.03,
+  "null_sd": 0.0215
+ },
+ {
+  "analysis": "Riedel ML>=2.5 M>=5.0, windowed null",
+  "target": "y_main",
+  "ig": 0.0006,
+  "p_window": 0.3076923076923077,
+  "n": 1000,
+  "null_mean": -0.0098,
+  "null_sd": 0.0214,
+  "null_q95": 0.0207,
+  "n_test": 101,
+  "secs": 885
+ },
+ {
+  "analysis": "Riedel ML>=2.5 M>=5.0, harness-default null (n=100)",
+  "target": "y_all",
+  "ig": 0.0055,
+  "p_default": 0.019801980198019802,
+  "null_mean": -0.017,
+  "null_sd": 0.0175
+ },
+ {
+  "analysis": "Riedel ML>=2.5 M>=5.0, windowed null",
+  "target": "y_all",
+  "ig": 0.0055,
+  "p_window": 0.1938061938061938,
+  "n": 1000,
+  "null_mean": -0.0086,
+  "null_sd": 0.0188,
+  "null_q95": 0.0191,
+  "n_test": 108,
+  "secs": 1098
+ },
+ {
+  "analysis": "Riedel ML>=4.5 (contrast) M>=5, windowed null",
+  "target": "y_main",
+  "ig": -0.0226,
+  "p_window": 0.6268656716417911,
+  "n": 200,
+  "null_mean": -0.0172,
+  "null_sd": 0.0305,
+  "null_q95": 0.0213,
+  "n_test": 101,
+  "secs": 141
+ },
+ {
+  "analysis": "Riedel ML>=4.5 (contrast) M>=5, windowed null",
+  "target": "y_all",
+  "ig": -0.0158,
+  "p_window": 0.6069651741293532,
+  "n": 200,
+  "null_mean": -0.0136,
+  "null_sd": 0.0262,
+  "null_q95": 0.0205,
+  "n_test": 108,
+  "secs": 123
+ },
+ {
+  "analysis": "Riedel ML>=2.5 M>=5.5, windowed null",
+  "target": "y_main",
+  "ig": -0.0284,
+  "p_window": 0.5970149253731343,
+  "n": 200,
+  "null_mean": -0.0244,
+  "null_sd": 0.067,
+  "null_q95": 0.0699,
+  "n_test": 40,
+  "secs": 95
+ },
+ {
+  "analysis": "Riedel ML>=2.5 M>=5.5, windowed null",
+  "target": "y_all",
+  "ig": -0.0121,
+  "p_window": 0.48258706467661694,
+  "n": 200,
+  "null_mean": -0.0228,
+  "null_sd": 0.0571,
+  "null_q95": 0.0527,
+  "n_test": 42,
+  "secs": 91
+ }
+]

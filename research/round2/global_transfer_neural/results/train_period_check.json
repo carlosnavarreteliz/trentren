@@ -1,0 +1,80 @@
+{
+ "gft_y_main": {
+  "n": 146,
+  "raw_ig_vs_base_oof": 0.1223716363971715,
+  "levelmatched_ig": 0.12590236091066415,
+  "boot": {
+   "ig_per_event": 0.12590236091066412,
+   "ci_lo": 0.06782007295764741,
+   "ci_hi": 0.192891648503671,
+   "p_boot_le0": 0.0,
+   "n_years": 37
+  },
+  "note": "gzs is not out-of-fold-trained on Chile (zero-shot) so it is genuinely out-of-sample"
+ },
+ "co_y_main": {
+  "n": 146,
+  "raw_ig_vs_base_oof": 0.07963973166190758,
+  "levelmatched_ig": 0.07900441599338784,
+  "boot": {
+   "ig_per_event": 0.07900441599338784,
+   "ci_lo": 0.01450761303110326,
+   "ci_hi": 0.17116477454079426,
+   "p_boot_le0": 0.005,
+   "n_years": 37
+  },
+  "note": "gzs is not out-of-fold-trained on Chile (zero-shot) so it is genuinely out-of-sample"
+ },
+ "gzs_y_main": {
+  "n": 146,
+  "raw_ig_vs_base_oof": 0.12204800198756778,
+  "levelmatched_ig": 0.1297908787315613,
+  "boot": {
+   "ig_per_event": 0.1297908787315613,
+   "ci_lo": 0.06726110572344705,
+   "ci_hi": 0.2019198001961157,
+   "p_boot_le0": 0.0,
+   "n_years": 37
+  },
+  "note": "gzs is not out-of-fold-trained on Chile (zero-shot) so it is genuinely out-of-sample"
+ },
+ "gft_y_all": {
+  "n": 194,
+  "raw_ig_vs_base_oof": 0.07990637954386734,
+  "levelmatched_ig": 0.08123915988051263,
+  "boot": {
+   "ig_per_event": 0.08123915988051263,
+   "ci_lo": 0.03842678491414767,
+   "ci_hi": 0.13165659629578771,
+   "p_boot_le0": 0.0005,
+   "n_years": 37
+  },
+  "note": "gzs is not out-of-fold-trained on Chile (zero-shot) so it is genuinely out-of-sample"
+ },
+ "co_y_all": {
+  "n": 194,
+  "raw_ig_vs_base_oof": 0.04869416988350006,
+  "levelmatched_ig": 0.04912676092585086,
+  "boot": {
+   "ig_per_event": 0.04912676092585086,
+   "ci_lo": 0.00586909045731562,
+   "ci_hi": 0.09403350577441509,
+   "p_boot_le0": 0.014,
+   "n_years": 37
+  },
+  "note": "gzs is not out-of-fold-trained on Chile (zero-shot) so it is genuinely out-of-sample"
+ },
+ "gzs_y_all": {
+  "n": 194,
+  "raw_ig_vs_base_oof": 0.0651042067351744,
+  "levelmatched_ig": 0.06519109726551187,
+  "boot": {
+   "ig_per_event": 0.06519109726551187,
+   "ci_lo": 0.021354405738846814,
+   "ci_hi": 0.11771571546701595,
+   "p_boot_le0": 0.0025,
+   "n_years": 37
+  },
+  "note": "gzs is not out-of-fold-trained on Chile (zero-shot) so it is genuinely out-of-sample"
+ }
+}

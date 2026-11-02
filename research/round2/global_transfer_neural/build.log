@@ -1,0 +1,13 @@
+global events M>=4.7 1973-2012: 131646; inside Chile box (removed): 5878
+assigned: {'aleutians_alaska': 4151, 'izu_bonin_mariana': 5564, 'japan_kuril_kamchatka': 12931, 'mexico_central_america': 3444, 'nankai_ryukyu': 2373, 'peru_ecuador_colombia': 2606, 'philippine_trench': 5472, 'sunda': 8706, 'tonga_kermadec': 15697, 'vanuatu': 6941} lengths km: {'peru_ecuador_colombia': 3057, 'mexico_central_america': 2979, 'japan_kuril_kamchatka': 3130, 'aleutians_alaska': 3669, 'izu_bonin_mariana': 3276, 'nankai_ryukyu': 2050, 'tonga_kermadec': 2881, 'sunda': 4819, 'vanuatu': 1737, 'philippine_trench': 1190}
+peru_ecuador_colombia {'n_events': 2606, 'n_bins': 28, 'n_m6': 128, 'n_m7': 21, 'pos_all6': 109, 'pos_main6': 97, 'pos_all7': 19, 'log10_eta0': -5.025194613951417} 13s
+mexico_central_america {'n_events': 3444, 'n_bins': 27, 'n_m6': 206, 'n_m7': 32, 'pos_all6': 188, 'pos_main6': 163, 'pos_all7': 31, 'log10_eta0': -5.302013141129361} 14s
+japan_kuril_kamchatka {'n_events': 12931, 'n_bins': 29, 'n_m6': 499, 'n_m7': 47, 'pos_all6': 354, 'pos_main6': 272, 'pos_all7': 40, 'log10_eta0': -5.6570248899397875} 25s
+aleutians_alaska {'n_events': 4151, 'n_bins': 33, 'n_m6': 196, 'n_m7': 13, 'pos_all6': 163, 'pos_main6': 146, 'pos_all7': 11, 'log10_eta0': -5.548412898367963} 28s
+izu_bonin_mariana {'n_events': 5564, 'n_bins': 30, 'n_m6': 140, 'n_m7': 13, 'pos_all6': 128, 'pos_main6': 119, 'pos_all7': 13, 'log10_eta0': -5.054720246466237} 31s
+nankai_ryukyu {'n_events': 2373, 'n_bins': 19, 'n_m6': 105, 'n_m7': 7, 'pos_all6': 87, 'pos_main6': 82, 'pos_all7': 6, 'log10_eta0': -5.1979149250294965} 33s
+tonga_kermadec {'n_events': 15697, 'n_bins': 26, 'n_m6': 622, 'n_m7': 49, 'pos_all6': 553, 'pos_main6': 520, 'pos_all7': 46, 'log10_eta0': -5.735079413173096} 51s
+sunda {'n_events': 8706, 'n_bins': 44, 'n_m6': 290, 'n_m7': 29, 'pos_all6': 237, 'pos_main6': 164, 'pos_all7': 28, 'log10_eta0': -5.421405153117032} 59s
+vanuatu {'n_events': 6941, 'n_bins': 16, 'n_m6': 415, 'n_m7': 51, 'pos_all6': 319, 'pos_main6': 273, 'pos_all7': 44, 'log10_eta0': -5.836053921678015} 63s
+philippine_trench {'n_events': 5472, 'n_bins': 11, 'n_m6': 178, 'n_m7': 24, 'pos_all6': 141, 'pos_main6': 119, 'pos_all7': 19, 'log10_eta0': -5.480169330873457} 66s
+{"rows": 507590, "pos": [7009, 6043, 2279, 1955, 257], "n_events": 67885} {"rows": 76850, "train_pos": [606, 483, 194, 146, 24], "heads": ["all55", "main55", "all6", "main6", "all7"]} 75s

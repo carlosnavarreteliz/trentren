@@ -1,0 +1,14 @@
+x_resid_30 y_main {'ig': -0.0006, 'coef': {'x_resid_30': -0.0339}, 'auc_base': 0.6645, 'auc_full': 0.6641, 'p_phase': 0.4478, 'null_mean': -0.0035}
+x_resid_30 y_all {'ig': -0.0069, 'coef': {'x_resid_30': -0.1323}, 'auc_base': 0.6969, 'auc_full': 0.7003, 'p_phase': 0.7711, 'null_mean': -0.002}
+x_resid_365 y_main {'ig': -0.0038, 'coef': {'x_resid_365': 0.1232}, 'auc_base': 0.6645, 'auc_full': 0.6624, 'p_phase': 0.6617, 'null_mean': -0.0041}
+x_resid_365 y_all {'ig': 0.0005, 'coef': {'x_resid_365': 0.0314}, 'auc_base': 0.6969, 'auc_full': 0.6965, 'p_phase': 0.408, 'null_mean': -0.0019}
+x_lam_90 y_main {'ig': -0.0082, 'coef': {'x_lam_90': 0.1214}, 'auc_base': 0.6645, 'auc_full': 0.66, 'p_phase': 0.7313, 'null_mean': -0.0046}
+x_lam_90 y_all {'ig': -0.0066, 'coef': {'x_lam_90': 0.084}, 'auc_base': 0.6969, 'auc_full': 0.6963, 'p_phase': 0.7562, 'null_mean': -0.0029}
+x_surp_mean_365 y_main {'ig': -0.0064, 'coef': {'x_surp_mean_365': 0.2612}, 'auc_base': 0.6645, 'auc_full': 0.6596, 'p_phase': 0.6866, 'null_mean': -0.0049}
+x_surp_mean_365 y_all {'ig': -0.0029, 'coef': {'x_surp_mean_365': 0.144}, 'auc_base': 0.6969, 'auc_full': 0.6953, 'p_phase': 0.6468, 'null_mean': -0.0021}
+x_surp_mag_365 y_main {'ig': -0.0024, 'coef': {'x_surp_mag_365': 0.1632}, 'auc_base': 0.6645, 'auc_full': 0.6639, 'p_phase': 0.7761, 'null_mean': 0.0033}
+x_surp_mag_365 y_all {'ig': -0.0004, 'coef': {'x_surp_mag_365': 0.0812}, 'auc_base': 0.6969, 'auc_full': 0.6967, 'p_phase': 0.6567, 'null_mean': 0.0024}
+x_surp_time_365 y_main {'ig': -0.0037, 'coef': {'x_surp_time_365': 0.0499}, 'auc_base': 0.6645, 'auc_full': 0.6626, 'p_phase': 0.6169, 'null_mean': -0.003}
+x_surp_time_365 y_all {'ig': 0.0003, 'coef': {'x_surp_time_365': -0.0203}, 'auc_base': 0.6969, 'auc_full': 0.6978, 'p_phase': 0.4925, 'null_mean': 0.0003}
+x_upd_norm_365 y_main {'ig': 0.0007, 'coef': {'x_upd_norm_365': 0.0178}, 'auc_base': 0.6645, 'auc_full': 0.6641, 'p_phase': 0.4726, 'null_mean': 0.0023}
+x_upd_norm_365 y_all {'ig': 0.0011, 'coef': {'x_upd_norm_365': -0.0639}, 'auc_base': 0.6969, 'auc_full': 0.6996, 'p_phase': 0.4279, 'null_mean': 0.0011}

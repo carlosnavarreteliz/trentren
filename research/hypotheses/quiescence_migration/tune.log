@@ -1,0 +1,19 @@
+tune rtl {'rtl_r0': 50.0, 'rtl_t0': 0.5} -0.0086
+tune rtl {'rtl_r0': 50.0, 'rtl_t0': 1.0} -0.002
+tune rtl {'rtl_r0': 100.0, 'rtl_t0': 0.5} 0.0524
+tune rtl {'rtl_r0': 100.0, 'rtl_t0': 1.0} 0.0278
+tune zq {'zq_w': 0.5} 0.0069
+tune zq {'zq_w': 1.0} -0.0013
+tune zq {'zq_w': 2.0} -0.0283
+tune doughnut {'dn_w': 3.0} -0.0019
+tune doughnut {'dn_w': 5.0} 0.0017
+tune migr {'mg_w': 180.0} -0.0094
+tune migr {'mg_w': 365.0} -0.0224
+tune sync {'sy_w': 3.0} -0.0341
+tune sync {'sy_w': 5.0} -0.0333
+tune shadow {'sh_tau': 5.0} -0.0801
+tune shadow {'sh_tau': 10.0} -0.0812
+tune shadow {'sh_tau': 20.0} -0.0817
+selected {'rtl_r0': 100.0, 'rtl_t0': 0.5, 'zq_w': 0.5, 'dn_w': 5.0, 'mg_w': 180.0, 'sy_w': 5.0, 'sh_tau': 5.0}
+tuned test y_main -0.027 p= 0.5124378109452736 {'ig_per_event': -0.026990819821973003, 'ci_lo': -0.05606882773504827, 'ci_hi': 0.006070106650183918, 'p_boot_le0': 0.933, 'n_years': 14}
+tuned test y_all 0.0217 p= 0.05970149253731343 {'ig_per_event': 0.021664382377650233, 'ci_lo': -0.017114052791813765, 'ci_hi': 0.059883963251032825, 'p_boot_le0': 0.1215, 'n_years': 14}

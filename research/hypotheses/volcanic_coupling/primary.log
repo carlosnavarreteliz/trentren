@@ -1,0 +1,6 @@
+y_main [y_main/logit] N_test=72  IG(full-base)=-0.0009 nats/eq  IG(base-Poisson)=+0.006  AUC base/full=0.665/0.665  ASS base/full=0.664/0.664  T=-0.05  surrogate p=0.3217 (Bonferroni sig=False) [716s]
+  bin_permute p 0.45182724252491696  raw-shift p 0.423841059602649  boot {'ig_per_event': -0.0008765905216547484, 'ci_lo': -0.03543321845866047, 'ci_hi': 0.02625673848492523, 'p_boot_le0': 0.5395, 'n_years': 14}
+  coef {'x_arc_365': -0.1059, 'x_arc_30': 0.0813, 'x_erupt_365': 0.1563}
+y_all [y_all/logit] N_test=85  IG(full-base)=+0.0019 nats/eq  IG(base-Poisson)=+0.221  AUC base/full=0.697/0.700  ASS base/full=0.696/0.699  T=0.15  surrogate p=0.2525 (Bonferroni sig=False) [150s]
+  bin_permute p 0.2537313432835821  raw-shift p 0.24752475247524752  boot {'ig_per_event': 0.0019395734772572196, 'ci_lo': -0.014622743113763605, 'ci_hi': 0.014487972189237596, 'p_boot_le0': 0.406, 'n_years': 14}
+  coef {'x_arc_365': -0.0004, 'x_arc_30': 0.0334, 'x_erupt_365': 0.1174}
