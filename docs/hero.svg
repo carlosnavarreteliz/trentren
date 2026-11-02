@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 440" width="1400" height="440" role="img" aria-labelledby="t d">
+  <title id="t">Trentren</title>
+  <desc id="d">A seismogram bursts into the serpent Tren Tren Vilu, who rises along the hills above the sea.</desc>
+  <defs>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F3CF8E" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#F3CF8E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BFD6E6"/>
+      <stop offset="1" stop-color="#E6EFF5"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2B2A33"/>
+      <stop offset="0.25" stop-color="#B5533C"/>
+      <stop offset="1" stop-color="#C8553D"/>
+    </linearGradient>
+    <filter id="wash" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 0.05 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <clipPath id="frame"><rect width="1400" height="440" rx="22"/></clipPath>
+    <style>
+      .title { font: italic 600 92px "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif; fill: #2B2A33; letter-spacing: -1px; }
+      .sub { font: 400 25px "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif; fill: #5E5A52; }
+      .tag { font: 600 14px "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif; fill: #8A8276; letter-spacing: 3px; }
+      .note { font: italic 15px "Iowan Old Style", Palatino, Georgia, serif; fill: #8A8276; }
+      @media (prefers-reduced-motion: no-preference) {
+        .trace { stroke-dasharray: 1400; stroke-dashoffset: 1400; animation: draw 3.2s ease-out forwards; }
+        .snake { stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 2.6s 1.6s ease-out forwards; }
+        .head { opacity: 0; animation: show 0.6s 3.9s forwards; }
+        .ring { transform-origin: 455px 330px; animation: ring 4s ease-out infinite; }
+        .ring.b { animation-delay: 1.3s; } .ring.c { animation-delay: 2.6s; }
+        @keyframes draw { to { stroke-dashoffset: 0; } }
+        @keyframes show { to { opacity: 1; } }
+        @keyframes ring { from { transform: scale(0.2); opacity: 0.7; } to { transform: scale(1.6); opacity: 0; } }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1400" height="440" fill="#FAF6EE"/>
+    <!-- watercolor washes -->
+    <g filter="url(#soft)" opacity="0.6">
+      <ellipse cx="1130" cy="110" rx="170" ry="120" fill="url(#sun)"/>
+      <ellipse cx="300" cy="80" rx="320" ry="90" fill="#EFE3D3"/>
+      <ellipse cx="820" cy="60" rx="220" ry="60" fill="#E8EEF0"/>
+    </g>
+    <circle cx="1130" cy="118" r="46" fill="#F1C982" opacity="0.75"/>
+
+    <!-- hills, back to front -->
+    <path filter="url(#wash)" d="M-20 330 C 120 270, 220 300, 330 262 S 560 210, 700 250 S 900 200, 1010 236 S 1180 290, 1260 300 L 1420 330 L 1420 460 L -20 460 Z" fill="#D9D3E6" opacity="0.8"/>
+    <path filter="url(#wash)" d="M-20 360 C 140 320, 260 345, 400 320 S 640 268, 790 300 S 960 250, 1060 282 S 1200 336, 1330 388 L 1330 460 L -20 460 Z" fill="#B9CBB0" opacity="0.9"/>
+    <path filter="url(#wash)" d="M-20 400 C 160 372, 300 390, 460 372 S 700 340, 840 356 S 1000 330, 1110 360 S 1190 392, 1230 410 L 1230 460 L -20 460 Z" fill="#8FAE8A"/>
+
+    <!-- the sea the serpent holds back -->
+    <path d="M1060 460 C 1110 430, 1140 384, 1196 374 C 1260 364, 1330 366, 1420 358 L 1420 460 Z" fill="url(#sea)"/>
+    <path d="M1060 460 C 1110 430, 1140 384, 1196 374 C 1260 364, 1330 366, 1420 358" fill="none" stroke="#FAF6EE" stroke-width="3" opacity="0.8"/>
+    <g fill="none" stroke="#7FA7C4" stroke-width="2" stroke-linecap="round" opacity="0.8">
+      <path d="M1200 392 q 14 -9 28 0 t 28 0 t 28 0"/>
+      <path d="M1270 414 q 14 -9 28 0 t 28 0 t 28 0 t 28 0"/>
+      <path d="M1190 432 q 14 -9 28 0 t 28 0"/>
+    </g>
+
+    <!-- epicentre rings -->
+    <g fill="none" stroke="#C8553D" stroke-width="1.6">
+      <circle class="ring" cx="455" cy="330" r="60" opacity="0.35"/>
+      <circle class="ring b" cx="455" cy="330" r="60" opacity="0.25"/>
+      <circle class="ring c" cx="455" cy="330" r="60" opacity="0.15"/>
+    </g>
+
+    <!-- seismogram: quiet, burst, decay -->
+    <path class="trace" fill="none" stroke="url(#body)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"
+      d="M60 330 L 110 330 L 116 327 L 122 333 L 128 330 L 200 330 L 206 326 L 212 334 L 218 330 L 330 330
+         L 350 318 L 362 346 L 376 296 L 390 368 L 404 268 L 418 392 L 432 250 L 446 404 L 460 262 L 474 386
+         L 488 284 L 502 368 L 516 300 L 530 352 L 544 314 L 558 342 L 572 322 L 586 336"/>
+
+    <!-- Tren Tren Vilu rising along the ridge -->
+    <path class="snake" fill="none" stroke="#C8553D" stroke-width="13" stroke-linecap="round"
+      d="M586 336 C 630 352, 650 300, 700 304 S 770 352, 820 330 S 890 268, 950 282 S 1010 310, 1040 272 S 1070 220, 1102 214"/>
+    <path class="snake" fill="none" stroke="#F0B08F" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 11"
+      d="M586 336 C 630 352, 650 300, 700 304 S 770 352, 820 330 S 890 268, 950 282 S 1010 310, 1040 272 S 1070 220, 1102 214"/>
+    <g class="head">
+      <ellipse cx="1112" cy="210" rx="17" ry="11" transform="rotate(-18 1112 210)" fill="#C8553D"/>
+      <circle cx="1117" cy="205" r="2.6" fill="#FAF6EE"/>
+      <path d="M1127 203 l 14 -6 m -14 6 l 13 3" stroke="#2B2A33" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- type -->
+    <text x="80" y="140" class="title">Trentren</text>
+    <text x="84" y="186" class="sub">An AI council that watches the earth move</text>
+    <text x="86" y="226" class="tag">CHILE · JAPAN · USA   ·   POWERED BY META MUSE WONDER</text>
+    <text x="1320" y="64" class="note" text-anchor="end">after Tren Tren Vilu, the serpent who raised the hills to save the people from the sea</text>
+
+    <rect width="1400" height="440" filter="url(#grain)" fill="#FAF6EE"/>
+  </g>
+</svg>
